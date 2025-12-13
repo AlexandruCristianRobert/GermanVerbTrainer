@@ -20,5 +20,5 @@ Thumbs.db
 coverage
 *.spec.ts
 
-# Environment files (keep environment.prod.ts)
-src/environments/environment.ts
+# Don't exclude environment files - Angular needs both for file replacements!
+# src/environments/environment.ts  <-- REMOVE THIS LINE
