@@ -1,27 +1,33 @@
-# GermanVerbTrainer
+## Environment Setup
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+This project requires Supabase credentials to function.
 
-## Development server
+### First-time Setup:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Copy the environment template:
 
-## Code scaffolding
+   ```bash
+   cp src/environments/environment.template.ts src/environments/environment.ts
+   cp src/environments/environment.template.ts src/environments/environment.production.ts
+   ```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Get your Supabase credentials:
 
-## Build
+   - Go to [Supabase Dashboard](https://app.supabase.com)
+   - Select your project
+   - Go to Settings > API
+   - Copy the "Project URL" and "anon public" key
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Update both environment files with your credentials:
+   - Open `src/environments/environment.ts`
+   - Replace `YOUR_SUPABASE_PROJECT_URL` with your Project URL
+   - Replace `YOUR_SUPABASE_ANON_KEY` with your anon public key
+   - Repeat for `src/environments/environment.production.ts`
 
-## Running unit tests
+### Environment Files:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- `environment.ts` - Development configuration (not committed to git)
+- `environment.production.ts` - Production configuration (not committed to git)
+- `environment.template.ts` - Template file (safe to commit)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**Never commit files containing real credentials to git!**

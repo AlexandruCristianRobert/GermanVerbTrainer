@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+npm-debug.log
+
+# Build outputs
+dist
+.angular
+
+# Development files
+.vscode
+.git
+.gitignore
+*.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+coverage
+*.spec.ts
+
+# Environment files (keep environment.prod.ts)
+src/environments/environment.ts

@@ -1,0 +1,242 @@
+<div
+  class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8 px-4"
+>
+  <div class="max-w-4xl mx-auto">
+    <!-- Header with Timer and Progress -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-6">
+      <div class="flex items-center justify-between mb-4">
+        <div>
+          <h1 class="text-2xl font-bold text-gray-800">German Verb Quiz</h1>
+          <p class="text-sm text-gray-600 mt-1">
+            Question {{ currentQuestionIndex + 1 }} of {{ questions.length }}
+          </p>
+        </div>
+        <div class="text-right">
+          <div class="text-3xl font-bold text-blue-600">
+            {{ getFormattedTime() }}
+          </div>
+          <div class="text-xs text-gray-600">Time Elapsed</div>
+        </div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+        <div
+          class="bg-blue-600 h-3 rounded-full transition-all duration-300"
+          [style.width.%]="progress"
+        ></div>
+      </div>
+      <div class="flex justify-between text-xs text-gray-600 mt-2">
+        <span>{{ questionsAnswered }} answered</span>
+        <span>{{ questionsRemaining }} remaining</span>
+      </div>
+    </div>
+
+    <!-- Question Card -->
+    <div *ngIf="currentQuestion" class="bg-white shadow-lg rounded-lg p-8 mb-6">
+      <!-- Question Header -->
+      <div class="mb-6">
+        <div class="flex items-center justify-between mb-4">
+          <span
+            class="inline-block px-3 py-1 bg-purple-100 text-purple-800 text-sm font-semibold rounded-full"
+          >
+            {{ currentQuestion.tense }}
+          </span>
+          <span
+            class="inline-block px-3 py-1 bg-green-100 text-green-800 text-sm font-semibold rounded-full"
+          >
+            {{ currentQuestion.verb.verb_type }}
+          </span>
+          <span
+            class="inline-block px-3 py-1 bg-orange-100 text-orange-800 text-sm font-semibold rounded-full"
+          >
+            Level {{ currentQuestion.verb.difficulty_level }}
+          </span>
+        </div>
+
+        <!-- Question Text -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-2">
+          {{ currentQuestion.questionText }}
+        </h2>
+
+        <p class="text-lg text-gray-600">
+          Verb:
+          <span class="font-semibold">{{
+            currentQuestion.verb.infinitive
+          }}</span>
+          ({{ currentQuestion.verb.english_translation }})
+        </p>
+      </div>
+
+      <!-- Answer Input -->
+      <div class="mb-6">
+        <label class="block text-sm font-medium text-gray-700 mb-2">
+          Your Answer:
+        </label>
+        <input
+          type="text"
+          [(ngModel)]="currentAnswer"
+          (keypress)="handleKeyPress($event)"
+          (input)="showValidation = false"
+          placeholder="Type the conjugated verb..."
+          class="w-full px-4 py-3 text-xl border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+          [class.border-red-500]="showValidation && !isCurrentAnswerCorrect()"
+          [class.border-green-500]="showValidation && isCurrentAnswerCorrect()"
+          autofocus
+        />
+
+        <!-- Validation Feedback -->
+        <div *ngIf="showValidation" class="mt-2">
+          <div
+            *ngIf="isCurrentAnswerCorrect()"
+            class="flex items-center text-green-600 text-sm font-medium"
+          >
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Correct!
+          </div>
+          <div
+            *ngIf="!isCurrentAnswerCorrect() && answerError"
+            class="flex items-start text-red-600 text-sm font-medium"
+          >
+            <svg
+              class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            {{ answerError }}
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex gap-3 mb-6">
+        <button
+          (click)="checkAnswer()"
+          [disabled]="!currentAnswer.trim()"
+          class="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
+        >
+          Check Answer
+        </button>
+        <button
+          (click)="toggleHint()"
+          class="flex-1 bg-yellow-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors"
+        >
+          {{ showHint ? "Hide" : "Show" }} Hint
+        </button>
+        <button
+          (click)="clearCurrentAnswer()"
+          class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg font-semibold hover:bg-gray-300 transition-colors"
+        >
+          Clear
+        </button>
+      </div>
+
+      <!-- Hint Panel -->
+      <div
+        *ngIf="showHint"
+        class="bg-yellow-50 border-2 border-yellow-200 rounded-lg p-4 mb-6"
+      >
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="font-semibold text-gray-800">
+            Hint (Level {{ hintLevel }}):
+          </h3>
+          <div class="flex gap-2">
+            <button
+              (click)="decreaseHintLevel()"
+              [disabled]="hintLevel === 1"
+              class="px-2 py-1 bg-yellow-200 text-gray-700 rounded text-sm hover:bg-yellow-300 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Less
+            </button>
+            <button
+              (click)="increaseHintLevel()"
+              [disabled]="hintLevel === 3"
+              class="px-2 py-1 bg-yellow-200 text-gray-700 rounded text-sm hover:bg-yellow-300 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              More
+            </button>
+          </div>
+        </div>
+        <p class="text-gray-700 text-lg font-mono">{{ getHint() }}</p>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="flex gap-3 mb-6">
+      <button
+        (click)="previousQuestion()"
+        [disabled]="isFirstQuestion"
+        class="flex-1 bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
+      >
+        ← Previous
+      </button>
+
+      <button
+        *ngIf="!isLastQuestion"
+        (click)="nextQuestion()"
+        class="flex-1 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+      >
+        Next →
+      </button>
+
+      <button
+        *ngIf="isLastQuestion"
+        (click)="confirmSubmitQuiz()"
+        [disabled]="isSubmitting"
+        class="flex-1 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
+      >
+        {{ isSubmitting ? "Submitting..." : "Submit Quiz" }}
+      </button>
+    </div>
+
+    <!-- Question Navigator -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-6">
+      <h3 class="font-semibold text-gray-800 mb-4">Quick Navigation:</h3>
+      <div class="grid grid-cols-5 sm:grid-cols-10 gap-2">
+        <button
+          *ngFor="let question of questions; let i = index"
+          (click)="goToQuestion(i)"
+          [class.bg-blue-600]="i === currentQuestionIndex"
+          [class.text-white]="i === currentQuestionIndex"
+          [class.bg-green-100]="
+            i !== currentQuestionIndex && isQuestionAnswered(i)
+          "
+          [class.text-green-800]="
+            i !== currentQuestionIndex && isQuestionAnswered(i)
+          "
+          [class.bg-gray-100]="
+            i !== currentQuestionIndex && !isQuestionAnswered(i)
+          "
+          [class.text-gray-700]="
+            i !== currentQuestionIndex && !isQuestionAnswered(i)
+          "
+          class="aspect-square rounded-lg font-semibold hover:shadow-md transition-all"
+        >
+          {{ i + 1 }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Exit Button -->
+    <div class="text-center">
+      <button
+        (click)="exitQuiz()"
+        class="text-red-600 hover:text-red-800 font-medium"
+      >
+        Exit Quiz
+      </button>
+    </div>
+  </div>
+</div>

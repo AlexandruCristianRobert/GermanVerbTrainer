@@ -1,0 +1,174 @@
+<div class="min-h-screen bg-gray-50 py-8 px-4">
+  <div class="max-w-2xl mx-auto">
+    <!-- Progress Header -->
+    <div class="mb-6">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-sm font-medium text-gray-600">
+          Question {{ quizState.currentIndex + 1 }} of
+          {{ quizState.questions.length }}
+        </span>
+        <span class="text-sm font-medium text-gray-600">
+          Score: {{ quizState.score }}/{{
+            quizState.currentIndex + (currentQuestion.submitted ? 1 : 0)
+          }}
+        </span>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-2">
+        <div
+          class="bg-blue-600 h-2 rounded-full transition-all duration-300"
+          [style.width.%]="progressPercentage"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Question Card -->
+    <div class="bg-white rounded-lg shadow-lg p-8">
+      <!-- German Verb -->
+      <div class="text-center mb-8">
+        <p class="text-sm text-gray-600 mb-2">Translate to English:</p>
+        <p class="text-5xl font-bold text-gray-900 mb-4">
+          {{ currentQuestion.verb.infinitive }}
+        </p>
+        <div class="flex items-center justify-center gap-2">
+          <span
+            class="inline-block px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600"
+          >
+            {{ currentQuestion.verb.verb_type }}
+          </span>
+          <span
+            class="inline-block px-3 py-1 bg-blue-100 rounded-full text-xs text-blue-700"
+          >
+            Level {{ currentQuestion.verb.difficulty_level }}
+          </span>
+        </div>
+      </div>
+
+      <!-- Answer Form -->
+      <form
+        [formGroup]="answerForm"
+        (ngSubmit)="submitAnswer()"
+        *ngIf="!showFeedback"
+      >
+        <div class="mb-6">
+          <input
+            type="text"
+            formControlName="answer"
+            placeholder="Enter English translation..."
+            autocomplete="off"
+            #answerInput
+            class="w-full px-4 py-3 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
+            [class.border-red-500]="
+              answerForm.get('answer')?.invalid &&
+              answerForm.get('answer')?.touched
+            "
+          />
+
+          <p
+            *ngIf="answerForm.get('answer')?.errors?.['required'] && answerForm.get('answer')?.touched"
+            class="text-sm text-red-600 mt-2"
+          >
+            Please enter an answer
+          </p>
+          <p
+            *ngIf="answerForm.get('answer')?.errors?.['minlength'] && answerForm.get('answer')?.touched"
+            class="text-sm text-red-600 mt-2"
+          >
+            Answer must be at least 2 characters
+          </p>
+        </div>
+
+        <button
+          type="submit"
+          [disabled]="answerForm.invalid"
+          class="w-full btn-primary text-lg py-3 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          Check Answer
+        </button>
+      </form>
+
+      <!-- Feedback -->
+      <div
+        *ngIf="showFeedback"
+        class="space-y-4"
+        tabindex="0"
+        #feedbackDiv
+        (keydown.enter)="nextQuestion()"
+      >
+        <!-- Correct/Incorrect Badge -->
+        <div class="text-center">
+          <div
+            *ngIf="currentQuestion.isCorrect"
+            class="inline-flex items-center px-6 py-3 bg-green-100 text-green-800 rounded-lg"
+          >
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span class="font-semibold text-lg">Correct!</span>
+          </div>
+          <div
+            *ngIf="!currentQuestion.isCorrect"
+            class="inline-flex items-center px-6 py-3 bg-red-100 text-red-800 rounded-lg"
+          >
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span class="font-semibold text-lg">Incorrect</span>
+          </div>
+        </div>
+
+        <!-- Answer Details -->
+        <div class="bg-gray-50 rounded-lg p-4 space-y-2">
+          <div class="flex justify-between items-center">
+            <span class="text-gray-600">Your answer:</span>
+            <span
+              [class.text-green-700]="currentQuestion.isCorrect"
+              [class.text-red-700]="!currentQuestion.isCorrect"
+              class="font-medium text-lg"
+            >
+              {{ currentQuestion.userAnswer }}
+            </span>
+          </div>
+          <div
+            *ngIf="!currentQuestion.isCorrect"
+            class="flex justify-between items-center border-t pt-2"
+          >
+            <span class="text-gray-600">Correct answer:</span>
+            <span class="font-medium text-green-700 text-lg">
+              {{ currentQuestion.verb.english_translation }}
+            </span>
+          </div>
+        </div>
+
+        <!-- Next Button -->
+        <button
+          (click)="nextQuestion()"
+          class="w-full btn-primary text-lg py-3"
+        >
+          {{
+            quizState.currentIndex < quizState.questions.length - 1
+              ? "Next Question →"
+              : "Finish Quiz"
+          }}
+        </button>
+      </div>
+
+      <!-- Quit Button -->
+      <div class="mt-4 text-center">
+        <button
+          (click)="quitQuiz()"
+          class="text-gray-600 hover:text-gray-800 transition-colors"
+        >
+          Quit Quiz
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

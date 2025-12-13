@@ -1,0 +1,201 @@
+<div class="min-h-screen bg-gray-50 py-8 px-4">
+  <div class="max-w-4xl mx-auto">
+    <!-- Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2">
+        Vocabulary Quiz Configuration
+      </h1>
+      <p class="text-gray-600">
+        Test your knowledge of German verb translations
+      </p>
+    </div>
+
+    <form [formGroup]="configForm" (ngSubmit)="startQuiz()" class="space-y-6">
+      <!-- Difficulty Levels Card -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold text-gray-900 mb-4">
+          Select Difficulty Levels
+        </h2>
+        <p class="text-sm text-gray-600 mb-4">
+          Choose one or more difficulty levels
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div
+            *ngFor="let option of difficultyLevelOptions"
+            (click)="toggleLevel(option.level)"
+            class="relative cursor-pointer border-2 rounded-lg p-4 transition-all"
+            [class.border-blue-500]="isLevelSelected(option.level)"
+            [class.bg-blue-50]="isLevelSelected(option.level)"
+            [class.border-gray-200]="!isLevelSelected(option.level)"
+            [class.hover:border-gray-300]="!isLevelSelected(option.level)"
+          >
+            <!-- Checkbox -->
+            <div class="absolute top-3 right-3">
+              <div
+                class="w-5 h-5 rounded border-2 flex items-center justify-center"
+                [class.border-blue-500]="isLevelSelected(option.level)"
+                [class.bg-blue-500]="isLevelSelected(option.level)"
+                [class.border-gray-300]="!isLevelSelected(option.level)"
+              >
+                <svg
+                  *ngIf="isLevelSelected(option.level)"
+                  class="w-3 h-3 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div>
+              <h3 class="font-semibold text-gray-900 mb-1">
+                {{ option.label }}
+              </h3>
+              <p class="text-sm text-gray-600">{{ option.description }}</p>
+              <div class="mt-2 flex gap-1">
+                <span
+                  *ngFor="let cefr of option.cefr"
+                  class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-700"
+                >
+                  {{ cefr }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p
+          *ngIf="
+            configForm.get('difficultyLevels')?.invalid &&
+            configForm.get('difficultyLevels')?.touched
+          "
+          class="text-sm text-red-600 mt-2"
+        >
+          Please select at least one difficulty level
+        </p>
+      </div>
+
+      <!-- Verb Count Card -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold text-gray-900 mb-4">
+          Number of Verbs
+        </h2>
+
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="text-gray-700">Verbs per quiz:</span>
+            <span class="text-2xl font-bold text-blue-600">{{
+              configForm.get("verbCount")?.value
+            }}</span>
+          </div>
+
+          <input
+            type="range"
+            formControlName="verbCount"
+            min="5"
+            max="100"
+            step="5"
+            class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+          />
+
+          <div class="flex justify-between text-xs text-gray-500">
+            <span>5</span>
+            <span>25</span>
+            <span>50</span>
+            <span>75</span>
+            <span>100</span>
+          </div>
+
+          <div class="mt-4 p-3 bg-blue-50 rounded-lg">
+            <p class="text-sm text-gray-700">
+              <span class="font-semibold text-blue-700">{{
+                availableVerbsCount
+              }}</span>
+              verbs available with current filters
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preview Section -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <button
+          type="button"
+          (click)="togglePreview()"
+          class="w-full flex items-center justify-between text-left"
+        >
+          <h2 class="text-xl font-semibold text-gray-900">
+            Preview Sample Verbs
+          </h2>
+          <svg
+            class="w-5 h-5 text-gray-500 transition-transform"
+            [class.rotate-180]="showPreview"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+
+        <div *ngIf="showPreview" class="mt-4 space-y-2">
+          <div
+            *ngFor="let verb of previewVerbs"
+            class="p-3 bg-gray-50 rounded-lg flex justify-between items-center"
+          >
+            <div>
+              <span class="font-semibold text-gray-900">{{
+                verb.infinitive
+              }}</span>
+              <span class="text-sm text-gray-600 ml-2"
+                >({{ verb.verb_type }})</span
+              >
+            </div>
+            <span class="text-gray-700">{{ verb.english_translation }}</span>
+          </div>
+
+          <p
+            *ngIf="previewVerbs.length === 0"
+            class="text-sm text-gray-500 text-center py-4"
+          >
+            No verbs available with current filters
+          </p>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex gap-4">
+        <button
+          type="submit"
+          [disabled]="
+            configForm.invalid ||
+            availableVerbsCount < configForm.get('verbCount')?.value
+          "
+          class="flex-1 btn-primary text-lg py-3 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          Start Vocabulary Quiz →
+        </button>
+
+        <button
+          type="button"
+          (click)="resetToDefaults()"
+          class="px-6 py-3 border-2 border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors"
+        >
+          Reset to Defaults
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

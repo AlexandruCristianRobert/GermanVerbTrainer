@@ -1,0 +1,255 @@
+<!-- e:\Projects\Angular\German Verbs\german-verb-trainer\src\app\features\admin\components\verb-upload\verb-upload.component.html -->
+
+<div class="min-h-screen bg-gray-50 py-8 px-4">
+  <div class="max-w-4xl mx-auto">
+    <!-- Header -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <div class="flex items-center justify-between mb-4">
+        <div>
+          <h1 class="text-3xl font-bold text-gray-800">Manage Verbs</h1>
+          <p class="text-gray-600 mt-1">
+            Upload new verbs or download existing ones
+          </p>
+        </div>
+        <button
+          (click)="goBack()"
+          class="text-blue-600 hover:text-blue-700 font-medium"
+        >
+          ← Back to Config
+        </button>
+      </div>
+    </div>
+
+    <!-- Download Section -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-gray-800 mb-4">Download Verbs</h2>
+      <p class="text-gray-600 mb-4">
+        Download all verbs currently in the database as a JSON file
+      </p>
+
+      <button
+        (click)="downloadVerbs()"
+        [disabled]="isDownloading"
+        class="bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-indigo-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors flex items-center"
+      >
+        <span *ngIf="!isDownloading"> 📥 Download All Verbs </span>
+        <span *ngIf="isDownloading" class="flex items-center">
+          <svg
+            class="animate-spin h-5 w-5 mr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="4"
+            ></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+            ></path>
+          </svg>
+          Downloading...
+        </span>
+      </button>
+
+      <!-- Download Success Message -->
+      <div
+        *ngIf="downloadStatus === 'success' && downloadResult"
+        class="mt-4 bg-green-50 border-l-4 border-green-500 p-4"
+      >
+        <p class="text-green-800 font-semibold">{{ downloadResult.message }}</p>
+        <p class="text-sm text-green-700 mt-1">
+          File has been downloaded to your device.
+        </p>
+      </div>
+
+      <!-- Download Error Message -->
+      <div
+        *ngIf="downloadStatus === 'error' && downloadResult"
+        class="mt-4 bg-red-50 border-l-4 border-red-500 p-4"
+      >
+        <p class="text-red-800 font-semibold">{{ downloadResult.message }}</p>
+      </div>
+    </div>
+
+    <!-- Upload Section -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-bold text-gray-800 mb-4">Upload Verbs</h2>
+
+      <!-- Instructions -->
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
+        <h3 class="font-semibold text-blue-900 mb-2">Instructions:</h3>
+        <ol class="list-decimal list-inside text-sm text-blue-800 space-y-1">
+          <li>Download the template JSON file to see the required format</li>
+          <li>Add your verbs following the template structure</li>
+          <li>Select your JSON file and validate it</li>
+          <li>If validation passes, click "Upload Verbs"</li>
+        </ol>
+      </div>
+
+      <!-- Download Template Button -->
+      <button
+        (click)="downloadTemplate()"
+        class="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-700 transition-colors mb-4"
+      >
+        📄 Download Template
+      </button>
+
+      <!-- File Input -->
+      <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700 mb-2">
+          Choose JSON file
+        </label>
+        <input
+          type="file"
+          (change)="onFileSelected($event)"
+          accept=".json"
+          class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 cursor-pointer"
+        />
+      </div>
+
+      <!-- Selected File Display -->
+      <div *ngIf="selectedFile" class="mb-4">
+        <p class="text-sm text-gray-600">
+          Selected:
+          <span class="font-semibold">{{ selectedFile.name }}</span> ({{
+            (selectedFile.size / 1024).toFixed(2)
+          }}
+          KB)
+        </p>
+      </div>
+
+      <!-- File Preview -->
+      <div *ngIf="filePreview" class="mb-4">
+        <h3 class="text-sm font-medium text-gray-700 mb-2">File Preview:</h3>
+        <pre
+          class="bg-gray-100 p-4 rounded-lg text-xs overflow-x-auto max-h-48"
+          >{{ filePreview }}</pre
+        >
+      </div>
+
+      <!-- Validate Button -->
+      <button
+        (click)="validateFile()"
+        [disabled]="!selectedFile || isLoading"
+        class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+      >
+        <span *ngIf="!isLoading || uploadStatus !== 'validating'"
+          >✓ Validate File</span
+        >
+        <span *ngIf="isLoading && uploadStatus === 'validating'"
+          >Validating...</span
+        >
+      </button>
+    </div>
+
+    <!-- Validation Results -->
+    <div
+      *ngIf="validationErrors.length > 0"
+      class="bg-white rounded-lg shadow-md p-6 mb-6"
+    >
+      <h2 class="text-xl font-bold text-red-700 mb-4">Validation Errors</h2>
+      <div class="space-y-2">
+        <div
+          *ngFor="let error of validationErrors"
+          class="bg-red-50 border-l-4 border-red-500 p-3 text-sm text-red-700"
+        >
+          {{ error }}
+        </div>
+      </div>
+    </div>
+
+    <!-- Validation Success -->
+    <div
+      *ngIf="
+        validatedVerbs &&
+        validatedVerbs.length > 0 &&
+        validationErrors.length === 0
+      "
+      class="bg-white rounded-lg shadow-md p-6 mb-6"
+    >
+      <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
+        <h3 class="font-semibold text-green-900 mb-1">
+          ✓ Validation Successful!
+        </h3>
+        <p class="text-sm text-green-800">
+          {{ validatedVerbs.length }} verb(s) ready to upload
+        </p>
+      </div>
+
+      <!-- Upload Button -->
+      <button
+        (click)="uploadVerbs()"
+        [disabled]="isLoading"
+        class="bg-purple-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors flex items-center"
+      >
+        <span *ngIf="!isLoading || uploadStatus !== 'uploading'">
+          🚀 Upload {{ validatedVerbs.length }} Verb(s)
+        </span>
+        <span
+          *ngIf="isLoading && uploadStatus === 'uploading'"
+          class="flex items-center"
+        >
+          <svg
+            class="animate-spin h-5 w-5 mr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="4"
+            ></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+            ></path>
+          </svg>
+          Uploading...
+        </span>
+      </button>
+    </div>
+
+    <!-- Upload Success -->
+    <div
+      *ngIf="uploadStatus === 'success' && uploadResult"
+      class="bg-white rounded-lg shadow-md p-6 mb-6"
+    >
+      <div class="bg-green-50 border-l-4 border-green-500 p-4">
+        <h3 class="font-bold text-green-900 mb-2 text-xl">
+          🎉 Upload Successful!
+        </h3>
+        <p class="text-green-800">{{ uploadResult.message }}</p>
+        <p class="text-sm text-green-700 mt-2">
+          Cache has been reloaded. New verbs are now available.
+        </p>
+      </div>
+    </div>
+
+    <!-- Upload Error -->
+    <div
+      *ngIf="
+        uploadStatus === 'error' && !validationErrors.length && selectedFile
+      "
+      class="bg-white rounded-lg shadow-md p-6 mb-6"
+    >
+      <div class="bg-red-50 border-l-4 border-red-500 p-4">
+        <h3 class="font-bold text-red-900 mb-2">Upload Failed</h3>
+        <p class="text-red-800">
+          An error occurred during upload. Please try again.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

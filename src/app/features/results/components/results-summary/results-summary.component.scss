@@ -1,0 +1,36 @@
+// Print styles
+@media print {
+  .bg-gradient-to-br {
+    background: white !important;
+  }
+  
+  button {
+    display: none !important;
+  }
+
+  .shadow-lg {
+    box-shadow: none !important;
+    border: 1px solid #e5e7eb;
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bg-white {
+  animation: fadeIn 0.4s ease-out;
+}
+
+// Circular progress animation
+circle {
+  transition: stroke-dashoffset 1s ease-in-out;
+}

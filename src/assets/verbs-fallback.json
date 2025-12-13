@@ -1,0 +1,29 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000000001",
+    "infinitive": "sein",
+    "english_translation": "to be",
+    "verb_type": "irregular",
+    "stem": "sei",
+    "conjugations": {
+      "präsens": {
+        "ich": "bin",
+        "du": "bist",
+        "er": "ist",
+        "wir": "sind",
+        "ihr": "seid",
+        "sie": "sind"
+      },
+      "präteritum": {
+        "ich": "war",
+        "du": "warst",
+        "er": "war",
+        "wir": "waren",
+        "ihr": "wart",
+        "sie": "waren"
+      }
+    },
+    "difficulty_level": 1,
+    "created_at": "2025-01-01T00:00:00Z"
+  }
+]

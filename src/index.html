@@ -1,13 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>GermanVerbTrainer</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>GermanVerbTrainer</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script>
+      if (typeof localStorage !== "undefined") {
+        try {
+          const authKey = "sb-zbebdpbdtsyoyilzhbbc-auth-token";
+          const authData = localStorage.getItem(authKey);
+          if (authData) {
+            JSON.parse(authData);
+          }
+        } catch (e) {
+          console.warn("Clearing corrupted auth data");
+          localStorage.removeItem("sb-zbebdpbdtsyoyilzhbbc-auth-token");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
 </html>

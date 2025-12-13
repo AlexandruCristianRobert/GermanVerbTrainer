@@ -28,6 +28,14 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
+# Environment files with sensitive data
+src/environments/environment.ts
+src/environments/environment.production.ts
+src/environments/*.local.ts
+
+# Environment template is okay to commit
+!src/environments/environment.template.ts
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/
