@@ -13,30 +13,26 @@ RUN npm ci --legacy-peer-deps
 # Copy project files
 COPY . .
 
-# Build the application for production with SSR
+# Build the application for production (client-side only)
 RUN npm run build
 
-# Stage 2: Production image
+# Stage 2: Production image with simple static server
 FROM node:20-alpine AS production
 
 # Set working directory
 WORKDIR /app
 
-# Copy built application from build stage
-COPY --from=build /app/dist/german-verb-trainer ./dist/german-verb-trainer
+# Install serve package globally
+RUN npm install -g serve
 
-# Copy package files for production dependencies
-COPY --from=build /app/package*.json ./
+# Copy built browser files from build stage
+COPY --from=build /app/dist/german-verb-trainer/browser ./dist
 
-# Install only production dependencies
-RUN npm ci --omit=dev --legacy-peer-deps
-
-# Expose port (default Angular SSR port is 4000)
+# Expose port
 EXPOSE 4000
 
 # Set environment variable
 ENV NODE_ENV=production
-ENV PORT=4000
 
-# Start the server
-CMD ["node", "dist/german-verb-trainer/server/server.mjs"]
+# Start the static file server
+CMD ["serve", "-s", "dist", "-l", "4000"]
