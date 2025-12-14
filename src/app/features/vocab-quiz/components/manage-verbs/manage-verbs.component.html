@@ -1,0 +1,412 @@
+<div class="min-h-screen bg-dark-900 py-4 px-4">
+  <div class="max-w-7xl mx-auto animate-fade-in">
+    <!-- Header -->
+    <div class="mb-4">
+      <h1 class="text-2xl font-bold text-gradient mb-1">
+        Manage Custom Verb Lists
+      </h1>
+      <p class="text-sm text-gray-400">
+        Create and manage custom verb lists for focused practice
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <!-- Left Panel: Lists -->
+      <div class="lg:col-span-1">
+        <div
+          class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-lg border border-dark-600/50 p-4"
+        >
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-base font-semibold text-white">Your Lists</h2>
+            <button
+              (click)="startCreateList()"
+              class="px-3 py-1.5 bg-accent-cyan hover:bg-accent-purple text-dark-900 rounded text-sm font-medium transition-colors"
+            >
+              New
+            </button>
+          </div>
+
+          <!-- Create/Edit Form -->
+          <div
+            *ngIf="isCreatingList || isEditingList"
+            class="mb-3 p-3 bg-dark-700/50 rounded border border-dark-600"
+          >
+            <h3 class="text-sm font-semibold text-white mb-2">
+              {{ isCreatingList ? "Create List" : "Edit List" }}
+            </h3>
+            <input
+              [(ngModel)]="listName"
+              placeholder="List name"
+              class="w-full px-3 py-2 mb-2 bg-dark-900 border border-dark-600 rounded text-white text-sm focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan/30"
+            />
+            <textarea
+              [(ngModel)]="listDescription"
+              placeholder="Description (optional)"
+              rows="2"
+              class="w-full px-3 py-2 mb-2 bg-dark-900 border border-dark-600 rounded text-white text-sm focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan/30"
+            ></textarea>
+            <div class="flex gap-2">
+              <button
+                (click)="saveList()"
+                [disabled]="!listName.trim()"
+                class="flex-1 px-3 py-2 bg-accent-cyan hover:bg-accent-purple text-dark-900 rounded text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Save
+              </button>
+              <button
+                (click)="cancelListForm()"
+                class="flex-1 px-3 py-2 bg-dark-700 hover:bg-dark-600 text-white rounded text-sm transition-colors"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+
+          <!-- Lists -->
+          <div class="space-y-2 max-h-[600px] overflow-y-auto">
+            <div
+              *ngFor="let list of customLists"
+              (click)="selectList(list)"
+              [ngClass]="{
+                'border-accent-cyan': selectedList?.id === list.id,
+                'bg-accent-cyan bg-opacity-10': selectedList?.id === list.id
+              }"
+              class="p-3 bg-dark-700 bg-opacity-50 rounded border border-dark-600 cursor-pointer hover:border-accent-cyan hover:border-opacity-50 transition-all group"
+            >
+              <div class="flex items-start justify-between">
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-sm font-semibold text-white truncate">
+                    {{ list.name }}
+                  </h3>
+                  <p
+                    *ngIf="list.description"
+                    class="text-xs text-gray-400 truncate mt-0.5"
+                  >
+                    {{ list.description }}
+                  </p>
+                  <div class="flex items-center gap-2 mt-1">
+                    <span class="text-xs text-accent-cyan font-medium">
+                      {{ list.verbInfinitives.length }} verbs
+                    </span>
+                  </div>
+                </div>
+                <button
+                  (click)="deleteList(list, $event)"
+                  class="ml-2 p-1 text-gray-500 hover:text-error-400 transition-colors opacity-0 group-hover:opacity-100"
+                  title="Delete list"
+                >
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <p
+              *ngIf="customLists.length === 0"
+              class="text-center text-gray-500 text-sm py-8"
+            >
+              No custom lists yet.<br />Click "New" to create one!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel: List Details -->
+      <div class="lg:col-span-2">
+        <!-- No list selected -->
+        <div
+          *ngIf="!selectedList"
+          class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-lg border border-dark-600/50 p-8 text-center"
+        >
+          <div class="text-gray-500">
+            <svg
+              class="w-16 h-16 mx-auto mb-3 opacity-50"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
+            <p class="text-base">Select a list to view and manage verbs</p>
+          </div>
+        </div>
+
+        <!-- List selected: Show verbs -->
+        <div
+          *ngIf="selectedList && !isSelectingVerbs"
+          class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-lg border border-dark-600/50 p-4"
+        >
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h2 class="text-base font-semibold text-white">
+                {{ selectedList.name }}
+              </h2>
+              <p *ngIf="selectedList.description" class="text-xs text-gray-400">
+                {{ selectedList.description }}
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button
+                (click)="startEditList()"
+                class="px-3 py-1.5 bg-dark-700 hover:bg-dark-600 text-white rounded text-sm transition-colors"
+              >
+                Edit
+              </button>
+              <button
+                (click)="startSelectingVerbs()"
+                class="px-3 py-1.5 bg-accent-cyan hover:bg-accent-purple text-dark-900 rounded text-sm font-medium transition-colors"
+              >
+                Add Verbs
+              </button>
+            </div>
+          </div>
+
+          <!-- Verb count summary -->
+          <div
+            class="mb-3 p-3 bg-dark-700/30 border border-dark-600/50 rounded"
+          >
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-xs text-gray-400">Total Verbs</p>
+                <p class="text-lg font-bold text-accent-cyan">
+                  {{ selectedListVerbs.length }}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- List of verbs in this list -->
+          <div class="space-y-2 max-h-[500px] overflow-y-auto">
+            <div
+              *ngFor="let verb of selectedListVerbs"
+              class="p-2.5 bg-dark-700/50 rounded border border-dark-600 group hover:border-accent-cyan/30 transition-all"
+            >
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class="text-sm font-semibold text-white">{{
+                      verb.infinitive
+                    }}</span>
+                    <span
+                      class="px-1.5 py-0.5 bg-accent-cyan/20 text-accent-cyan rounded text-xs font-medium"
+                    >
+                      {{ verb.verb_type }}
+                    </span>
+                    <span class="text-xs text-gray-500">
+                      Level {{ verb.difficulty_level }}
+                    </span>
+                  </div>
+                  <p class="text-xs text-gray-400">
+                    {{ verb.english_translation }}
+                  </p>
+                </div>
+                <button
+                  (click)="removeVerbFromList(verb.infinitive)"
+                  class="ml-2 p-1 text-gray-500 hover:text-error-400 transition-colors opacity-0 group-hover:opacity-100"
+                  title="Remove from list"
+                >
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <p
+              *ngIf="selectedListVerbs.length === 0"
+              class="text-center text-gray-500 text-sm py-8"
+            >
+              No verbs in this list yet.<br />Click "Add Verbs" to get started!
+            </p>
+          </div>
+        </div>
+
+        <!-- Verb selection mode -->
+        <div
+          *ngIf="selectedList && isSelectingVerbs"
+          class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-lg border border-dark-600/50 p-4"
+        >
+          <div class="mb-4">
+            <h2 class="text-base font-semibold text-white mb-1">
+              Add Verbs to "{{ selectedList.name }}"
+            </h2>
+            <p class="text-xs text-gray-400">
+              Select verbs to add to your custom list
+            </p>
+          </div>
+
+          <!-- Filters -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
+            <div>
+              <label class="block text-xs text-gray-400 mb-1">Search</label>
+              <input
+                [(ngModel)]="searchQuery"
+                (ngModelChange)="onSearchChange()"
+                placeholder="Search verbs..."
+                class="w-full px-3 py-2 bg-dark-700 border border-dark-600 rounded text-white text-sm focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan/30"
+              />
+            </div>
+
+            <div>
+              <label class="block text-xs text-gray-400 mb-1"
+                >Difficulty Level</label
+              >
+              <select
+                [(ngModel)]="filterDifficulty"
+                (ngModelChange)="onFilterChange()"
+                class="w-full px-3 py-2 bg-dark-700 border border-dark-600 rounded text-white text-sm focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan/30"
+              >
+                <option [ngValue]="null">All Levels</option>
+                <option
+                  *ngFor="let level of difficultyLevels"
+                  [ngValue]="level"
+                >
+                  {{ getDifficultyLabel(level) }}
+                </option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs text-gray-400 mb-1">Verb Type</label>
+              <select
+                [(ngModel)]="filterVerbType"
+                (ngModelChange)="onFilterChange()"
+                class="w-full px-3 py-2 bg-dark-700 border border-dark-600 rounded text-white text-sm focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan/30"
+              >
+                <option [ngValue]="null">All Types</option>
+                <option *ngFor="let type of verbTypes" [ngValue]="type">
+                  {{ type }}
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Selection actions -->
+          <div class="flex items-center gap-2 mb-4 flex-wrap">
+            <button
+              (click)="selectAllVisibleVerbs()"
+              class="px-3 py-1.5 bg-dark-700 hover:bg-dark-600 text-white rounded text-sm transition-colors"
+            >
+              Select All ({{ availableVerbs.length }})
+            </button>
+            <button
+              (click)="selectRandomVerbs(10)"
+              class="px-3 py-1.5 bg-dark-700 hover:bg-dark-600 text-white rounded text-sm transition-colors"
+            >
+              Random 10
+            </button>
+            <button
+              (click)="selectRandomVerbs(25)"
+              class="px-3 py-1.5 bg-dark-700 hover:bg-dark-600 text-white rounded text-sm transition-colors"
+            >
+              Random 25
+            </button>
+            <button
+              (click)="selectRandomVerbs(50)"
+              class="px-3 py-1.5 bg-dark-700 hover:bg-dark-600 text-white rounded text-sm transition-colors"
+            >
+              Random 50
+            </button>
+            <button
+              (click)="clearSelection()"
+              [disabled]="selectedVerbsForAdding.size === 0"
+              class="px-3 py-1.5 bg-dark-700 hover:bg-dark-600 text-white rounded text-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Clear ({{ selectedVerbsForAdding.size }})
+            </button>
+          </div>
+
+          <!-- Verbs List -->
+          <div class="mb-4 max-h-[400px] overflow-y-auto space-y-1.5">
+            <div
+              *ngFor="let verb of availableVerbs"
+              (click)="toggleVerbSelection(verb.infinitive)"
+              [ngClass]="{
+                'border-accent-cyan': selectedVerbsForAdding.has(
+                  verb.infinitive
+                ),
+                'bg-accent-cyan bg-opacity-10': selectedVerbsForAdding.has(
+                  verb.infinitive
+                ),
+                'opacity-50': isVerbInList(verb.infinitive)
+              }"
+              class="p-2.5 bg-dark-700 bg-opacity-50 rounded border border-dark-600 cursor-pointer hover:border-accent-cyan hover:border-opacity-50 transition-all"
+            >
+              <div class="flex items-center gap-3">
+                <input
+                  type="checkbox"
+                  [checked]="selectedVerbsForAdding.has(verb.infinitive)"
+                  [disabled]="isVerbInList(verb.infinitive)"
+                  class="w-4 h-4 text-accent-cyan focus:ring-accent-cyan/30"
+                  (click)="$event.stopPropagation()"
+                />
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-0.5">
+                    <span class="text-sm font-semibold text-white">{{
+                      verb.infinitive
+                    }}</span>
+                    <span
+                      class="px-1.5 py-0.5 bg-accent-cyan/20 text-accent-cyan rounded text-xs font-medium"
+                    >
+                      {{ verb.verb_type }}
+                    </span>
+                    <span class="text-xs text-gray-500">
+                      Level {{ verb.difficulty_level }}
+                    </span>
+                    <span
+                      *ngIf="isVerbInList(verb.infinitive)"
+                      class="text-xs text-gray-500 italic"
+                    >
+                      (already in list)
+                    </span>
+                  </div>
+                  <p class="text-xs text-gray-400">
+                    {{ verb.english_translation }}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p
+              *ngIf="availableVerbs.length === 0"
+              class="text-center text-gray-500 text-sm py-8"
+            >
+              No verbs match your filters
+            </p>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="flex gap-2">
+            <button
+              (click)="addSelectedVerbs()"
+              [disabled]="selectedVerbsForAdding.size === 0"
+              class="flex-1 px-4 py-2 bg-accent-cyan hover:bg-accent-purple text-dark-900 rounded text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Add Selected ({{ selectedVerbsForAdding.size }})
+            </button>
+            <button
+              (click)="cancelSelectingVerbs()"
+              class="px-4 py-2 bg-dark-700 hover:bg-dark-600 text-white rounded text-sm transition-colors"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

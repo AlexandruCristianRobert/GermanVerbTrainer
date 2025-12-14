@@ -1,21 +1,23 @@
-<div class="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-4xl mx-auto">
+<div class="min-h-screen bg-dark-900 py-4 px-4">
+  <div class="max-w-3xl mx-auto animate-fade-in">
     <!-- Header -->
-    <div class="text-center mb-8">
-      <h1 class="text-4xl font-bold text-gray-900 mb-2">German Verb Trainer</h1>
-      <p class="text-lg text-gray-600">Configure your quiz settings</p>
+    <div class="text-center mb-5">
+      <h1 class="text-2xl font-bold text-gradient mb-1">German Verb Trainer</h1>
+      <p class="text-sm text-gray-400">Configure your quiz settings</p>
     </div>
 
     <!-- Configuration Card -->
-    <div class="bg-white shadow-lg rounded-lg p-6 mb-6">
+    <div
+      class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-lg border border-dark-600/50 p-4 mb-4"
+    >
       <!-- Validation Errors -->
       <div
         *ngIf="showValidationErrors && validationErrors.length > 0"
-        class="mb-6 bg-red-50 border border-red-200 rounded-lg p-4"
+        class="mb-4 bg-error-500/10 border border-error-500/50 rounded-lg p-3"
       >
         <div class="flex items-start">
           <svg
-            class="h-5 w-5 text-red-400 mt-0.5 mr-3"
+            class="h-5 w-5 text-error-400 mt-0.5 mr-3"
             fill="currentColor"
             viewBox="0 0 20 20"
           >
@@ -26,10 +28,10 @@
             />
           </svg>
           <div>
-            <h3 class="text-sm font-medium text-red-800 mb-1">
+            <h3 class="text-sm font-medium text-error-400 mb-1">
               Please fix the following errors:
             </h3>
-            <ul class="list-disc list-inside text-sm text-red-700">
+            <ul class="list-disc list-inside text-sm text-error-300">
               <li *ngFor="let error of validationErrors">{{ error }}</li>
             </ul>
           </div>
@@ -37,70 +39,73 @@
       </div>
 
       <!-- Tenses Section -->
-      <div class="mb-8">
-        <div class="flex items-center justify-between mb-3">
-          <h2 class="text-xl font-semibold text-gray-800">Tenses</h2>
-          <div class="space-x-2">
+      <div class="mb-4">
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="text-base font-semibold text-white">Tenses</h2>
+          <div class="space-x-2 text-xs">
             <button
               (click)="selectAllTenses()"
-              class="text-sm text-blue-600 hover:text-blue-800 font-medium"
+              class="text-accent-cyan hover:text-accent-purple font-medium transition-colors"
             >
-              Select All
+              All
             </button>
-            <span class="text-gray-400">|</span>
+            <span class="text-dark-500">|</span>
             <button
               (click)="selectNoTenses()"
-              class="text-sm text-blue-600 hover:text-blue-800 font-medium"
+              class="text-accent-cyan hover:text-accent-purple font-medium transition-colors"
             >
               Clear
             </button>
           </div>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+        <div class="flex flex-wrap gap-2">
           <button
             *ngFor="let tense of availableTenses"
             (click)="toggleTense(tense)"
-            [class.bg-blue-600]="isTenseSelected(tense)"
-            [class.text-white]="isTenseSelected(tense)"
-            [class.bg-gray-100]="!isTenseSelected(tense)"
-            [class.text-gray-700]="!isTenseSelected(tense)"
-            class="px-4 py-3 rounded-lg font-medium transition-colors duration-150 hover:shadow-md"
+            [ngClass]="{
+              'bg-gradient-to-r from-accent-cyan/20 to-accent-purple/20 border-accent-cyan text-white':
+                isTenseSelected(tense),
+              'bg-dark-700/50 border-dark-600 text-gray-400':
+                !isTenseSelected(tense)
+            }"
+            class="px-3 py-1.5 rounded text-xs font-medium transition-all duration-200 border hover:border-accent-cyan hover:text-white"
           >
-            <div class="text-sm">{{ getTenseLabel(tense) }}</div>
-            <div class="text-xs opacity-75">{{ tense }}</div>
+            {{ getTenseLabel(tense) }}
           </button>
         </div>
       </div>
 
       <!-- Verb Types Section -->
-      <div class="mb-8">
-        <div class="flex items-center justify-between mb-3">
-          <h2 class="text-xl font-semibold text-gray-800">Verb Types</h2>
-          <div class="space-x-2">
+      <div class="mb-4">
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="text-base font-semibold text-white">Verb Types</h2>
+          <div class="space-x-2 text-xs">
             <button
               (click)="selectAllVerbTypes()"
-              class="text-sm text-blue-600 hover:text-blue-800 font-medium"
+              class="text-accent-cyan hover:text-accent-purple font-medium transition-colors"
             >
-              Select All
+              All
             </button>
-            <span class="text-gray-400">|</span>
+            <span class="text-dark-500">|</span>
             <button
               (click)="selectNoVerbTypes()"
-              class="text-sm text-blue-600 hover:text-blue-800 font-medium"
+              class="text-accent-cyan hover:text-accent-purple font-medium transition-colors"
             >
               Clear
             </button>
           </div>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="flex flex-wrap gap-2">
           <button
             *ngFor="let type of availableVerbTypes"
             (click)="toggleVerbType(type)"
-            [class.bg-green-600]="isVerbTypeSelected(type)"
-            [class.text-white]="isVerbTypeSelected(type)"
-            [class.bg-gray-100]="!isVerbTypeSelected(type)"
-            [class.text-gray-700]="!isVerbTypeSelected(type)"
-            class="px-4 py-3 rounded-lg font-medium transition-colors duration-150 hover:shadow-md"
+            [ngClass]="{
+              'bg-success-500/20 border-success-500 text-success-400':
+                isVerbTypeSelected(type),
+              'bg-dark-700/50 border-dark-600 text-gray-400':
+                !isVerbTypeSelected(type)
+            }"
+            class="px-3 py-1.5 rounded text-xs font-medium transition-all duration-200 border hover:border-success-500 hover:text-white"
           >
             {{ getVerbTypeLabel(type) }}
           </button>
@@ -108,36 +113,36 @@
       </div>
 
       <!-- Persons Section -->
-      <div class="mb-8">
-        <div class="flex items-center justify-between mb-3">
-          <h2 class="text-xl font-semibold text-gray-800">
-            Grammatical Persons
-          </h2>
-          <div class="space-x-2">
+      <div class="mb-4">
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="text-base font-semibold text-white">Persons</h2>
+          <div class="space-x-2 text-xs">
             <button
               (click)="selectAllPersons()"
-              class="text-sm text-blue-600 hover:text-blue-800 font-medium"
+              class="text-accent-cyan hover:text-accent-purple font-medium transition-colors"
             >
-              Select All
+              All
             </button>
-            <span class="text-gray-400">|</span>
+            <span class="text-dark-500">|</span>
             <button
               (click)="selectNoPersons()"
-              class="text-sm text-blue-600 hover:text-blue-800 font-medium"
+              class="text-accent-cyan hover:text-accent-purple font-medium transition-colors"
             >
               Clear
             </button>
           </div>
         </div>
-        <div class="grid grid-cols-3 md:grid-cols-6 gap-3">
+        <div class="flex flex-wrap gap-2">
           <button
             *ngFor="let person of availablePersons"
             (click)="togglePerson(person)"
-            [class.bg-purple-600]="isPersonSelected(person)"
-            [class.text-white]="isPersonSelected(person)"
-            [class.bg-gray-100]="!isPersonSelected(person)"
-            [class.text-gray-700]="!isPersonSelected(person)"
-            class="px-4 py-3 rounded-lg font-medium transition-colors duration-150 hover:shadow-md"
+            [ngClass]="{
+              'bg-accent-purple/20 border-accent-purple text-accent-purple':
+                isPersonSelected(person),
+              'bg-dark-700/50 border-dark-600 text-gray-400':
+                !isPersonSelected(person)
+            }"
+            class="px-3 py-1.5 rounded text-xs font-medium transition-all duration-200 border hover:border-accent-purple hover:text-white"
           >
             {{ person }}
           </button>
@@ -145,130 +150,125 @@
       </div>
 
       <!-- Difficulty Levels Section -->
-      <div class="mb-8">
-        <div class="flex items-center justify-between mb-3">
-          <h2 class="text-xl font-semibold text-gray-800">Difficulty Levels</h2>
-          <div class="space-x-2">
+      <div class="mb-4">
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="text-base font-semibold text-white">Difficulty</h2>
+          <div class="space-x-2 text-xs">
             <button
               (click)="selectAllDifficulties()"
-              class="text-sm text-blue-600 hover:text-blue-800 font-medium"
+              class="text-accent-cyan hover:text-accent-purple font-medium transition-colors"
             >
-              Select All
+              All
             </button>
-            <span class="text-gray-400">|</span>
+            <span class="text-dark-500">|</span>
             <button
               (click)="selectNoDifficulties()"
-              class="text-sm text-blue-600 hover:text-blue-800 font-medium"
+              class="text-accent-cyan hover:text-accent-purple font-medium transition-colors"
             >
               Clear
             </button>
           </div>
         </div>
-        <div class="grid grid-cols-5 gap-3">
+        <div class="flex flex-wrap gap-2">
           <button
             *ngFor="let level of availableDifficulties"
             (click)="toggleDifficulty(level)"
-            [class.bg-orange-600]="isDifficultySelected(level)"
-            [class.text-white]="isDifficultySelected(level)"
-            [class.bg-gray-100]="!isDifficultySelected(level)"
-            [class.text-gray-700]="!isDifficultySelected(level)"
-            class="px-4 py-3 rounded-lg font-medium transition-colors duration-150 hover:shadow-md"
+            [ngClass]="{
+              'bg-warning-500/20 border-warning-500 text-warning-400':
+                isDifficultySelected(level),
+              'bg-dark-700/50 border-dark-600 text-gray-400':
+                !isDifficultySelected(level)
+            }"
+            class="px-3 py-1.5 rounded text-xs font-medium transition-all duration-200 border hover:border-warning-500 hover:text-white"
+            [title]="getDifficultyLabel(level)"
           >
-            <div class="text-lg">{{ level }}</div>
-            <div class="text-xs opacity-75">
-              {{ getDifficultyLabel(level) }}
-            </div>
+            {{ level }}
           </button>
         </div>
       </div>
 
       <!-- Question Count Section -->
-      <div class="mb-8">
-        <h2 class="text-xl font-semibold text-gray-800 mb-3">
-          Number of Questions
-        </h2>
-        <div class="flex items-center space-x-4">
+      <div class="mb-4">
+        <div class="flex items-center gap-3">
+          <h2 class="text-base font-semibold text-white">Questions:</h2>
           <select
             [(ngModel)]="config.questionCount"
             (ngModelChange)="updateStatistics()"
-            class="flex-1 max-w-xs px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            class="px-3 py-1.5 bg-dark-700 border border-dark-600 rounded text-white focus:ring-1 focus:ring-accent-cyan focus:border-transparent transition-all text-sm"
           >
             <option *ngFor="let count of questionCountOptions" [value]="count">
-              {{ count }} questions
+              {{ count }}
             </option>
           </select>
-          <div class="text-sm text-gray-600">
-            or enter custom:
-            <input
-              type="number"
-              [(ngModel)]="config.questionCount"
-              (ngModelChange)="updateStatistics()"
-              min="1"
-              max="50"
-              class="ml-2 w-20 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            />
-          </div>
+          <span class="text-xs text-gray-400">or</span>
+          <input
+            type="number"
+            [(ngModel)]="config.questionCount"
+            (ngModelChange)="updateStatistics()"
+            min="1"
+            max="50"
+            class="w-16 px-3 py-1.5 bg-dark-700 border border-dark-600 rounded text-white focus:ring-1 focus:ring-accent-cyan focus:border-transparent transition-all text-sm"
+          />
         </div>
       </div>
 
       <!-- Statistics Section -->
-      <div class="bg-blue-50 rounded-lg p-4 mb-6">
-        <h3 class="font-semibold text-gray-800 mb-2">Quiz Preview</h3>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
+      <div class="bg-dark-700/30 border border-dark-600/50 rounded p-3 mb-4">
+        <div class="flex items-center justify-between text-xs">
           <div>
-            <span class="text-gray-600">Available Verbs:</span>
-            <span class="ml-2 font-semibold text-gray-900">{{
+            <span class="text-gray-400">Verbs:</span>
+            <span class="ml-1 font-semibold text-accent-cyan">{{
               availableVerbCount
             }}</span>
           </div>
           <div>
-            <span class="text-gray-600">Questions:</span>
-            <span class="ml-2 font-semibold text-gray-900">{{
+            <span class="text-gray-400">Questions:</span>
+            <span class="ml-1 font-semibold text-accent-cyan">{{
               config.questionCount
             }}</span>
           </div>
           <div>
-            <span class="text-gray-600">Est. Time:</span>
-            <span class="ml-2 font-semibold text-gray-900"
-              >~{{ estimatedQuizTime }} min</span
+            <span class="text-gray-400">Time:</span>
+            <span class="ml-1 font-semibold text-accent-cyan"
+              >~{{ estimatedQuizTime }}m</span
             >
           </div>
         </div>
       </div>
 
       <!-- Action Buttons -->
-      <div class="flex flex-col sm:flex-row gap-3">
+      <div class="flex gap-2">
         <button
           (click)="startQuiz()"
-          class="flex-1 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-150 shadow-md hover:shadow-lg"
+          class="flex-1 bg-gradient-to-r from-accent-cyan to-accent-purple text-white px-4 py-2 rounded font-semibold hover:shadow-glow-cyan transition-all duration-300 text-sm"
         >
           Start Quiz
         </button>
         <button
           (click)="saveConfig()"
-          class="flex-1 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-150 shadow-md hover:shadow-lg"
+          class="bg-success-600 text-white px-4 py-2 rounded font-semibold hover:bg-success-500 transition-all duration-200 text-sm"
         >
-          Save Configuration
+          Save
         </button>
         <button
           (click)="resetToDefaults()"
-          class="flex-1 bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors duration-150 shadow-md hover:shadow-lg"
+          class="bg-dark-600 text-gray-300 px-4 py-2 rounded font-semibold hover:bg-dark-500 hover:text-white transition-all duration-200 text-sm"
         >
-          Reset to Defaults
+          Reset
         </button>
       </div>
     </div>
 
     <!-- Quick Links -->
-    <div class="text-center text-sm text-gray-600">
+    <div class="text-center text-xs text-gray-500">
       <a
         routerLink="/history"
-        class="text-blue-600 hover:text-blue-800 font-medium mr-4"
+        class="text-accent-cyan hover:text-accent-purple font-medium mr-4 transition-colors"
         >View History</a
       >
       <a
         routerLink="/sync"
-        class="text-blue-600 hover:text-blue-800 font-medium"
+        class="text-accent-cyan hover:text-accent-purple font-medium transition-colors"
         >Sync Data</a
       >
     </div>

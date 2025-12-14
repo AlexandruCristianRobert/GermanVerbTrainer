@@ -6,20 +6,22 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { VocabQuizConfigService } from '../../services/vocab-quiz-config.service';
 import { VerbService } from '../../../quiz/services/verb.service';
+import { CustomVerbListService } from '../../services/custom-verb-list.service';
 import {
   VocabQuizConfig,
   DIFFICULTY_LEVEL_OPTIONS,
   DifficultyLevelOption,
+  CustomVerbList,
 } from '../../models';
 import { Verb, VerbFilters } from '../../../../core/models';
 
 @Component({
   selector: 'app-vocab-quiz-config',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule],
   templateUrl: './vocab-quiz-config.component.html',
   styleUrls: ['./vocab-quiz-config.component.scss'],
 })
@@ -29,18 +31,25 @@ export class VocabQuizConfigComponent implements OnInit {
   availableVerbsCount = 0;
   previewVerbs: Verb[] = [];
   showPreview = false;
+  customLists: CustomVerbList[] = [];
 
   constructor(
     private fb: FormBuilder,
     private vocabConfigService: VocabQuizConfigService,
     private verbService: VerbService,
+    private customListService: CustomVerbListService,
     private router: Router
   ) {}
 
   ngOnInit(): void {
+    this.loadCustomLists();
     this.initializeForm();
     this.updateAvailableVerbsCount();
     this.setupFormListeners();
+  }
+
+  private loadCustomLists(): void {
+    this.customLists = this.customListService.getAllLists();
   }
 
   private initializeForm(): void {
@@ -56,6 +65,8 @@ export class VocabQuizConfigComponent implements OnInit {
         [Validators.required, Validators.minLength(1)],
       ],
       includeAllTypes: [savedConfig.includeAllTypes],
+      useCustomList: [savedConfig.useCustomList || false],
+      customListId: [savedConfig.customListId || null],
     });
   }
 
@@ -99,12 +110,17 @@ export class VocabQuizConfigComponent implements OnInit {
    */
   updateAvailableVerbsCount(): void {
     const config = this.configForm.value as VocabQuizConfig;
-    const filters: VerbFilters = {
-      difficultyLevels: config.difficultyLevels,
-      verbTypes: config.includeAllTypes ? undefined : [],
-    };
 
-    this.availableVerbsCount = this.verbService.getVerbCount(filters);
+    if (config.useCustomList && config.customListId) {
+      const list = this.customListService.getListById(config.customListId);
+      this.availableVerbsCount = list?.verbInfinitives.length || 0;
+    } else {
+      const filters: VerbFilters = {
+        difficultyLevels: config.difficultyLevels,
+        verbTypes: config.includeAllTypes ? undefined : [],
+      };
+      this.availableVerbsCount = this.verbService.getVerbCount(filters);
+    }
   }
 
   /**
@@ -122,12 +138,21 @@ export class VocabQuizConfigComponent implements OnInit {
    */
   updatePreviewVerbs(): void {
     const config = this.configForm.value as VocabQuizConfig;
-    const filters: VerbFilters = {
-      difficultyLevels: config.difficultyLevels,
-      verbTypes: config.includeAllTypes ? undefined : [],
-    };
 
-    this.previewVerbs = this.verbService.getRandomVerbs(5, filters);
+    if (config.useCustomList && config.customListId) {
+      const allVerbs = this.customListService.getVerbsForList(
+        config.customListId
+      );
+      // Randomize
+      const shuffled = [...allVerbs].sort(() => Math.random() - 0.5);
+      this.previewVerbs = shuffled.slice(0, 5);
+    } else {
+      const filters: VerbFilters = {
+        difficultyLevels: config.difficultyLevels,
+        verbTypes: config.includeAllTypes ? undefined : [],
+      };
+      this.previewVerbs = this.verbService.getRandomVerbs(5, filters);
+    }
   }
 
   /**

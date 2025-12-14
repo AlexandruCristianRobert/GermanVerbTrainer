@@ -1,104 +1,122 @@
-<div class="min-h-screen bg-gray-50 py-8 px-4">
-  <div class="max-w-4xl mx-auto">
+<div class="min-h-screen bg-dark-900 py-6 px-4">
+  <div class="max-w-4xl mx-auto animate-fade-in">
     <!-- Error State -->
     <div
       *ngIf="error"
-      class="bg-red-50 border border-red-200 rounded-lg p-6 text-center"
+      class="bg-error-500/10 border border-error-500/50 rounded-xl p-4 text-center"
     >
-      <p class="text-red-700 font-semibold mb-4">{{ error }}</p>
-      <button (click)="retakeQuiz()" class="btn-primary">Take a Quiz</button>
+      <p class="text-error-400 font-semibold mb-3">{{ error }}</p>
+      <button
+        (click)="retakeQuiz()"
+        class="bg-gradient-to-r from-accent-cyan to-accent-purple text-white px-6 py-2 rounded-lg font-semibold hover:shadow-glow-cyan transition-all duration-300"
+      >
+        Take a Quiz
+      </button>
     </div>
 
     <!-- Results Display -->
-    <div *ngIf="result && !error" class="space-y-6">
+    <div *ngIf="result && !error" class="space-y-4">
       <!-- Header -->
       <div class="text-center">
-        <h1 class="text-3xl font-bold text-gray-900 mb-2">
+        <h1 class="text-2xl font-bold text-gradient mb-1">
           Vocabulary Quiz Results
         </h1>
-        <p class="text-gray-600">{{ encouragementMessage }}</p>
+        <p class="text-sm text-gray-400">{{ encouragementMessage }}</p>
       </div>
 
       <!-- Score Card -->
-      <div class="bg-white rounded-lg shadow-lg p-8" [class]="scoreBgColor">
+      <div
+        class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-xl border border-dark-600/50 p-6"
+        [class]="scoreBgColor"
+      >
         <div class="text-center">
-          <div class="text-6xl font-bold mb-2" [class]="scoreColor">
+          <div class="text-5xl font-bold mb-2" [class]="scoreColor">
             {{ scorePercentage | number : "1.0-0" }}%
           </div>
-          <div class="text-2xl font-semibold text-gray-700 mb-4">
+          <div class="text-xl font-semibold text-gray-300 mb-2">
             Grade: {{ scoreGrade }}
           </div>
-          <div class="text-lg text-gray-600">
+          <div class="text-sm text-gray-400">
             {{ correctAnswersCount }} out of {{ totalQuestions }} correct
           </div>
         </div>
       </div>
 
       <!-- Stats Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
         <!-- Correct Answers -->
-        <div class="bg-white rounded-lg shadow p-6">
+        <div
+          class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-xl border border-dark-600/50 p-4"
+        >
           <div class="flex items-center justify-between">
             <div>
-              <p class="text-sm text-gray-600 mb-1">Correct Answers</p>
-              <p class="text-3xl font-bold text-green-600">
+              <p class="text-xs text-gray-400 mb-1">Correct Answers</p>
+              <p class="text-2xl font-bold text-success-400">
                 {{ correctAnswersCount }}
               </p>
             </div>
-            <div class="text-4xl">✓</div>
+            <div class="text-3xl">✓</div>
           </div>
         </div>
 
         <!-- Incorrect Answers -->
-        <div class="bg-white rounded-lg shadow p-6">
+        <div
+          class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-xl border border-dark-600/50 p-4"
+        >
           <div class="flex items-center justify-between">
             <div>
-              <p class="text-sm text-gray-600 mb-1">Incorrect Answers</p>
-              <p class="text-3xl font-bold text-red-600">
+              <p class="text-xs text-gray-400 mb-1">Incorrect Answers</p>
+              <p class="text-2xl font-bold text-error-400">
                 {{ totalQuestions - correctAnswersCount }}
               </p>
             </div>
-            <div class="text-4xl">✗</div>
+            <div class="text-3xl">✗</div>
           </div>
         </div>
 
         <!-- Time Taken -->
-        <div class="bg-white rounded-lg shadow p-6">
+        <div
+          class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-xl border border-dark-600/50 p-4"
+        >
           <div class="flex items-center justify-between">
             <div>
-              <p class="text-sm text-gray-600 mb-1">Time Taken</p>
-              <p class="text-3xl font-bold text-blue-600">
+              <p class="text-xs text-gray-400 mb-1">Time Taken</p>
+              <p class="text-2xl font-bold text-accent-cyan">
                 {{ durationMinutes }}:{{
                   durationSeconds < 10 ? "0" + durationSeconds : durationSeconds
                 }}
               </p>
             </div>
-            <div class="text-4xl">⏱️</div>
+            <div class="text-3xl">⏱️</div>
           </div>
         </div>
       </div>
 
       <!-- Detailed Answers Review -->
-      <div class="bg-white rounded-lg shadow">
-        <div class="p-6 border-b">
-          <h2 class="text-xl font-semibold text-gray-900">Answer Review</h2>
+      <div
+        class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-xl border border-dark-600/50"
+      >
+        <div class="p-4 border-b border-dark-600">
+          <h2 class="text-lg font-semibold text-white">Answer Review</h2>
         </div>
 
-        <div class="divide-y">
+        <div class="divide-y divide-dark-600">
           <div
             *ngFor="let answer of vocabAnswers; let i = index"
-            class="p-6"
-            [class.bg-green-50]="answer.isCorrect"
-            [class.bg-red-50]="!answer.isCorrect"
+            class="p-4"
+            [ngClass]="{
+              'bg-success-500/10': answer.isCorrect,
+              'bg-error-500/10': !answer.isCorrect
+            }"
           >
-            <div class="flex items-start gap-4">
+            <div class="flex items-start gap-3">
               <!-- Status Icon -->
               <div class="flex-shrink-0 mt-1">
                 <div
                   *ngIf="answer.isCorrect"
-                  class="w-8 h-8 rounded-full bg-green-500 text-white flex items-center justify-center"
+                  class="w-6 h-6 rounded-full bg-success-500 text-white flex items-center justify-center"
                 >
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fill-rule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -108,9 +126,9 @@
                 </div>
                 <div
                   *ngIf="!answer.isCorrect"
-                  class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center"
+                  class="w-6 h-6 rounded-full bg-error-500 text-white flex items-center justify-center"
                 >
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fill-rule="evenodd"
                       d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -122,26 +140,27 @@
 
               <!-- Question and Answers -->
               <div class="flex-1">
-                <div class="mb-3">
-                  <span class="text-sm text-gray-600"
+                <div class="mb-2">
+                  <span class="text-xs text-gray-500"
                     >Question {{ i + 1 }}:</span
                   >
-                  <p class="text-2xl font-bold text-gray-900 mt-1">
+                  <p class="text-lg font-bold text-white mt-0.5">
                     {{ answer.infinitive }}
                   </p>
                 </div>
 
-                <div class="space-y-2">
+                <div class="space-y-1 text-sm">
                   <!-- User Answer -->
                   <div class="flex items-baseline gap-2">
-                    <span
-                      class="text-sm font-medium text-gray-600 min-w-[100px]"
+                    <span class="text-xs font-medium text-gray-400 min-w-[90px]"
                       >Your answer:</span
                     >
                     <span
                       class="font-medium"
-                      [class.text-green-700]="answer.isCorrect"
-                      [class.text-red-700]="!answer.isCorrect"
+                      [ngClass]="{
+                        'text-success-400': answer.isCorrect,
+                        'text-error-400': !answer.isCorrect
+                      }"
                     >
                       {{ answer.userAnswer }}
                     </span>
@@ -152,11 +171,10 @@
                     *ngIf="!answer.isCorrect"
                     class="flex items-baseline gap-2"
                   >
-                    <span
-                      class="text-sm font-medium text-gray-600 min-w-[100px]"
+                    <span class="text-xs font-medium text-gray-400 min-w-[90px]"
                       >Correct answer:</span
                     >
-                    <span class="font-medium text-green-700">{{
+                    <span class="font-medium text-success-400">{{
                       answer.correctAnswer
                     }}</span>
                   </div>
@@ -168,19 +186,22 @@
       </div>
 
       <!-- Action Buttons -->
-      <div class="flex flex-col sm:flex-row gap-4">
-        <button (click)="retakeQuiz()" class="flex-1 btn-primary text-lg py-3">
-          Take Another Vocabulary Quiz
+      <div class="flex flex-col sm:flex-row gap-3">
+        <button
+          (click)="retakeQuiz()"
+          class="flex-1 bg-gradient-to-r from-accent-cyan to-accent-purple text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-glow-cyan transition-all duration-300"
+        >
+          Take Another Quiz
         </button>
         <button
           (click)="viewHistory()"
-          class="flex-1 px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors font-medium"
+          class="flex-1 px-6 py-2.5 border-2 border-accent-cyan text-accent-cyan rounded-lg hover:bg-accent-cyan/10 transition-all font-medium"
         >
-          View All History
+          View History
         </button>
         <button
           (click)="goHome()"
-          class="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-medium"
+          class="px-6 py-2.5 border-2 border-dark-600 text-gray-300 rounded-lg hover:bg-dark-700 hover:border-dark-500 transition-all font-medium"
         >
           Home
         </button>

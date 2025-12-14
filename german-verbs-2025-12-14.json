@@ -1,0 +1,7286 @@
+[
+  {
+    "german": "wirten",
+    "english": "to manage",
+    "category": "",
+    "hint": "to run a guesthouse or inn (regional)"
+  },
+  {
+    "german": "anfangen",
+    "english": "to start",
+    "category": "A1",
+    "hint": "to begin doing something"
+  },
+  {
+    "german": "anrufen",
+    "english": "to call",
+    "category": "A1",
+    "hint": "to phone someone"
+  },
+  {
+    "german": "antworten",
+    "english": "to answer",
+    "category": "A1",
+    "hint": "to reply to a question or call"
+  },
+  {
+    "german": "anziehen",
+    "english": "to put on",
+    "category": "A1",
+    "hint": "to get dressed in clothes"
+  },
+  {
+    "german": "arbeiten",
+    "english": "to work",
+    "category": "A1",
+    "hint": "to do a job or task"
+  },
+  {
+    "german": "aufstehen",
+    "english": "to get up",
+    "category": "A1",
+    "hint": "to leave your bed in the morning"
+  },
+  {
+    "german": "aussteigen",
+    "english": "to get off",
+    "category": "A1",
+    "hint": "to leave a bus, train, or car"
+  },
+  {
+    "german": "ausziehen",
+    "english": "to take off",
+    "category": "A1",
+    "hint": "to remove clothes"
+  },
+  {
+    "german": "beginnen",
+    "english": "to begin",
+    "category": "A1",
+    "hint": "to start something (more formal)"
+  },
+  {
+    "german": "bestellen",
+    "english": "to order",
+    "category": "A1",
+    "hint": "to ask for food or goods"
+  },
+  {
+    "german": "besuchen",
+    "english": "to visit",
+    "category": "A1",
+    "hint": "to go see a person or place"
+  },
+  {
+    "german": "bezahlen",
+    "english": "to pay",
+    "category": "A1",
+    "hint": "to give money for something"
+  },
+  {
+    "german": "bleiben",
+    "english": "to stay",
+    "category": "A1",
+    "hint": "to remain in a place"
+  },
+  {
+    "german": "brauchen",
+    "english": "to need",
+    "category": "A1",
+    "hint": "to require something"
+  },
+  {
+    "german": "bringen",
+    "english": "to bring",
+    "category": "A1",
+    "hint": "to carry something to a person"
+  },
+  {
+    "german": "d\u00FCrfen",
+    "english": "may",
+    "category": "A1",
+    "hint": "to be allowed to do something"
+  },
+  {
+    "german": "duschen",
+    "english": "to shower",
+    "category": "A1",
+    "hint": "to wash yourself under running water"
+  },
+  {
+    "german": "einkaufen",
+    "english": "to shop",
+    "category": "A1",
+    "hint": "to buy food or daily items"
+  },
+  {
+    "german": "einladen",
+    "english": "to invite",
+    "category": "A1",
+    "hint": "to ask someone to come"
+  },
+  {
+    "german": "einsteigen",
+    "english": "to get on",
+    "category": "A1",
+    "hint": "to board a bus, train, or plane"
+  },
+  {
+    "german": "essen",
+    "english": "to eat",
+    "category": "A1",
+    "hint": "to put food in your mouth"
+  },
+  {
+    "german": "fahren",
+    "english": "to drive",
+    "category": "A1",
+    "hint": "to travel by vehicle or ride a bike"
+  },
+  {
+    "german": "feiern",
+    "english": "to celebrate",
+    "category": "A1",
+    "hint": "to have a party for a special day"
+  },
+  {
+    "german": "finden",
+    "english": "to find",
+    "category": "A1",
+    "hint": "to discover something lost"
+  },
+  {
+    "german": "fliegen",
+    "english": "to fly",
+    "category": "A1",
+    "hint": "to travel by plane or move through the air"
+  },
+  {
+    "german": "fragen",
+    "english": "to ask",
+    "category": "A1",
+    "hint": "to want information from someone"
+  },
+  {
+    "german": "geben",
+    "english": "to give",
+    "category": "A1",
+    "hint": "to hand something to another person"
+  },
+  {
+    "german": "gehen",
+    "english": "to go",
+    "category": "A1",
+    "hint": "to walk or move to another place"
+  },
+  {
+    "german": "haben",
+    "english": "to have",
+    "category": "A1",
+    "hint": "to own or possess something"
+  },
+  {
+    "german": "heissen",
+    "english": "to be called",
+    "category": "A1",
+    "hint": "what someone\u0027s name is"
+  },
+  {
+    "german": "helfen",
+    "english": "to help",
+    "category": "A1",
+    "hint": "to assist someone"
+  },
+  {
+    "german": "h\u00F6ren",
+    "english": "to hear",
+    "category": "A1",
+    "hint": "to receive sound with your ears"
+  },
+  {
+    "german": "kaufen",
+    "english": "to buy",
+    "category": "A1",
+    "hint": "to pay money to own something"
+  },
+  {
+    "german": "kennen",
+    "english": "to know",
+    "category": "A1",
+    "hint": "to be familiar with a person (formal)"
+  },
+  {
+    "german": "kochen",
+    "english": "to cook",
+    "category": "A1",
+    "hint": "to prepare food with heat"
+  },
+  {
+    "german": "kommen",
+    "english": "to come",
+    "category": "A1",
+    "hint": "to move toward the speaker"
+  },
+  {
+    "german": "k\u00F6nnen",
+    "english": "con",
+    "category": "A1",
+    "hint": "to be able to do something"
+  },
+  {
+    "german": "kosten",
+    "english": "to cost",
+    "category": "A1",
+    "hint": "how much money something is"
+  },
+  {
+    "german": "lachen",
+    "english": "to laugh",
+    "category": "A1",
+    "hint": "to make happy sounds when amused"
+  },
+  {
+    "german": "laufen",
+    "english": "to run",
+    "category": "A1",
+    "hint": "to move quickly on foot"
+  },
+  {
+    "german": "lernen",
+    "english": "to learn",
+    "category": "A1",
+    "hint": "to gain new knowledge or skills"
+  },
+  {
+    "german": "lesen",
+    "english": "to read",
+    "category": "A1",
+    "hint": "to look at and understand written words"
+  },
+  {
+    "german": "liegen",
+    "english": "to lie",
+    "category": "A1",
+    "hint": "to be in a flat position (things/people)"
+  },
+  {
+    "german": "machen",
+    "english": "to make",
+    "category": "A1",
+    "hint": "to do or create something"
+  },
+  {
+    "german": "mitnehmen",
+    "english": "to take along",
+    "category": "A1",
+    "hint": "to bring someone/something with you"
+  },
+  {
+    "german": "m\u00F6chten",
+    "english": "to want",
+    "category": "A1",
+    "hint": "polite way to say you want something"
+  },
+  {
+    "german": "m\u00F6gen",
+    "english": "to like",
+    "category": "A1",
+    "hint": "to enjoy or find something pleasant"
+  },
+  {
+    "german": "m\u00FCssen",
+    "english": "to have to",
+    "category": "A1",
+    "hint": "to be obliged to do something"
+  },
+  {
+    "german": "nehmen",
+    "english": "to take",
+    "category": "A1",
+    "hint": "to grab or accept something"
+  },
+  {
+    "german": "\u00F6ffnen",
+    "english": "to open",
+    "category": "A1",
+    "hint": "to make something not closed"
+  },
+  {
+    "german": "putzen",
+    "english": "to clean",
+    "category": "A1",
+    "hint": "to remove dirt from something"
+  },
+  {
+    "german": "regnen",
+    "english": "to rain",
+    "category": "A1",
+    "hint": "when water falls from the sky"
+  },
+  {
+    "german": "reisen",
+    "english": "to travel",
+    "category": "A1",
+    "hint": "to go on a trip, often far away"
+  },
+  {
+    "german": "sagen",
+    "english": "to say",
+    "category": "A1",
+    "hint": "to speak words"
+  },
+  {
+    "german": "schlafen",
+    "english": "to sleep",
+    "category": "A1",
+    "hint": "to rest with your eyes closed at night"
+  },
+  {
+    "german": "schliessen",
+    "english": "to close",
+    "category": "A1",
+    "hint": "to make something shut"
+  },
+  {
+    "german": "schneien",
+    "english": "to snow",
+    "category": "A1",
+    "hint": "when white flakes fall in winter"
+  },
+  {
+    "german": "schreiben",
+    "english": "to write",
+    "category": "A1",
+    "hint": "to make words on paper or screen"
+  },
+  {
+    "german": "schwimmen",
+    "english": "to swim",
+    "category": "A1",
+    "hint": "to move through water using arms and legs"
+  },
+  {
+    "german": "sehen",
+    "english": "to see",
+    "category": "A1",
+    "hint": "to notice with your eyes"
+  },
+  {
+    "german": "sein",
+    "english": "to be",
+    "category": "A1",
+    "hint": "to exist or describe someone/something"
+  },
+  {
+    "german": "singen",
+    "english": "to sing",
+    "category": "A1",
+    "hint": "to make music with your voice"
+  },
+  {
+    "german": "sitzen",
+    "english": "to sit",
+    "category": "A1",
+    "hint": "to rest on a chair or surface"
+  },
+  {
+    "german": "sollen",
+    "english": "should",
+    "category": "A1",
+    "hint": "advice or duty to do something"
+  },
+  {
+    "german": "spielen",
+    "english": "to play",
+    "category": "A1",
+    "hint": "to have fun with a game or instrument"
+  },
+  {
+    "german": "sprechen",
+    "english": "to speak",
+    "category": "A1",
+    "hint": "to talk or use a language"
+  },
+  {
+    "german": "stehen",
+    "english": "to stand",
+    "category": "A1",
+    "hint": "to be on your feet"
+  },
+  {
+    "german": "studieren",
+    "english": "to study",
+    "category": "A1",
+    "hint": "to learn at university"
+  },
+  {
+    "german": "suchen",
+    "english": "to search",
+    "category": "A1",
+    "hint": "to look for something lost"
+  },
+  {
+    "german": "tanzen",
+    "english": "to dance",
+    "category": "A1",
+    "hint": "to move to music"
+  },
+  {
+    "german": "trinken",
+    "english": "to drink",
+    "category": "A1",
+    "hint": "to swallow liquid"
+  },
+  {
+    "german": "umziehen",
+    "english": "to move",
+    "category": "A1",
+    "hint": "to change where you live"
+  },
+  {
+    "german": "vergessen",
+    "english": "to forget",
+    "category": "A1",
+    "hint": "to not remember something"
+  },
+  {
+    "german": "verstehen",
+    "english": "to understand",
+    "category": "A1",
+    "hint": "to know what something means"
+  },
+  {
+    "german": "warten",
+    "english": "to wait",
+    "category": "A1",
+    "hint": "to stay until something happens"
+  },
+  {
+    "german": "waschen",
+    "english": "to wash",
+    "category": "A1",
+    "hint": "to clean with water"
+  },
+  {
+    "german": "wissen",
+    "english": "to know",
+    "category": "A1",
+    "hint": "to have facts in your mind"
+  },
+  {
+    "german": "wohnen",
+    "english": "to live",
+    "category": "A1",
+    "hint": "to have your home somewhere"
+  },
+  {
+    "german": "wollen",
+    "english": "to want",
+    "category": "A1",
+    "hint": "to desire something"
+  },
+  {
+    "german": "zeigen",
+    "english": "to show",
+    "category": "A1",
+    "hint": "to let someone see something"
+  },
+  {
+    "german": "abholen",
+    "english": "to pick up",
+    "category": "A2",
+    "hint": "to go get someone or something"
+  },
+  {
+    "german": "ankommen",
+    "english": "to arrive",
+    "category": "A2",
+    "hint": "to reach your destination"
+  },
+  {
+    "german": "aussehen",
+    "english": "to look",
+    "category": "A2",
+    "hint": "to have a certain appearance"
+  },
+  {
+    "german": "backen",
+    "english": "to bake",
+    "category": "A2",
+    "hint": "to cook in the oven (cake, bread)"
+  },
+  {
+    "german": "befinden",
+    "english": "to be located",
+    "category": "A2",
+    "hint": "where something is situated"
+  },
+  {
+    "german": "begr\u00FC\u00DFen",
+    "english": "to greet",
+    "category": "A2",
+    "hint": "to say hello to someone"
+  },
+  {
+    "german": "bekommen",
+    "english": "to receive",
+    "category": "A2",
+    "hint": "to get something given to you"
+  },
+  {
+    "german": "benutzen",
+    "english": "to use",
+    "category": "A2",
+    "hint": "to employ something for a purpose"
+  },
+  {
+    "german": "berichten",
+    "english": "to report",
+    "category": "A2",
+    "hint": "to tell news or events"
+  },
+  {
+    "german": "beschreiben",
+    "english": "to describe",
+    "category": "A2",
+    "hint": "to explain how something looks or is"
+  },
+  {
+    "german": "bestehen",
+    "english": "to pass",
+    "category": "A2",
+    "hint": "to succeed in an exam or test"
+  },
+  {
+    "german": "bieten",
+    "english": "to offer",
+    "category": "A2",
+    "hint": "to propose or give something"
+  },
+  {
+    "german": "blicken",
+    "english": "to look",
+    "category": "A2",
+    "hint": "to direct your eyes somewhere"
+  },
+  {
+    "german": "dauern",
+    "english": "to last",
+    "category": "A2",
+    "hint": "how long something continues"
+  },
+  {
+    "german": "denken",
+    "english": "to think",
+    "category": "A2",
+    "hint": "to use your mind"
+  },
+  {
+    "german": "eintreten",
+    "english": "to enter",
+    "category": "A2",
+    "hint": "to go inside a room or building"
+  },
+  {
+    "german": "erkl\u00E4ren",
+    "english": "to explain",
+    "category": "A2",
+    "hint": "to make something clear"
+  },
+  {
+    "german": "erlauben",
+    "english": "to allow",
+    "category": "A2",
+    "hint": "to give permission"
+  },
+  {
+    "german": "erz\u00E4hlen",
+    "english": "to tell",
+    "category": "A2",
+    "hint": "to narrate a story"
+  },
+  {
+    "german": "fallen",
+    "english": "to fall",
+    "category": "A2",
+    "hint": "to drop down"
+  },
+  {
+    "german": "fehlen",
+    "english": "to be missing",
+    "category": "A2",
+    "hint": "something is not there"
+  },
+  {
+    "german": "fernsehen",
+    "english": "to watch TV",
+    "category": "A2",
+    "hint": "to look at television"
+  },
+  {
+    "german": "folgen",
+    "english": "to follow",
+    "category": "A2",
+    "hint": "to go behind someone"
+  },
+  {
+    "german": "f\u00FChlen",
+    "english": "to feel",
+    "category": "A2",
+    "hint": "to experience an emotion or sensation"
+  },
+  {
+    "german": "funktionieren",
+    "english": "to work",
+    "category": "A2",
+    "hint": "a machine or system operates correctly"
+  },
+  {
+    "german": "gewinnen",
+    "english": "to win",
+    "category": "A2",
+    "hint": "to be the best in a competition"
+  },
+  {
+    "german": "glauben",
+    "english": "to believe",
+    "category": "A2",
+    "hint": "to think something is true"
+  },
+  {
+    "german": "gratulieren",
+    "english": "to congratulate",
+    "category": "A2",
+    "hint": "to say \u0027well done\u0027 to someone"
+  },
+  {
+    "german": "halten",
+    "english": "to hold",
+    "category": "A2",
+    "hint": "to keep something in your hands"
+  },
+  {
+    "german": "heiraten",
+    "english": "to marry",
+    "category": "A2",
+    "hint": "to become husband and wife"
+  },
+  {
+    "german": "hoffen",
+    "english": "to hope",
+    "category": "A2",
+    "hint": "to wish for a good outcome"
+  },
+  {
+    "german": "interessieren",
+    "english": "to interest",
+    "category": "A2",
+    "hint": "something catches your attention"
+  },
+  {
+    "german": "kennenlernen",
+    "english": "to get to know",
+    "category": "A2",
+    "hint": "to meet and learn about a person"
+  },
+  {
+    "german": "klappen",
+    "english": "to work out",
+    "category": "A2",
+    "hint": "something goes according to plan"
+  },
+  {
+    "german": "klingen",
+    "english": "to sound",
+    "category": "A2",
+    "hint": "how something is heard"
+  },
+  {
+    "german": "kriegen",
+    "english": "to get",
+    "category": "A2",
+    "hint": "informal way to receive something"
+  },
+  {
+    "german": "l\u00E4cheln",
+    "english": "to smile",
+    "category": "A2",
+    "hint": "to make a happy face"
+  },
+  {
+    "german": "leben",
+    "english": "to live",
+    "category": "A2",
+    "hint": "to be alive or reside"
+  },
+  {
+    "german": "lieben",
+    "english": "to love",
+    "category": "A2",
+    "hint": "to have very strong affection"
+  },
+  {
+    "german": "merken",
+    "english": "to notice",
+    "category": "A2",
+    "hint": "to become aware of something"
+  },
+  {
+    "german": "mitkommen",
+    "english": "to come along",
+    "category": "A2",
+    "hint": "to join someone somewhere"
+  },
+  {
+    "german": "nachdenken",
+    "english": "to think about",
+    "category": "A2",
+    "hint": "to consider something carefully"
+  },
+  {
+    "german": "passieren",
+    "english": "to happen",
+    "category": "A2",
+    "hint": "an event takes place"
+  },
+  {
+    "german": "rauchen",
+    "english": "to smoke",
+    "category": "A2",
+    "hint": "to breathe in cigarette smoke"
+  },
+  {
+    "german": "rechnen",
+    "english": "to calculate",
+    "category": "A2",
+    "hint": "to do math"
+  },
+  {
+    "german": "reden",
+    "english": "to talk",
+    "category": "A2",
+    "hint": "to have a conversation"
+  },
+  {
+    "german": "schaffen",
+    "english": "to manage",
+    "category": "A2",
+    "hint": "to succeed in doing something difficult"
+  },
+  {
+    "german": "schicken",
+    "english": "to send",
+    "category": "A2",
+    "hint": "to make something go to another person"
+  },
+  {
+    "german": "schmecken",
+    "english": "to taste",
+    "category": "A2",
+    "hint": "how food feels in your mouth"
+  },
+  {
+    "german": "sparen",
+    "english": "to save",
+    "category": "A2",
+    "hint": "to keep money instead of spending it"
+  },
+  {
+    "german": "steigen",
+    "english": "to climb",
+    "category": "A2",
+    "hint": "to go up (stairs, mountain, etc.)"
+  },
+  {
+    "german": "sterben",
+    "english": "to die",
+    "category": "A2",
+    "hint": "to stop living"
+  },
+  {
+    "german": "streiten",
+    "english": "to argue",
+    "category": "A2",
+    "hint": "to fight with words"
+  },
+  {
+    "german": "telefonieren",
+    "english": "to phone",
+    "category": "A2",
+    "hint": "to make a telephone call"
+  },
+  {
+    "german": "treffen",
+    "english": "to meet",
+    "category": "A2",
+    "hint": "to come together with someone"
+  },
+  {
+    "german": "\u00FCbernachten",
+    "english": "to spend the night",
+    "category": "A2",
+    "hint": "to sleep somewhere else for one night"
+  },
+  {
+    "german": "umsteigen",
+    "english": "to change",
+    "category": "A2",
+    "hint": "to switch trains or buses"
+  },
+  {
+    "german": "verabreden",
+    "english": "to arrange to meet",
+    "category": "A2",
+    "hint": "to make plans to see someone"
+  },
+  {
+    "german": "verbringen",
+    "english": "to spend time",
+    "category": "A2",
+    "hint": "to pass time doing something"
+  },
+  {
+    "german": "verlieren",
+    "english": "to lose",
+    "category": "A2",
+    "hint": "to not win or misplace something"
+  },
+  {
+    "german": "vorstellen",
+    "english": "to introduce",
+    "category": "A2",
+    "hint": "to present one person to another"
+  },
+  {
+    "german": "wechseln",
+    "english": "to change",
+    "category": "A2",
+    "hint": "to exchange or switch something"
+  },
+  {
+    "german": "werden",
+    "english": "to become",
+    "category": "A2",
+    "hint": "to turn into something else"
+  },
+  {
+    "german": "w\u00FCnschen",
+    "english": "to wish",
+    "category": "A2",
+    "hint": "to hope someone gets something good"
+  },
+  {
+    "german": "zeichnen",
+    "english": "to draw",
+    "category": "A2",
+    "hint": "to make a picture with a pencil"
+  },
+  {
+    "german": "zuh\u00F6ren",
+    "english": "to listen",
+    "category": "A2",
+    "hint": "to pay attention to sounds or speech"
+  },
+  {
+    "german": "zuschauen",
+    "english": "to watch",
+    "category": "A2",
+    "hint": "to look at something happening"
+  },
+  {
+    "german": "abbauen",
+    "english": "to dismantle",
+    "category": "B1",
+    "hint": "to take something apart piece by piece (e.g. a stand or tent)"
+  },
+  {
+    "german": "abbrechen",
+    "english": "to break off",
+    "category": "B1",
+    "hint": "to suddenly stop or cancel something (talks, contact, a branch)"
+  },
+  {
+    "german": "abfahren",
+    "english": "to depart",
+    "category": "B1",
+    "hint": "when a train, bus or car leaves"
+  },
+  {
+    "german": "abgeben",
+    "english": "to hand in",
+    "category": "B1",
+    "hint": "to give homework or a form to a teacher/authority"
+  },
+  {
+    "german": "abhalten",
+    "english": "to hold",
+    "category": "B1",
+    "hint": "to organize and carry out an event or meeting"
+  },
+  {
+    "german": "abh\u00E4ngen",
+    "english": "to depend",
+    "category": "B1",
+    "hint": "something \u0027depends on\u0027 another factor"
+  },
+  {
+    "german": "ablehnen",
+    "english": "to reject",
+    "category": "B1",
+    "hint": "to say no to an offer or application"
+  },
+  {
+    "german": "abnehmen",
+    "english": "to lose weight",
+    "category": "B1",
+    "hint": "to become thinner (also: to pick up the phone)"
+  },
+  {
+    "german": "abschaffen",
+    "english": "to abolish",
+    "category": "B1",
+    "hint": "to officially get rid of a law or system"
+  },
+  {
+    "german": "abschlie\u00DFen",
+    "english": "to complete",
+    "category": "B1",
+    "hint": "to finish a course, contract, or lock a door"
+  },
+  {
+    "german": "abstellen",
+    "english": "to put down",
+    "category": "B1",
+    "hint": "to park a bike or place something somewhere temporarily"
+  },
+  {
+    "german": "abstimmen",
+    "english": "to vote",
+    "category": "B1",
+    "hint": "to choose yes or no in an election or poll"
+  },
+  {
+    "german": "achten",
+    "english": "to respect",
+    "category": "B1",
+    "hint": "to pay attention to rules or other people"
+  },
+  {
+    "german": "anbieten",
+    "english": "to offer",
+    "category": "B1",
+    "hint": "to propose help or something for sale"
+  },
+  {
+    "german": "\u00E4ndern",
+    "english": "to change",
+    "category": "B1",
+    "hint": "to make something different"
+  },
+  {
+    "german": "anfassen",
+    "english": "to touch",
+    "category": "B1",
+    "hint": "to feel something with your hands"
+  },
+  {
+    "german": "angreifen",
+    "english": "to attack",
+    "category": "B1",
+    "hint": "to start fighting someone physically or verbally"
+  },
+  {
+    "german": "anmelden",
+    "english": "to register",
+    "category": "B1",
+    "hint": "to sign up for a course or officially report your address"
+  },
+  {
+    "german": "anpassen",
+    "english": "to adapt",
+    "category": "B1",
+    "hint": "to adjust yourself or something to new conditions"
+  },
+  {
+    "german": "anregen",
+    "english": "to suggest",
+    "category": "B1",
+    "hint": "to gently propose an idea"
+  },
+  {
+    "german": "ansprechen",
+    "english": "to address",
+    "category": "B1",
+    "hint": "to talk directly to someone (also: something appeals to you)"
+  },
+  {
+    "german": "anstellen",
+    "english": "to hire",
+    "category": "B1",
+    "hint": "to give someone a job (also: to queue)"
+  },
+  {
+    "german": "antun",
+    "english": "to do to someone",
+    "category": "B1",
+    "hint": "usually negative: to do harm to somebody"
+  },
+  {
+    "german": "aufbauen",
+    "english": "to build up",
+    "category": "B1",
+    "hint": "to construct or develop something step by step"
+  },
+  {
+    "german": "aufbewahren",
+    "english": "to store",
+    "category": "B1",
+    "hint": "to keep something safe for later"
+  },
+  {
+    "german": "auffallen",
+    "english": "to stand out",
+    "category": "B1",
+    "hint": "to be very noticeable"
+  },
+  {
+    "german": "aufgeben",
+    "english": "to give up",
+    "category": "B1",
+    "hint": "to stop trying because it\u2019s too difficult"
+  },
+  {
+    "german": "aufhalten",
+    "english": "to stop",
+    "category": "B1",
+    "hint": "to delay or prevent someone from continuing"
+  },
+  {
+    "german": "aufnehmen",
+    "english": "to record",
+    "category": "B1",
+    "hint": "to capture sound/video or accept refugees"
+  },
+  {
+    "german": "aufregen",
+    "english": "to upset",
+    "category": "B1",
+    "hint": "to make someone angry or nervous"
+  },
+  {
+    "german": "aufschreiben",
+    "english": "to write down",
+    "category": "B1",
+    "hint": "to note something quickly on paper"
+  },
+  {
+    "german": "aufteilen",
+    "english": "to divide",
+    "category": "B1",
+    "hint": "to split into parts or groups"
+  },
+  {
+    "german": "ausbilden",
+    "english": "to train",
+    "category": "B1",
+    "hint": "to teach someone a profession"
+  },
+  {
+    "german": "ausdr\u00FCcken",
+    "english": "to express",
+    "category": "B1",
+    "hint": "to say or show your feelings/thoughts"
+  },
+  {
+    "german": "ausfallen",
+    "english": "to be cancelled",
+    "category": "B1",
+    "hint": "a class or train doesn\u2019t take place"
+  },
+  {
+    "german": "ausf\u00FCllen",
+    "english": "to fill out",
+    "category": "B1",
+    "hint": "to complete a form with information"
+  },
+  {
+    "german": "ausgeben",
+    "english": "to spend",
+    "category": "B1",
+    "hint": "to use money on something"
+  },
+  {
+    "german": "aushalten",
+    "english": "to endure",
+    "category": "B1",
+    "hint": "to bear pain or a difficult situation"
+  },
+  {
+    "german": "ausmachen",
+    "english": "to turn off",
+    "category": "B1",
+    "hint": "to switch off the light (also: to agree on something)"
+  },
+  {
+    "german": "ausreichen",
+    "english": "to be enough",
+    "category": "B1",
+    "hint": "there is sufficient amount of something"
+  },
+  {
+    "german": "aussprechen",
+    "english": "to pronounce",
+    "category": "B1",
+    "hint": "to say a word correctly (or to speak openly)"
+  },
+  {
+    "german": "austauschen",
+    "english": "to exchange",
+    "category": "B1",
+    "hint": "to give and receive something different"
+  },
+  {
+    "german": "ausw\u00E4hlen",
+    "english": "to select",
+    "category": "B1",
+    "hint": "to choose from several options"
+  },
+  {
+    "german": "auswandern",
+    "english": "to emigrate",
+    "category": "B1",
+    "hint": "to leave your country to live abroad permanently"
+  },
+  {
+    "german": "befehlen",
+    "english": "to order",
+    "category": "B1",
+    "hint": "to command someone to do something"
+  },
+  {
+    "german": "begeistern",
+    "english": "to excite",
+    "category": "B1",
+    "hint": "to make someone very enthusiastic"
+  },
+  {
+    "german": "behalten",
+    "english": "to keep",
+    "category": "B1",
+    "hint": "to not give back something you borrowed"
+  },
+  {
+    "german": "behaupten",
+    "english": "to claim",
+    "category": "B1",
+    "hint": "to say something is true without proof"
+  },
+  {
+    "german": "beherrschen",
+    "english": "to master",
+    "category": "B1",
+    "hint": "to know a language or skill very well"
+  },
+  {
+    "german": "behindern",
+    "english": "to hinder",
+    "category": "B1",
+    "hint": "to make something more difficult for someone"
+  },
+  {
+    "german": "beinhalten",
+    "english": "to include",
+    "category": "B1",
+    "hint": "something contains certain parts"
+  },
+  {
+    "german": "beitragen",
+    "english": "to contribute",
+    "category": "B1",
+    "hint": "to help achieve a result or give money"
+  },
+  {
+    "german": "bekannt machen",
+    "english": "to introduce",
+    "category": "B1",
+    "hint": "to make people familiar with someone/something"
+  },
+  {
+    "german": "belasten",
+    "english": "to burden",
+    "category": "B1",
+    "hint": "to put too much pressure on someone"
+  },
+  {
+    "german": "belegen",
+    "english": "to prove",
+    "category": "B1",
+    "hint": "to show evidence that something is true"
+  },
+  {
+    "german": "bemerken",
+    "english": "to notice",
+    "category": "B1",
+    "hint": "to realize something is there"
+  },
+  {
+    "german": "benehmen",
+    "english": "to behave",
+    "category": "B1",
+    "hint": "how someone acts in a situation"
+  },
+  {
+    "german": "beraten",
+    "english": "to advise",
+    "category": "B1",
+    "hint": "to give professional recommendations"
+  },
+  {
+    "german": "ber\u00FCcksichtigen",
+    "english": "to consider",
+    "category": "B1",
+    "hint": "to take something into account"
+  },
+  {
+    "german": "besitzen",
+    "english": "to own",
+    "category": "B1",
+    "hint": "to legally have something as yours"
+  },
+  {
+    "german": "besorgen",
+    "english": "to get",
+    "category": "B1",
+    "hint": "to buy or fetch something for someone"
+  },
+  {
+    "german": "bestehen aus",
+    "english": "to consist of",
+    "category": "B1",
+    "hint": "something is made up of certain parts"
+  },
+  {
+    "german": "bestimmen",
+    "english": "to determine",
+    "category": "B1",
+    "hint": "to decide or define exactly"
+  },
+  {
+    "german": "betonen",
+    "english": "to emphasize",
+    "category": "B1",
+    "hint": "to stress that something is important"
+  },
+  {
+    "german": "betr\u00FCgen",
+    "english": "to cheat",
+    "category": "B1",
+    "hint": "to deceive someone, especially in a game or relationship"
+  },
+  {
+    "german": "bewegen",
+    "english": "to move",
+    "category": "B1",
+    "hint": "to change position or motivate someone"
+  },
+  {
+    "german": "bewerten",
+    "english": "to evaluate",
+    "category": "B1",
+    "hint": "to judge the quality or value of something"
+  },
+  {
+    "german": "bewirken",
+    "english": "to cause",
+    "category": "B1",
+    "hint": "to make something happen as a result"
+  },
+  {
+    "german": "beziehen",
+    "english": "to refer to",
+    "category": "B1",
+    "hint": "to talk about or relate to something"
+  },
+  {
+    "german": "bilden",
+    "english": "to form",
+    "category": "B1",
+    "hint": "to create or educate"
+  },
+  {
+    "german": "bl\u00FChen",
+    "english": "to bloom",
+    "category": "B1",
+    "hint": "when flowers open in spring"
+  },
+  {
+    "german": "b\u00F6se sein",
+    "english": "to be angry",
+    "category": "B1",
+    "hint": "to feel strong displeasure"
+  },
+  {
+    "german": "danken",
+    "english": "to thank",
+    "category": "B1",
+    "hint": "to say you are grateful"
+  },
+  {
+    "german": "daran denken",
+    "english": "to remember",
+    "category": "B1",
+    "hint": "to think of something from the past"
+  },
+  {
+    "german": "durchf\u00FChren",
+    "english": "to carry out",
+    "category": "B1",
+    "hint": "to perform or execute a plan"
+  },
+  {
+    "german": "eignen",
+    "english": "to be suitable",
+    "category": "B1",
+    "hint": "something is good for a certain purpose"
+  },
+  {
+    "german": "einfallen",
+    "english": "to occur to",
+    "category": "B1",
+    "hint": "a sudden idea comes to your mind"
+  },
+  {
+    "german": "einrichten",
+    "english": "to set up",
+    "category": "B1",
+    "hint": "to furnish a room or establish a system"
+  },
+  {
+    "german": "einschlafen",
+    "english": "to fall asleep",
+    "category": "B1",
+    "hint": "to start sleeping"
+  },
+  {
+    "german": "einsetzen",
+    "english": "to use",
+    "category": "B1",
+    "hint": "to start applying something (force, money, etc.)"
+  },
+  {
+    "german": "entdecken",
+    "english": "to discover",
+    "category": "B1",
+    "hint": "to find something new or unknown"
+  },
+  {
+    "german": "entfernen",
+    "english": "to remove",
+    "category": "B1",
+    "hint": "to take something away"
+  },
+  {
+    "german": "enthalten",
+    "english": "to contain",
+    "category": "B1",
+    "hint": "something has certain ingredients or parts inside"
+  },
+  {
+    "german": "entscheiden",
+    "english": "to decide",
+    "category": "B1",
+    "hint": "to make a choice after thinking"
+  },
+  {
+    "german": "entschuldigen",
+    "english": "to apologize",
+    "category": "B1",
+    "hint": "to say sorry for something you did wrong"
+  },
+  {
+    "german": "entstehen",
+    "english": "to arise",
+    "category": "B1",
+    "hint": "something comes into existence"
+  },
+  {
+    "german": "entwickeln",
+    "english": "to develop",
+    "category": "B1",
+    "hint": "to grow or create over time"
+  },
+  {
+    "german": "erfahren",
+    "english": "to experience",
+    "category": "B1",
+    "hint": "to live through something (also: to find out)"
+  },
+  {
+    "german": "erfinden",
+    "english": "to invent",
+    "category": "B1",
+    "hint": "to create something completely new"
+  },
+  {
+    "german": "erh\u00F6hen",
+    "english": "to increase",
+    "category": "B1",
+    "hint": "to make a number or amount larger"
+  },
+  {
+    "german": "erinnern",
+    "english": "to remind",
+    "category": "B1",
+    "hint": "to help someone remember something"
+  },
+  {
+    "german": "erkennen",
+    "english": "to recognize",
+    "category": "B1",
+    "hint": "to know again someone/something you saw before"
+  },
+  {
+    "german": "erleben",
+    "english": "to experience",
+    "category": "B1",
+    "hint": "to go through an event personally"
+  },
+  {
+    "german": "erm\u00F6glichen",
+    "english": "to enable",
+    "category": "B1",
+    "hint": "to make something possible"
+  },
+  {
+    "german": "erneuern",
+    "english": "to renew",
+    "category": "B1",
+    "hint": "to update or extend a contract/passport"
+  },
+  {
+    "german": "erreichen",
+    "english": "to reach",
+    "category": "B1",
+    "hint": "to arrive at a goal or contact someone"
+  },
+  {
+    "german": "erscheinen",
+    "english": "to appear",
+    "category": "B1",
+    "hint": "to become visible or be published"
+  },
+  {
+    "german": "erschweren",
+    "english": "to make difficult",
+    "category": "B1",
+    "hint": "to cause extra problems"
+  },
+  {
+    "german": "ersetzen",
+    "english": "to replace",
+    "category": "B1",
+    "hint": "to put something new in place of the old"
+  },
+  {
+    "german": "erstatten",
+    "english": "to refund",
+    "category": "B1",
+    "hint": "to give money back to someone"
+  },
+  {
+    "german": "erwarten",
+    "english": "to expect",
+    "category": "B1",
+    "hint": "to believe something will happen"
+  },
+  {
+    "german": "erziehen",
+    "english": "to educate",
+    "category": "B1",
+    "hint": "to raise and teach children"
+  },
+  {
+    "german": "fallen lassen",
+    "english": "to drop",
+    "category": "B1",
+    "hint": "to let something fall on purpose (or stop a plan)"
+  },
+  {
+    "german": "fertigstellen",
+    "english": "to complete",
+    "category": "B1",
+    "hint": "to finish making or building something"
+  },
+  {
+    "german": "feststellen",
+    "english": "to determine",
+    "category": "B1",
+    "hint": "to officially notice or confirm a fact"
+  },
+  {
+    "german": "f\u00F6rdern",
+    "english": "to promote",
+    "category": "B1",
+    "hint": "to support or help something grow"
+  },
+  {
+    "german": "f\u00FChren",
+    "english": "to lead",
+    "category": "B1",
+    "hint": "to guide a group or manage a company"
+  },
+  {
+    "german": "gefallen",
+    "english": "to please",
+    "category": "B1",
+    "hint": "something you really like (used with mir/ihm etc.)"
+  },
+  {
+    "german": "geh\u00F6ren",
+    "english": "to belong",
+    "category": "B1",
+    "hint": "to be the property of someone"
+  },
+  {
+    "german": "gelingen",
+    "english": "to succeed",
+    "category": "B1",
+    "hint": "something turns out well (used with mir/ihm etc.)"
+  },
+  {
+    "german": "gie\u00DFen",
+    "english": "to pour",
+    "category": "B1",
+    "hint": "to water plants or pour liquid metal"
+  },
+  {
+    "german": "gleichen",
+    "english": "to resemble",
+    "category": "B1",
+    "hint": "to look very similar to someone/something"
+  },
+  {
+    "german": "greifen",
+    "english": "to grab",
+    "category": "B1",
+    "hint": "to quickly take something with your hand"
+  },
+  {
+    "german": "gr\u00FCnden",
+    "english": "to found",
+    "category": "B1",
+    "hint": "to start or establish a company or organization"
+  },
+  {
+    "german": "handeln",
+    "english": "to act",
+    "category": "B1",
+    "hint": "to behave or do something in a situation"
+  },
+  {
+    "german": "h\u00E4ngen",
+    "english": "to hang",
+    "category": "B1",
+    "hint": "to put something up so it dangles (picture, clothes)"
+  },
+  {
+    "german": "herstellen",
+    "english": "to produce",
+    "category": "B1",
+    "hint": "to manufacture goods in a factory"
+  },
+  {
+    "german": "hindern",
+    "english": "to prevent",
+    "category": "B1",
+    "hint": "to stop someone from doing something"
+  },
+  {
+    "german": "hineinpassen",
+    "english": "to fit in",
+    "category": "B1",
+    "hint": "to be the right size or belong in a group"
+  },
+  {
+    "german": "hinweisen",
+    "english": "to point out",
+    "category": "B1",
+    "hint": "to draw attention to something important"
+  },
+  {
+    "german": "identifizieren",
+    "english": "to identify",
+    "category": "B1",
+    "hint": "to recognize or prove who someone is"
+  },
+  {
+    "german": "ignorieren",
+    "english": "to ignore",
+    "category": "B1",
+    "hint": "to deliberately not pay attention"
+  },
+  {
+    "german": "informieren",
+    "english": "to inform",
+    "category": "B1",
+    "hint": "to give someone the latest news or facts"
+  },
+  {
+    "german": "investieren",
+    "english": "to invest",
+    "category": "B1",
+    "hint": "to put money into something to make profit"
+  },
+  {
+    "german": "irren",
+    "english": "to be wrong",
+    "category": "B1",
+    "hint": "used in \u0027sich irren\u0027 \u2013 to make a mistake"
+  },
+  {
+    "german": "kritisieren",
+    "english": "to criticize",
+    "category": "B1",
+    "hint": "to say what is bad or wrong about something"
+  },
+  {
+    "german": "leiden",
+    "english": "to suffer",
+    "category": "B1",
+    "hint": "to feel pain or great difficulty"
+  },
+  {
+    "german": "leisten",
+    "english": "to afford",
+    "category": "B1",
+    "hint": "to have enough money to buy something"
+  },
+  {
+    "german": "lenken",
+    "english": "to steer",
+    "category": "B1",
+    "hint": "to control the direction of a car or conversation"
+  },
+  {
+    "german": "l\u00F6sen",
+    "english": "to solve",
+    "category": "B1",
+    "hint": "to find the answer to a problem"
+  },
+  {
+    "german": "machen lassen",
+    "english": "to have done",
+    "category": "B1",
+    "hint": "to pay someone else to do something for you"
+  },
+  {
+    "german": "meiden",
+    "english": "to avoid",
+    "category": "B1",
+    "hint": "to stay away from someone or something"
+  },
+  {
+    "german": "missverstehen",
+    "english": "to misunderstand",
+    "category": "B1",
+    "hint": "to understand something the wrong way"
+  },
+  {
+    "german": "mitbringen",
+    "english": "to bring",
+    "category": "B1",
+    "hint": "to bring something with you to a place"
+  },
+  {
+    "german": "mitteilen",
+    "english": "to inform",
+    "category": "B1",
+    "hint": "to officially tell someone something"
+  },
+  {
+    "german": "nachahmen",
+    "english": "to imitate",
+    "category": "B1",
+    "hint": "to copy someone\u2019s behavior or voice"
+  },
+  {
+    "german": "nachfragen",
+    "english": "to inquire",
+    "category": "B1",
+    "hint": "to ask again for more details"
+  },
+  {
+    "german": "nachschlagen",
+    "english": "to look up",
+    "category": "B1",
+    "hint": "to check a word in a dictionary"
+  },
+  {
+    "german": "nachweisen",
+    "english": "to prove",
+    "category": "B1",
+    "hint": "to show clear evidence of something"
+  },
+  {
+    "german": "nennen",
+    "english": "to name",
+    "category": "B1",
+    "hint": "to give a name or call someone something"
+  },
+  {
+    "german": "organisieren",
+    "english": "to organize",
+    "category": "B1",
+    "hint": "to plan and arrange an event"
+  },
+  {
+    "german": "passen",
+    "english": "to suit",
+    "category": "B1",
+    "hint": "something looks good on you or fits the situation"
+  },
+  {
+    "german": "planen",
+    "english": "to plan",
+    "category": "B1",
+    "hint": "to think about and organize future actions"
+  },
+  {
+    "german": "pr\u00E4sentieren",
+    "english": "to present",
+    "category": "B1",
+    "hint": "to show or give a talk about something"
+  },
+  {
+    "german": "pr\u00FCfen",
+    "english": "to check",
+    "category": "B1",
+    "hint": "to examine carefully if everything is correct"
+  },
+  {
+    "german": "qu\u00E4len",
+    "english": "to torment",
+    "category": "B1",
+    "hint": "to cause someone extreme pain or stress"
+  },
+  {
+    "german": "raten",
+    "english": "to guess",
+    "category": "B1",
+    "hint": "to try to find the answer without knowing"
+  },
+  {
+    "german": "reagieren",
+    "english": "to react",
+    "category": "B1",
+    "hint": "to respond to something that happened"
+  },
+  {
+    "german": "realisieren",
+    "english": "to realize",
+    "category": "B1",
+    "hint": "to finally understand or make something happen"
+  },
+  {
+    "german": "reduzieren",
+    "english": "to reduce",
+    "category": "B1",
+    "hint": "to make something smaller or less"
+  },
+  {
+    "german": "regeln",
+    "english": "to regulate",
+    "category": "B1",
+    "hint": "to solve a problem or set rules"
+  },
+  {
+    "german": "reichen",
+    "english": "to suffice",
+    "category": "B1",
+    "hint": "to be enough for a purpose"
+  },
+  {
+    "german": "reinigen",
+    "english": "to clean",
+    "category": "B1",
+    "hint": "to remove dirt professionally"
+  },
+  {
+    "german": "retten",
+    "english": "to save",
+    "category": "B1",
+    "hint": "to rescue someone from danger"
+  },
+  {
+    "german": "rufen",
+    "english": "to call out",
+    "category": "B1",
+    "hint": "to shout or phone someone"
+  },
+  {
+    "german": "sammeln",
+    "english": "to collect",
+    "category": "B1",
+    "hint": "to bring things together (stamps, points, experiences)"
+  },
+  {
+    "german": "schaden",
+    "english": "to harm",
+    "category": "B1",
+    "hint": "to damage someone or something (used with dativ)"
+  },
+  {
+    "german": "sch\u00E4tzen",
+    "english": "to estimate",
+    "category": "B1",
+    "hint": "to guess an amount or value something highly"
+  },
+  {
+    "german": "scheitern",
+    "english": "to fail",
+    "category": "B1",
+    "hint": "a plan or project doesn\u2019t work out"
+  },
+  {
+    "german": "schlagen",
+    "english": "to hit",
+    "category": "B1",
+    "hint": "to strike someone or suggest something"
+  },
+  {
+    "german": "sch\u00FCtzen",
+    "english": "to protect",
+    "category": "B1",
+    "hint": "to keep someone/something safe from danger"
+  },
+  {
+    "german": "schweigen",
+    "english": "to be silent",
+    "category": "B1",
+    "hint": "to say nothing at all"
+  },
+  {
+    "german": "sehen aus",
+    "english": "to look like",
+    "category": "B1",
+    "hint": "to have a certain appearance"
+  },
+  {
+    "german": "sichern",
+    "english": "to secure",
+    "category": "B1",
+    "hint": "to make something safe or lock it"
+  },
+  {
+    "german": "sinken",
+    "english": "to sink",
+    "category": "B1",
+    "hint": "to go down slowly (ship, prices)"
+  },
+  {
+    "german": "sorgen",
+    "english": "to worry",
+    "category": "B1",
+    "hint": "to feel anxious (or to take care of = sorgen f\u00FCr)"
+  },
+  {
+    "german": "spiegeln",
+    "english": "to reflect",
+    "category": "B1",
+    "hint": "to show an image or mirror a situation"
+  },
+  {
+    "german": "stammen",
+    "english": "to originate",
+    "category": "B1",
+    "hint": "to come from a certain place or time"
+  },
+  {
+    "german": "stellen",
+    "english": "to place",
+    "category": "B1",
+    "hint": "to put something somewhere (also: to ask a question)"
+  },
+  {
+    "german": "st\u00F6ren",
+    "english": "to disturb",
+    "category": "B1",
+    "hint": "to interrupt or bother someone"
+  },
+  {
+    "german": "streiken",
+    "english": "to strike",
+    "category": "B1",
+    "hint": "workers stop working to protest"
+  },
+  {
+    "german": "strengen",
+    "english": "to strain",
+    "category": "B1",
+    "hint": "to make a big effort (sich anstrengen)"
+  },
+  {
+    "german": "st\u00FCtze",
+    "english": "to support",
+    "category": "B1",
+    "hint": "to help or hold something up"
+  },
+  {
+    "german": "teilen",
+    "english": "to share",
+    "category": "B1",
+    "hint": "to divide or give part to others"
+  },
+  {
+    "german": "trauen",
+    "english": "to trust",
+    "category": "B1",
+    "hint": "to believe someone is honest (sich trauen = to dare)"
+  },
+  {
+    "german": "treiben",
+    "english": "to drive",
+    "category": "B1",
+    "hint": "to force forward or do sport"
+  },
+  {
+    "german": "tun",
+    "english": "to do",
+    "category": "B1",
+    "hint": "general verb for doing something"
+  },
+  {
+    "german": "\u00FCberlegen",
+    "english": "to consider",
+    "category": "B1",
+    "hint": "to think carefully about something"
+  },
+  {
+    "german": "\u00FCbernehmen",
+    "english": "to take over",
+    "category": "B1",
+    "hint": "to accept responsibility or a company"
+  },
+  {
+    "german": "\u00FCbersetzen",
+    "english": "to translate",
+    "category": "B1",
+    "hint": "to change from one language to another"
+  },
+  {
+    "german": "\u00FCberzeugen",
+    "english": "to convince",
+    "category": "B1",
+    "hint": "to make someone believe or agree"
+  },
+  {
+    "german": "umgehen",
+    "english": "to handle",
+    "category": "B1",
+    "hint": "to deal with a situation or person"
+  },
+  {
+    "german": "umstellen",
+    "english": "to convert",
+    "category": "B1",
+    "hint": "to change a system or rearrange furniture"
+  },
+  {
+    "german": "unterscheiden",
+    "english": "to distinguish",
+    "category": "B1",
+    "hint": "to see the difference between things"
+  },
+  {
+    "german": "unterschreiben",
+    "english": "to sign",
+    "category": "B1",
+    "hint": "to write your name on a document"
+  },
+  {
+    "german": "ver\u00E4ndern",
+    "english": "to alter",
+    "category": "B1",
+    "hint": "to make something different"
+  },
+  {
+    "german": "veranlassen",
+    "english": "to cause",
+    "category": "B1",
+    "hint": "to make someone do something"
+  },
+  {
+    "german": "verbergen",
+    "english": "to hide",
+    "category": "B1",
+    "hint": "to keep something secret or out of sight"
+  },
+  {
+    "german": "verbessern",
+    "english": "to improve",
+    "category": "B1",
+    "hint": "to make something better"
+  },
+  {
+    "german": "verbieten",
+    "english": "to forbid",
+    "category": "B1",
+    "hint": "to officially say something is not allowed"
+  },
+  {
+    "german": "verdienen",
+    "english": "to earn",
+    "category": "B1",
+    "hint": "to get money for work (or deserve something)"
+  },
+  {
+    "german": "vereinbaren",
+    "english": "to agree",
+    "category": "B1",
+    "hint": "to make an appointment or arrangement"
+  },
+  {
+    "german": "vergleichen",
+    "english": "to compare",
+    "category": "B1",
+    "hint": "to look at similarities and differences"
+  },
+  {
+    "german": "verhalten",
+    "english": "to behave",
+    "category": "B1",
+    "hint": "how someone acts (sich verhalten)"
+  },
+  {
+    "german": "verhindern",
+    "english": "to prevent",
+    "category": "B1",
+    "hint": "to stop something from happening"
+  },
+  {
+    "german": "verlassen",
+    "english": "to leave",
+    "category": "B1",
+    "hint": "to go away from a place or person"
+  },
+  {
+    "german": "vermeiden",
+    "english": "to avoid",
+    "category": "B1",
+    "hint": "to try not to do or meet something"
+  },
+  {
+    "german": "verpflichten",
+    "english": "to oblige",
+    "category": "B1",
+    "hint": "to force someone legally or morally"
+  },
+  {
+    "german": "verringern",
+    "english": "to reduce",
+    "category": "B1",
+    "hint": "to make smaller in size or amount"
+  },
+  {
+    "german": "verschieben",
+    "english": "to postpone",
+    "category": "B1",
+    "hint": "to move an event to a later time"
+  },
+  {
+    "german": "verschieden",
+    "english": "to differ",
+    "category": "B1",
+    "hint": "to not be the same"
+  },
+  {
+    "german": "verschwinden",
+    "english": "to disappear",
+    "category": "B1",
+    "hint": "to no longer be visible"
+  },
+  {
+    "german": "versichern",
+    "english": "to insure",
+    "category": "B1",
+    "hint": "to buy insurance or strongly promise"
+  },
+  {
+    "german": "versorgen",
+    "english": "to supply",
+    "category": "B1",
+    "hint": "to provide food, care, or materials"
+  },
+  {
+    "german": "versp\u00E4ten",
+    "english": "to be late",
+    "category": "B1",
+    "hint": "to arrive after the expected time (sich versp\u00E4ten)"
+  },
+  {
+    "german": "versuchen",
+    "english": "to attempt",
+    "category": "B1",
+    "hint": "to try to do something"
+  },
+  {
+    "german": "verteidigen",
+    "english": "to defend",
+    "category": "B1",
+    "hint": "to protect against attack or criticism"
+  },
+  {
+    "german": "verursachen",
+    "english": "to cause",
+    "category": "B1",
+    "hint": "to be the reason something happens"
+  },
+  {
+    "german": "verwenden",
+    "english": "to use",
+    "category": "B1",
+    "hint": "to employ something for a purpose"
+  },
+  {
+    "german": "verzichten",
+    "english": "to renounce",
+    "category": "B1",
+    "hint": "to give up something voluntarily"
+  },
+  {
+    "german": "vollenden",
+    "english": "to complete",
+    "category": "B1",
+    "hint": "to finish something perfectly"
+  },
+  {
+    "german": "vorbeifahren",
+    "english": "to pass by",
+    "category": "B1",
+    "hint": "to drive or go past something"
+  },
+  {
+    "german": "vorbereiten",
+    "english": "to prepare",
+    "category": "B1",
+    "hint": "to get ready for something"
+  },
+  {
+    "german": "vorschlagen",
+    "english": "to suggest",
+    "category": "B1",
+    "hint": "to propose an idea"
+  },
+  {
+    "german": "wachsen",
+    "english": "to grow",
+    "category": "B1",
+    "hint": "to get bigger (plants, children, economy)"
+  },
+  {
+    "german": "w\u00E4hlen",
+    "english": "to choose",
+    "category": "B1",
+    "hint": "to select or vote for someone"
+  },
+  {
+    "german": "warnen",
+    "english": "to warn",
+    "category": "B1",
+    "hint": "to tell someone about danger"
+  },
+  {
+    "german": "weggehen",
+    "english": "to leave",
+    "category": "B1",
+    "hint": "to go away from home or a party"
+  },
+  {
+    "german": "weh tun",
+    "english": "to hurt",
+    "category": "B1",
+    "hint": "to cause physical or emotional pain"
+  },
+  {
+    "german": "weisen",
+    "english": "to point",
+    "category": "B1",
+    "hint": "to show direction or prove something"
+  },
+  {
+    "german": "wenden",
+    "english": "to turn",
+    "category": "B1",
+    "hint": "to turn over or change direction (sich wenden an = contact)"
+  },
+  {
+    "german": "werben",
+    "english": "to advertise",
+    "category": "B1",
+    "hint": "to promote a product or recruit"
+  },
+  {
+    "german": "werfen",
+    "english": "to throw",
+    "category": "B1",
+    "hint": "to toss something through the air"
+  },
+  {
+    "german": "wiederholen",
+    "english": "to repeat",
+    "category": "B1",
+    "hint": "to say or do something again"
+  },
+  {
+    "german": "wirken",
+    "english": "to seem",
+    "category": "B1",
+    "hint": "to have an effect or appear a certain way"
+  },
+  {
+    "german": "zahlen",
+    "english": "to count",
+    "category": "B1",
+    "hint": "to add up numbers (also common meaning: to pay)"
+  },
+  {
+    "german": "zerst\u00F6ren",
+    "english": "to destroy",
+    "category": "B1",
+    "hint": "to completely break or ruin something"
+  },
+  {
+    "german": "ziehen",
+    "english": "to pull",
+    "category": "B1",
+    "hint": "to move something toward you or move house"
+  },
+  {
+    "german": "z\u00F6gern",
+    "english": "to hesitate",
+    "category": "B1",
+    "hint": "to wait before doing something"
+  },
+  {
+    "german": "zunehmen",
+    "english": "to increase",
+    "category": "B1",
+    "hint": "to get bigger or gain weight"
+  },
+  {
+    "german": "zusammenarbeiten",
+    "english": "to collaborate",
+    "category": "B1",
+    "hint": "to work together on a project"
+  },
+  {
+    "german": "zusammenfassen",
+    "english": "to summarize",
+    "category": "B1",
+    "hint": "to give the main points in a few words"
+  },
+  {
+    "german": "zweifeln",
+    "english": "to doubt",
+    "category": "B1",
+    "hint": "to not be sure something is true"
+  },
+  {
+    "german": "abfassen",
+    "english": "to draft",
+    "category": "B2",
+    "hint": "To compose or write a formal document, like drafting a letter or contract"
+  },
+  {
+    "german": "abfedern",
+    "english": "to cushion",
+    "category": "B2",
+    "hint": "To soften the impact of something, like cushioning a blow or fall"
+  },
+  {
+    "german": "abfinden",
+    "english": "to come to terms with",
+    "category": "B2",
+    "hint": "To accept and make peace with an unpleasant situation"
+  },
+  {
+    "german": "abfragen",
+    "english": "to quiz",
+    "category": "B2",
+    "hint": "To test someone\u0027s knowledge by asking questions"
+  },
+  {
+    "german": "abgrenzen",
+    "english": "to demarcate",
+    "category": "B2",
+    "hint": "To set boundaries or distinguish between different areas or concepts"
+  },
+  {
+    "german": "abschweifen",
+    "english": "to digress",
+    "category": "B2",
+    "hint": "To wander off topic during a conversation or presentation"
+  },
+  {
+    "german": "absehen",
+    "english": "to foresee",
+    "category": "B2",
+    "hint": "To predict or anticipate what will happen in the future"
+  },
+  {
+    "german": "absichern",
+    "english": "to secure",
+    "category": "B2",
+    "hint": "To protect or make something safe, like securing a building or investment"
+  },
+  {
+    "german": "abspeichern",
+    "english": "to save",
+    "category": "B2",
+    "hint": "To store information on a computer or digital device"
+  },
+  {
+    "german": "abverlangen",
+    "english": "to demand",
+    "category": "B2",
+    "hint": "To require or expect something from someone, often something difficult"
+  },
+  {
+    "german": "abw\u00E4gen",
+    "english": "to weigh up",
+    "category": "B2",
+    "hint": "To carefully consider pros and cons before making a decision"
+  },
+  {
+    "german": "abwickeln",
+    "english": "to handle",
+    "category": "B2",
+    "hint": "To carry out or complete a transaction or procedure"
+  },
+  {
+    "german": "\u00E4chten",
+    "english": "to outlaw",
+    "category": "B2",
+    "hint": "To ban or prohibit something officially, or to shun socially"
+  },
+  {
+    "german": "adeln",
+    "english": "to ennoble",
+    "category": "B2",
+    "hint": "To grant noble status or to elevate someone\u0027s character"
+  },
+  {
+    "german": "ahnden",
+    "english": "to punish",
+    "category": "B2",
+    "hint": "To penalize wrongdoing, especially in a formal or official way"
+  },
+  {
+    "german": "akkumulieren",
+    "english": "to accumulate",
+    "category": "B2",
+    "hint": "To gather or pile up over time, like accumulating wealth or experience"
+  },
+  {
+    "german": "akquirieren",
+    "english": "to acquire",
+    "category": "B2",
+    "hint": "To gain new customers or business contracts"
+  },
+  {
+    "german": "aktualisieren",
+    "english": "to update",
+    "category": "B2",
+    "hint": "To make current or bring information up to date"
+  },
+  {
+    "german": "albtr\u00E4umen",
+    "english": "to have nightmares",
+    "category": "B2",
+    "hint": "To experience frightening or disturbing dreams during sleep"
+  },
+  {
+    "german": "amtieren",
+    "english": "to hold office",
+    "category": "B2",
+    "hint": "To serve in an official position or role"
+  },
+  {
+    "german": "anbiedern",
+    "english": "to ingratiate oneself",
+    "category": "B2",
+    "hint": "To try to gain favor by being overly friendly or flattering"
+  },
+  {
+    "german": "anbinden",
+    "english": "to tie up",
+    "category": "B2",
+    "hint": "To fasten or attach something with a rope or cord"
+  },
+  {
+    "german": "andauern",
+    "english": "to continue",
+    "category": "B2",
+    "hint": "To persist or last for a period of time"
+  },
+  {
+    "german": "andeuten",
+    "english": "to hint",
+    "category": "B2",
+    "hint": "To suggest something indirectly without saying it explicitly"
+  },
+  {
+    "german": "anecken",
+    "english": "to cause offense",
+    "category": "B2",
+    "hint": "To rub people the wrong way or provoke disapproval"
+  },
+  {
+    "german": "anfechten",
+    "english": "to contest",
+    "category": "B2",
+    "hint": "To challenge or dispute a decision, result, or claim"
+  },
+  {
+    "german": "angew\u00F6hnen",
+    "english": "to get used to",
+    "category": "B2",
+    "hint": "To develop a habit or become accustomed to something"
+  },
+  {
+    "german": "anh\u00E4ufen",
+    "english": "to accumulate",
+    "category": "B2",
+    "hint": "To amass or pile up items, wealth, or problems"
+  },
+  {
+    "german": "anheben",
+    "english": "to raise",
+    "category": "B2",
+    "hint": "To lift up or increase something, like raising prices or a heavy object"
+  },
+  {
+    "german": "anklagen",
+    "english": "to accuse",
+    "category": "B2",
+    "hint": "To formally charge someone with a crime or wrongdoing"
+  },
+  {
+    "german": "ankn\u00FCpfen",
+    "english": "to make contact",
+    "category": "B2",
+    "hint": "To establish connections or resume a relationship"
+  },
+  {
+    "german": "anlasten",
+    "english": "to blame",
+    "category": "B2",
+    "hint": "To hold someone responsible for something negative"
+  },
+  {
+    "german": "anmahnen",
+    "english": "to remind",
+    "category": "B2",
+    "hint": "To send a reminder about an overdue payment or obligation"
+  },
+  {
+    "german": "anmerken",
+    "english": "to remark",
+    "category": "B2",
+    "hint": "To comment or note something, often subtly"
+  },
+  {
+    "german": "anordnen",
+    "english": "to order",
+    "category": "B2",
+    "hint": "To command or arrange something in a specific way"
+  },
+  {
+    "german": "anprangern",
+    "english": "to denounce",
+    "category": "B2",
+    "hint": "To publicly criticize or condemn someone\u0027s actions"
+  },
+  {
+    "german": "anrechnen",
+    "english": "to credit",
+    "category": "B2",
+    "hint": "To count something toward a total or acknowledge someone\u0027s contribution"
+  },
+  {
+    "german": "anreisen",
+    "english": "to arrive",
+    "category": "B2",
+    "hint": "To come to a destination by making a journey"
+  },
+  {
+    "german": "anrichten",
+    "english": "to cause",
+    "category": "B2",
+    "hint": "To create or bring about something negative, like causing destruction"
+  },
+  {
+    "german": "anschaffen",
+    "english": "to purchase",
+    "category": "B2",
+    "hint": "To acquire something significant or expensive"
+  },
+  {
+    "german": "anschlie\u00DFen",
+    "english": "to connect",
+    "category": "B2",
+    "hint": "To link or join things together, or to join a group"
+  },
+  {
+    "german": "ansiedeln",
+    "english": "to settle",
+    "category": "B2",
+    "hint": "To establish residence in a new place or to locate a business"
+  },
+  {
+    "german": "anstacheln",
+    "english": "to incite",
+    "category": "B2",
+    "hint": "To provoke or encourage someone to take action, often aggressive"
+  },
+  {
+    "german": "anstecken",
+    "english": "to infect",
+    "category": "B2",
+    "hint": "To transmit a disease or spread enthusiasm to others"
+  },
+  {
+    "german": "ansto\u00DFen",
+    "english": "to toast",
+    "category": "B2",
+    "hint": "To clink glasses in celebration or to initiate something"
+  },
+  {
+    "german": "antizipieren",
+    "english": "to anticipate",
+    "category": "B2",
+    "hint": "To expect or predict something before it happens"
+  },
+  {
+    "german": "anvertrauen",
+    "english": "to confide",
+    "category": "B2",
+    "hint": "To share a secret or entrust something to someone"
+  },
+  {
+    "german": "anvisieren",
+    "english": "to target",
+    "category": "B2",
+    "hint": "To aim for or set as a goal"
+  },
+  {
+    "german": "anwerben",
+    "english": "to recruit",
+    "category": "B2",
+    "hint": "To enlist or hire people for a job or organization"
+  },
+  {
+    "german": "anzweifeln",
+    "english": "to doubt",
+    "category": "B2",
+    "hint": "To question the truth or validity of something"
+  },
+  {
+    "german": "appealieren",
+    "english": "to appeal",
+    "category": "B2",
+    "hint": "To make an earnest request or to be attractive to someone"
+  },
+  {
+    "german": "applaudieren",
+    "english": "to applaud",
+    "category": "B2",
+    "hint": "To clap hands in approval or praise"
+  },
+  {
+    "german": "\u00E4rgern",
+    "english": "to annoy",
+    "category": "B2",
+    "hint": "To irritate or make someone angry or frustrated"
+  },
+  {
+    "german": "argw\u00F6hnen",
+    "english": "to suspect",
+    "category": "B2",
+    "hint": "To have suspicions or mistrust about something"
+  },
+  {
+    "german": "armutszeugnis",
+    "english": "to be a disgrace",
+    "category": "B2",
+    "hint": "To be a shameful demonstration of inadequacy or failure"
+  },
+  {
+    "german": "artikulieren",
+    "english": "to articulate",
+    "category": "B2",
+    "hint": "To express thoughts clearly and coherently"
+  },
+  {
+    "german": "\u00E4rztlich behandeln",
+    "english": "to treat medically",
+    "category": "B2",
+    "hint": "To provide medical care or therapy to a patient"
+  },
+  {
+    "german": "aufarbeiten",
+    "english": "to process",
+    "category": "B2",
+    "hint": "To work through and come to terms with difficult experiences"
+  },
+  {
+    "german": "aufbieten",
+    "english": "to muster",
+    "category": "B2",
+    "hint": "To gather or summon strength, resources, or courage"
+  },
+  {
+    "german": "aufbl\u00FChen",
+    "english": "to flourish",
+    "category": "B2",
+    "hint": "To thrive and develop successfully, like a blooming flower"
+  },
+  {
+    "german": "aufb\u00FCrden",
+    "english": "to burden",
+    "category": "B2",
+    "hint": "To impose a heavy responsibility or load on someone"
+  },
+  {
+    "german": "aufdr\u00E4ngen",
+    "english": "to impose",
+    "category": "B2",
+    "hint": "To force something unwanted on someone"
+  },
+  {
+    "german": "auferlegen",
+    "english": "to impose",
+    "category": "B2",
+    "hint": "To place a duty, penalty, or requirement on someone officially"
+  },
+  {
+    "german": "auffangen",
+    "english": "to catch",
+    "category": "B2",
+    "hint": "To intercept something falling or to absorb an impact"
+  },
+  {
+    "german": "auffassen",
+    "english": "to interpret",
+    "category": "B2",
+    "hint": "To understand or perceive something in a particular way"
+  },
+  {
+    "german": "auffordern",
+    "english": "to call upon",
+    "category": "B2",
+    "hint": "To request or urge someone to do something"
+  },
+  {
+    "german": "auffrischen",
+    "english": "to refresh",
+    "category": "B2",
+    "hint": "To renew or revitalize knowledge or appearance"
+  },
+  {
+    "german": "aufheben",
+    "english": "to lift",
+    "category": "B2",
+    "hint": "To pick up, preserve, or cancel something"
+  },
+  {
+    "german": "aufhellen",
+    "english": "to brighten",
+    "category": "B2",
+    "hint": "To make lighter in color or to improve mood"
+  },
+  {
+    "german": "aufholen",
+    "english": "to catch up",
+    "category": "B2",
+    "hint": "To close a gap or make up for lost time"
+  },
+  {
+    "german": "aufkl\u00E4ren",
+    "english": "to enlighten",
+    "category": "B2",
+    "hint": "To inform or solve a mystery, bringing clarity"
+  },
+  {
+    "german": "aufkommen",
+    "english": "to arise",
+    "category": "B2",
+    "hint": "To emerge or come into existence, like a trend or question"
+  },
+  {
+    "german": "aufleben",
+    "english": "to come alive",
+    "category": "B2",
+    "hint": "To become lively or revitalized again"
+  },
+  {
+    "german": "auflehnen",
+    "english": "to rebel",
+    "category": "B2",
+    "hint": "To resist or oppose authority or norms"
+  },
+  {
+    "german": "auflockern",
+    "english": "to loosen up",
+    "category": "B2",
+    "hint": "To make less tense or rigid, creating a relaxed atmosphere"
+  },
+  {
+    "german": "aufl\u00F6sen",
+    "english": "to dissolve",
+    "category": "B2",
+    "hint": "To break apart or disband, like dissolving sugar or a group"
+  },
+  {
+    "german": "aufmerken",
+    "english": "to pay attention",
+    "category": "B2",
+    "hint": "To listen carefully and focus on what\u0027s being said"
+  },
+  {
+    "german": "aufmuntern",
+    "english": "to cheer up",
+    "category": "B2",
+    "hint": "To lift someone\u0027s spirits when they\u0027re feeling down"
+  },
+  {
+    "german": "aufrechterhalten",
+    "english": "to maintain",
+    "category": "B2",
+    "hint": "To keep something going or preserve a state or condition"
+  },
+  {
+    "german": "aufrufen",
+    "english": "to call up",
+    "category": "B2",
+    "hint": "To summon someone or to make an appeal or announcement"
+  },
+  {
+    "german": "aufr\u00FCsten",
+    "english": "to arm",
+    "category": "B2",
+    "hint": "To build up military forces or upgrade equipment"
+  },
+  {
+    "german": "aufschieben",
+    "english": "to postpone",
+    "category": "B2",
+    "hint": "To delay or put off doing something until later"
+  },
+  {
+    "german": "aufsp\u00FCren",
+    "english": "to track down",
+    "category": "B2",
+    "hint": "To search for and discover something or someone\u0027s location"
+  },
+  {
+    "german": "aufstocken",
+    "english": "to increase",
+    "category": "B2",
+    "hint": "To add to or expand resources, like staffing or inventory"
+  },
+  {
+    "german": "auftragen",
+    "english": "to apply",
+    "category": "B2",
+    "hint": "To spread or put on a substance to a surface"
+  },
+  {
+    "german": "aufweisen",
+    "english": "to show",
+    "category": "B2",
+    "hint": "To display or exhibit certain characteristics or features"
+  },
+  {
+    "german": "aufwerfen",
+    "english": "to raise",
+    "category": "B2",
+    "hint": "To bring up a topic or issue for discussion"
+  },
+  {
+    "german": "aufzeigen",
+    "english": "to point out",
+    "category": "B2",
+    "hint": "To demonstrate or make something visible or clear"
+  },
+  {
+    "german": "aufziehen",
+    "english": "to tease",
+    "category": "B2",
+    "hint": "To mock playfully or to raise a child or animal"
+  },
+  {
+    "german": "ausbauen",
+    "english": "to expand",
+    "category": "B2",
+    "hint": "To extend or develop something further"
+  },
+  {
+    "german": "ausbeuten",
+    "english": "to exploit",
+    "category": "B2",
+    "hint": "To take unfair advantage of people or resources"
+  },
+  {
+    "german": "ausbleiben",
+    "english": "to fail to appear",
+    "category": "B2",
+    "hint": "To not happen or not show up as expected"
+  },
+  {
+    "german": "ausbrechen",
+    "english": "to break out",
+    "category": "B2",
+    "hint": "To escape or begin suddenly, like war or disease"
+  },
+  {
+    "german": "ausdehnen",
+    "english": "to extend",
+    "category": "B2",
+    "hint": "To stretch out or expand in space or time"
+  },
+  {
+    "german": "ausersehen",
+    "english": "to choose",
+    "category": "B2",
+    "hint": "To select someone for a particular role or purpose"
+  },
+  {
+    "german": "ausf\u00FChren",
+    "english": "to execute",
+    "category": "B2",
+    "hint": "To carry out a plan, order, or task"
+  },
+  {
+    "german": "ausgleichen",
+    "english": "to balance",
+    "category": "B2",
+    "hint": "To compensate for differences or create equilibrium"
+  },
+  {
+    "german": "aushandeln",
+    "english": "to negotiate",
+    "category": "B2",
+    "hint": "To reach an agreement through discussion and compromise"
+  },
+  {
+    "german": "ausmerzen",
+    "english": "to eradicate",
+    "category": "B2",
+    "hint": "To eliminate or remove completely, like errors or pests"
+  },
+  {
+    "german": "ausnutzen",
+    "english": "to take advantage of",
+    "category": "B2",
+    "hint": "To exploit an opportunity or person for one\u0027s benefit"
+  },
+  {
+    "german": "ausrichten",
+    "english": "to align",
+    "category": "B2",
+    "hint": "To arrange in a straight line or orient toward a goal"
+  },
+  {
+    "german": "aussagen",
+    "english": "to testify",
+    "category": "B2",
+    "hint": "To give evidence or make a formal statement in court"
+  },
+  {
+    "german": "ausschlie\u00DFen",
+    "english": "to exclude",
+    "category": "B2",
+    "hint": "To keep out or rule out possibilities or people"
+  },
+  {
+    "german": "ausschreiben",
+    "english": "to announce",
+    "category": "B2",
+    "hint": "To advertise or officially announce an opening or competition"
+  },
+  {
+    "german": "aussetzen",
+    "english": "to expose",
+    "category": "B2",
+    "hint": "To subject to conditions or to pause temporarily"
+  },
+  {
+    "german": "aussto\u00DFen",
+    "english": "to emit",
+    "category": "B2",
+    "hint": "To release or expel gases, sounds, or people"
+  },
+  {
+    "german": "austeilen",
+    "english": "to distribute",
+    "category": "B2",
+    "hint": "To hand out or deliver items to multiple people"
+  },
+  {
+    "german": "aus\u00FCben",
+    "english": "to exercise",
+    "category": "B2",
+    "hint": "To practice a profession or exert influence"
+  },
+  {
+    "german": "ausweichen",
+    "english": "to evade",
+    "category": "B2",
+    "hint": "To dodge or avoid something physically or verbally"
+  },
+  {
+    "german": "ausweisen",
+    "english": "to deport",
+    "category": "B2",
+    "hint": "To expel from a country or to identify oneself"
+  },
+  {
+    "german": "auswerten",
+    "english": "to evaluate",
+    "category": "B2",
+    "hint": "To analyze data or information to draw conclusions"
+  },
+  {
+    "german": "auszahlen",
+    "english": "to pay out",
+    "category": "B2",
+    "hint": "To disburse money or to prove worthwhile"
+  },
+  {
+    "german": "auszeichnen",
+    "english": "to award",
+    "category": "B2",
+    "hint": "To honor with a prize or to distinguish oneself"
+  },
+  {
+    "german": "beabsichtigen",
+    "english": "to intend",
+    "category": "B2",
+    "hint": "To plan or mean to do something"
+  },
+  {
+    "german": "beantragen",
+    "english": "to apply for",
+    "category": "B2",
+    "hint": "To formally request something, like a visa or permit"
+  },
+  {
+    "german": "beauftragen",
+    "english": "to commission",
+    "category": "B2",
+    "hint": "To assign a task or hire someone for a specific job"
+  },
+  {
+    "german": "bebildern",
+    "english": "to illustrate",
+    "category": "B2",
+    "hint": "To add pictures or images to enhance text"
+  },
+  {
+    "german": "bedauern",
+    "english": "to regret",
+    "category": "B2",
+    "hint": "To feel sorry about something that happened"
+  },
+  {
+    "german": "bedecken",
+    "english": "to cover",
+    "category": "B2",
+    "hint": "To place something over to conceal or protect"
+  },
+  {
+    "german": "bedingen",
+    "english": "to cause",
+    "category": "B2",
+    "hint": "To be the reason for or require as a condition"
+  },
+  {
+    "german": "bedrohen",
+    "english": "to threaten",
+    "category": "B2",
+    "hint": "To pose a danger or make threatening statements toward someone"
+  },
+  {
+    "german": "befl\u00FCgeln",
+    "english": "to inspire",
+    "category": "B2",
+    "hint": "To give wings to ideas or motivate someone to achieve more"
+  },
+  {
+    "german": "befragen",
+    "english": "to survey",
+    "category": "B2",
+    "hint": "To question or interview people to gather information"
+  },
+  {
+    "german": "befreien",
+    "english": "to liberate",
+    "category": "B2",
+    "hint": "To set free from captivity, oppression, or obligation"
+  },
+  {
+    "german": "befriedigen",
+    "english": "to satisfy",
+    "category": "B2",
+    "hint": "To fulfill needs, desires, or requirements"
+  },
+  {
+    "german": "bef\u00FCrchten",
+    "english": "to fear",
+    "category": "B2",
+    "hint": "To be afraid that something bad will happen"
+  },
+  {
+    "german": "beglaubigen",
+    "english": "to certify",
+    "category": "B2",
+    "hint": "To officially verify the authenticity of a document"
+  },
+  {
+    "german": "begleiten",
+    "english": "to accompany",
+    "category": "B2",
+    "hint": "To go along with someone or something as a companion"
+  },
+  {
+    "german": "begraben",
+    "english": "to bury",
+    "category": "B2",
+    "hint": "To place in the ground or to put something to rest"
+  },
+  {
+    "german": "begrenzen",
+    "english": "to limit",
+    "category": "B2",
+    "hint": "To set boundaries or restrictions on something"
+  },
+  {
+    "german": "begr\u00FCnden",
+    "english": "to justify",
+    "category": "B2",
+    "hint": "To provide reasons or establish the foundation for something"
+  },
+  {
+    "german": "beherzigen",
+    "english": "to take to heart",
+    "category": "B2",
+    "hint": "To seriously consider and follow advice or lessons"
+  },
+  {
+    "german": "beichten",
+    "english": "to confess",
+    "category": "B2",
+    "hint": "To admit wrongdoing or reveal secrets, especially in a religious context"
+  },
+  {
+    "german": "bejubeln",
+    "english": "to cheer",
+    "category": "B2",
+    "hint": "To celebrate or applaud enthusiastically"
+  },
+  {
+    "german": "bekanntgeben",
+    "english": "to announce",
+    "category": "B2",
+    "hint": "To make information public or officially declare something"
+  },
+  {
+    "german": "bekanntmachen",
+    "english": "to make known",
+    "category": "B2",
+    "hint": "To introduce or publicize information or people"
+  },
+  {
+    "german": "bekunden",
+    "english": "to express",
+    "category": "B2",
+    "hint": "To demonstrate or show feelings or opinions openly"
+  },
+  {
+    "german": "beleben",
+    "english": "to enliven",
+    "category": "B2",
+    "hint": "To bring life or energy to something dull or stagnant"
+  },
+  {
+    "german": "beleuchten",
+    "english": "to illuminate",
+    "category": "B2",
+    "hint": "To light up or to examine a topic from various angles"
+  },
+  {
+    "german": "bel\u00FCgen",
+    "english": "to lie to",
+    "category": "B2",
+    "hint": "To deceive someone by telling untruths directly"
+  },
+  {
+    "german": "bem\u00E4ngeln",
+    "english": "to criticize",
+    "category": "B2",
+    "hint": "To find fault with or point out defects in something"
+  },
+  {
+    "german": "bemitleiden",
+    "english": "to pity",
+    "category": "B2",
+    "hint": "To feel sympathy or compassion for someone\u0027s misfortune"
+  },
+  {
+    "german": "benachteiligen",
+    "english": "to disadvantage",
+    "category": "B2",
+    "hint": "To put someone at an unfair disadvantage or treat unfavorably"
+  },
+  {
+    "german": "beneiden",
+    "english": "to envy",
+    "category": "B2",
+    "hint": "To feel jealous of what others have or achieve"
+  },
+  {
+    "german": "beobachten",
+    "english": "to observe",
+    "category": "B2",
+    "hint": "To watch carefully or notice patterns and behaviors"
+  },
+  {
+    "german": "berechtigen",
+    "english": "to entitle",
+    "category": "B2",
+    "hint": "To give someone the right or authorization to do something"
+  },
+  {
+    "german": "bereichern",
+    "english": "to enrich",
+    "category": "B2",
+    "hint": "To make richer in quality, content, or value"
+  },
+  {
+    "german": "beruhigen",
+    "english": "to calm",
+    "category": "B2",
+    "hint": "To soothe or make someone less anxious or agitated"
+  },
+  {
+    "german": "besch\u00E4digen",
+    "english": "to damage",
+    "category": "B2",
+    "hint": "To harm or cause physical injury to something"
+  },
+  {
+    "german": "besch\u00E4ftigen",
+    "english": "to employ",
+    "category": "B2",
+    "hint": "To give work to someone or to keep busy with activities"
+  },
+  {
+    "german": "bescheinigen",
+    "english": "to certify",
+    "category": "B2",
+    "hint": "To officially confirm or attest to something in writing"
+  },
+  {
+    "german": "beschei\u00DFen",
+    "english": "to cheat",
+    "category": "B2",
+    "hint": "To deceive or swindle someone, informal and vulgar term"
+  },
+  {
+    "german": "beschleunigen",
+    "english": "to accelerate",
+    "category": "B2",
+    "hint": "To speed up or increase the pace of something"
+  },
+  {
+    "german": "beschlie\u00DFen",
+    "english": "to decide",
+    "category": "B2",
+    "hint": "To make a formal decision or resolution about something"
+  },
+  {
+    "german": "besch\u00F6nigen",
+    "english": "to sugarcoat",
+    "category": "B2",
+    "hint": "To make something seem better than it actually is"
+  },
+  {
+    "german": "beschr\u00E4nken",
+    "english": "to restrict",
+    "category": "B2",
+    "hint": "To limit or confine within certain bounds"
+  },
+  {
+    "german": "beschriften",
+    "english": "to label",
+    "category": "B2",
+    "hint": "To write text on something to identify or describe it"
+  },
+  {
+    "german": "beschuldigen",
+    "english": "to accuse",
+    "category": "B2",
+    "hint": "To charge someone with wrongdoing or blame them for something"
+  },
+  {
+    "german": "beschweren",
+    "english": "to complain",
+    "category": "B2",
+    "hint": "To express dissatisfaction or file a formal grievance"
+  },
+  {
+    "german": "besiegen",
+    "english": "to defeat",
+    "category": "B2",
+    "hint": "To overcome or win against an opponent"
+  },
+  {
+    "german": "best\u00E4tigen",
+    "english": "to confirm",
+    "category": "B2",
+    "hint": "To verify or establish the truth of something"
+  },
+  {
+    "german": "bestechen",
+    "english": "to bribe",
+    "category": "B2",
+    "hint": "To offer money or favors to influence someone corruptly"
+  },
+  {
+    "german": "bestrafen",
+    "english": "to punish",
+    "category": "B2",
+    "hint": "To impose a penalty for wrongdoing or misbehavior"
+  },
+  {
+    "german": "bestreiten",
+    "english": "to deny",
+    "category": "B2",
+    "hint": "To dispute or refuse to acknowledge the truth of something"
+  },
+  {
+    "german": "betreffen",
+    "english": "to affect",
+    "category": "B2",
+    "hint": "To have an impact on or relate to someone or something"
+  },
+  {
+    "german": "betreuen",
+    "english": "to look after",
+    "category": "B2",
+    "hint": "To care for or supervise someone or something"
+  },
+  {
+    "german": "beugen",
+    "english": "to bend",
+    "category": "B2",
+    "hint": "To curve or flex something, or to submit to authority"
+  },
+  {
+    "german": "beunruhigen",
+    "english": "to worry",
+    "category": "B2",
+    "hint": "To cause concern or make someone anxious"
+  },
+  {
+    "german": "bev\u00F6lkern",
+    "english": "to populate",
+    "category": "B2",
+    "hint": "To inhabit or fill an area with people or creatures"
+  },
+  {
+    "german": "bewaffnen",
+    "english": "to arm",
+    "category": "B2",
+    "hint": "To provide with weapons or prepare for conflict"
+  },
+  {
+    "german": "bew\u00E4hren",
+    "english": "to prove oneself",
+    "category": "B2",
+    "hint": "To demonstrate worth or reliability through actions"
+  },
+  {
+    "german": "bew\u00E4ltigen",
+    "english": "to cope with",
+    "category": "B2",
+    "hint": "To successfully deal with or manage difficult situations"
+  },
+  {
+    "german": "bewundern",
+    "english": "to admire",
+    "category": "B2",
+    "hint": "To regard with respect, pleasure, or approval"
+  },
+  {
+    "german": "bezeichnen",
+    "english": "to designate",
+    "category": "B2",
+    "hint": "To name, label, or indicate something specifically"
+  },
+  {
+    "german": "bezweifeln",
+    "english": "to doubt",
+    "category": "B2",
+    "hint": "To question the truth or certainty of something"
+  },
+  {
+    "german": "binden",
+    "english": "to bind",
+    "category": "B2",
+    "hint": "To tie together or create a connection or commitment"
+  },
+  {
+    "german": "blamieren",
+    "english": "to embarrass",
+    "category": "B2",
+    "hint": "To cause shame or make someone look foolish"
+  },
+  {
+    "german": "bleichen",
+    "english": "to bleach",
+    "category": "B2",
+    "hint": "To whiten or lighten color using chemicals or sunlight"
+  },
+  {
+    "german": "blenden",
+    "english": "to dazzle",
+    "category": "B2",
+    "hint": "To blind with bright light or impress greatly"
+  },
+  {
+    "german": "boomen",
+    "english": "to boom",
+    "category": "B2",
+    "hint": "To experience rapid growth or sudden success"
+  },
+  {
+    "german": "boykottieren",
+    "english": "to boycott",
+    "category": "B2",
+    "hint": "To refuse to deal with or participate in as a form of protest"
+  },
+  {
+    "german": "bremsen",
+    "english": "to brake",
+    "category": "B2",
+    "hint": "To slow down or stop movement, literally or figuratively"
+  },
+  {
+    "german": "brennen",
+    "english": "to burn",
+    "category": "B2",
+    "hint": "To be on fire or feel intense heat or passion"
+  },
+  {
+    "german": "b\u00FCndeln",
+    "english": "to bundle",
+    "category": "B2",
+    "hint": "To gather together or combine into a single package"
+  },
+  {
+    "german": "charakterisieren",
+    "english": "to characterize",
+    "category": "B2",
+    "hint": "To describe the distinctive features or qualities of something"
+  },
+  {
+    "german": "d\u00E4mmen",
+    "english": "to dam",
+    "category": "B2",
+    "hint": "to build a barrier to hold back water"
+  },
+  {
+    "german": "d\u00E4mpfen",
+    "english": "to muffle",
+    "category": "B2",
+    "hint": "to reduce the intensity of sound or steam"
+  },
+  {
+    "german": "dankbar sein",
+    "english": "to be grateful",
+    "category": "B2",
+    "hint": "to feel or show deep appreciation"
+  },
+  {
+    "german": "daran zweifeln",
+    "english": "to doubt",
+    "category": "B2",
+    "hint": "to not fully believe something is true"
+  },
+  {
+    "german": "darlegen",
+    "english": "to explain",
+    "category": "B2",
+    "hint": "to present facts or arguments clearly"
+  },
+  {
+    "german": "darstellen",
+    "english": "to depict",
+    "category": "B2",
+    "hint": "to show or represent in words, art or acting"
+  },
+  {
+    "german": "decken",
+    "english": "to cover",
+    "category": "B2",
+    "hint": "to pay for costs or hide something"
+  },
+  {
+    "german": "definieren",
+    "english": "to define",
+    "category": "B2",
+    "hint": "to give the exact meaning of a word"
+  },
+  {
+    "german": "demontieren",
+    "english": "to dismantle",
+    "category": "B2",
+    "hint": "to take something apart piece by piece"
+  },
+  {
+    "german": "dem\u00FCtigen",
+    "english": "to humiliate",
+    "category": "B2",
+    "hint": "to make someone feel ashamed or small"
+  },
+  {
+    "german": "deuten",
+    "english": "to interpret",
+    "category": "B2",
+    "hint": "to explain the meaning of signs or behavior"
+  },
+  {
+    "german": "dichten",
+    "english": "to seal",
+    "category": "B2",
+    "hint": "to make something airtight or watertight"
+  },
+  {
+    "german": "diktieren",
+    "english": "to dictate",
+    "category": "B2",
+    "hint": "to speak so someone else can write it down"
+  },
+  {
+    "german": "diskutieren",
+    "english": "to debate",
+    "category": "B2",
+    "hint": "to argue or discuss a topic seriously"
+  },
+  {
+    "german": "distanziert",
+    "english": "to distance oneself",
+    "category": "B2",
+    "hint": "to keep an emotional or social distance"
+  },
+  {
+    "german": "dolmetschen",
+    "english": "to interpret",
+    "category": "B2",
+    "hint": "to translate spoken language in real time"
+  },
+  {
+    "german": "dopen",
+    "english": "to dope",
+    "category": "B2",
+    "hint": "to give performance-enhancing drugs (sport)"
+  },
+  {
+    "german": "dosieren",
+    "english": "to dose",
+    "category": "B2",
+    "hint": "to measure out medicine or ingredients exactly"
+  },
+  {
+    "german": "dr\u00E4ngen",
+    "english": "to urge",
+    "category": "B2",
+    "hint": "to strongly push or pressure someone"
+  },
+  {
+    "german": "drehen",
+    "english": "to film",
+    "category": "B2",
+    "hint": "to shoot a movie or turn something around"
+  },
+  {
+    "german": "drosseln",
+    "english": "to throttle",
+    "category": "B2",
+    "hint": "to reduce speed, output or internet bandwidth"
+  },
+  {
+    "german": "drucksen",
+    "english": "to hem and haw",
+    "category": "B2",
+    "hint": "to speak evasively, avoiding a clear answer"
+  },
+  {
+    "german": "dulden",
+    "english": "to tolerate",
+    "category": "B2",
+    "hint": "to allow something even if you don\u2019t like it"
+  },
+  {
+    "german": "durchblicken",
+    "english": "to understand",
+    "category": "B2",
+    "hint": "to finally get what\u2019s going on (informal)"
+  },
+  {
+    "german": "durchbrechen",
+    "english": "to break through",
+    "category": "B2",
+    "hint": "to force a way through a barrier or taboo"
+  },
+  {
+    "german": "durchfallen",
+    "english": "to fail",
+    "category": "B2",
+    "hint": "to not pass an exam or test"
+  },
+  {
+    "german": "durchforsten",
+    "english": "to search thoroughly",
+    "category": "B2",
+    "hint": "to comb through documents or a forest"
+  },
+  {
+    "german": "durchhalten",
+    "english": "to persevere",
+    "category": "B2",
+    "hint": "to keep going despite difficulties"
+  },
+  {
+    "german": "durchlaufen",
+    "english": "to go through",
+    "category": "B2",
+    "hint": "to complete a process or training program"
+  },
+  {
+    "german": "durchlesen",
+    "english": "to read through",
+    "category": "B2",
+    "hint": "to read a text from beginning to end"
+  },
+  {
+    "german": "durchsetzen",
+    "english": "to enforce",
+    "category": "B2",
+    "hint": "to make sure a rule or your will is followed"
+  },
+  {
+    "german": "durchsickern",
+    "english": "to leak",
+    "category": "B2",
+    "hint": "information slowly becomes public"
+  },
+  {
+    "german": "durchstarten",
+    "english": "to take off again",
+    "category": "B2",
+    "hint": "plane aborts landing and climbs, or to launch a career"
+  },
+  {
+    "german": "eifers\u00FCchtig sein",
+    "english": "to be jealous",
+    "category": "B2",
+    "hint": "to feel unhappy because someone has something you want"
+  },
+  {
+    "german": "einbauen",
+    "english": "to install",
+    "category": "B2",
+    "hint": "to build or fit something into a larger structure"
+  },
+  {
+    "german": "einbeziehen",
+    "english": "to involve",
+    "category": "B2",
+    "hint": "to include someone in a process or decision"
+  },
+  {
+    "german": "einbrechen",
+    "english": "to burgle",
+    "category": "B2",
+    "hint": "to illegally enter a building to steal"
+  },
+  {
+    "german": "einb\u00FC\u00DFen",
+    "english": "to lose",
+    "category": "B2",
+    "hint": "to suffer a loss of reputation, money or quality"
+  },
+  {
+    "german": "eind\u00E4mmen",
+    "english": "to contain",
+    "category": "B2",
+    "hint": "to limit the spread of a disease or problem"
+  },
+  {
+    "german": "eindringen",
+    "english": "to intrude",
+    "category": "B2",
+    "hint": "to force entry or penetrate deeply"
+  },
+  {
+    "german": "einf\u00E4deln",
+    "english": "to initiate",
+    "category": "B2",
+    "hint": "to cleverly start or arrange something"
+  },
+  {
+    "german": "einf\u00FChren",
+    "english": "to introduce",
+    "category": "B2",
+    "hint": "to bring in a new law, product or person"
+  },
+  {
+    "german": "eingehen",
+    "english": "to enter into",
+    "category": "B2",
+    "hint": "to start a contract, risk or relationship"
+  },
+  {
+    "german": "eingreifen",
+    "english": "to intervene",
+    "category": "B2",
+    "hint": "to step in to change a situation"
+  },
+  {
+    "german": "einheimsen",
+    "english": "to pocket",
+    "category": "B2",
+    "hint": "to collect prizes or profits (often greedily)"
+  },
+  {
+    "german": "einholen",
+    "english": "to obtain",
+    "category": "B2",
+    "hint": "to get permission or catch up with someone"
+  },
+  {
+    "german": "einkalkulieren",
+    "english": "to factor in",
+    "category": "B2",
+    "hint": "to include in your calculations or plans"
+  },
+  {
+    "german": "einleben",
+    "english": "to settle in",
+    "category": "B2",
+    "hint": "to get comfortable in a new place (sich einleben)"
+  },
+  {
+    "german": "einleiten",
+    "english": "to initiate",
+    "category": "B2",
+    "hint": "to officially start a procedure or investigation"
+  },
+  {
+    "german": "einnehmen",
+    "english": "to take",
+    "category": "B2",
+    "hint": "to swallow medicine or capture a city"
+  },
+  {
+    "german": "einordnen",
+    "english": "to classify",
+    "category": "B2",
+    "hint": "to put something in the right category"
+  },
+  {
+    "german": "einplanen",
+    "english": "to schedule",
+    "category": "B2",
+    "hint": "to include in your timetable or budget"
+  },
+  {
+    "german": "einpr\u00E4gen",
+    "english": "to memorize",
+    "category": "B2",
+    "hint": "to firmly fix something in your memory (sich einpr\u00E4gen)"
+  },
+  {
+    "german": "einr\u00E4umen",
+    "english": "to concede",
+    "category": "B2",
+    "hint": "to admit that something is true"
+  },
+  {
+    "german": "einreichen",
+    "english": "to submit",
+    "category": "B2",
+    "hint": "to hand in an application or document"
+  },
+  {
+    "german": "einreisen",
+    "english": "to enter the country",
+    "category": "B2",
+    "hint": "to arrive in a country (immigration)"
+  },
+  {
+    "german": "einschalten",
+    "english": "to switch on",
+    "category": "B2",
+    "hint": "to turn on a device on or call the police"
+  },
+  {
+    "german": "einsch\u00E4tzen",
+    "english": "to estimate",
+    "category": "B2",
+    "hint": "to judge a situation or person\u2019s ability"
+  },
+  {
+    "german": "einschr\u00E4nken",
+    "english": "to restrict",
+    "category": "B2",
+    "hint": "to limit freedom, spending, etc."
+  },
+  {
+    "german": "einschreiben",
+    "english": "to enroll",
+    "category": "B2",
+    "hint": "to register officially at university or by registered mail"
+  },
+  {
+    "german": "einsch\u00FCchtern",
+    "english": "to intimidate",
+    "category": "B2",
+    "hint": "to frighten someone into doing something"
+  },
+  {
+    "german": "einsehen",
+    "english": "to realize",
+    "category": "B2",
+    "hint": "to understand or accept a fact"
+  },
+  {
+    "german": "einstellen",
+    "english": "to adjust",
+    "category": "B2",
+    "hint": "to set a device or hire/stop working"
+  },
+  {
+    "german": "eintauschen",
+    "english": "to exchange",
+    "category": "B2",
+    "hint": "to swap one thing for another"
+  },
+  {
+    "german": "eintreffen",
+    "english": "to arrive",
+    "category": "B2",
+    "hint": "to reach the destination (formal)"
+  },
+  {
+    "german": "einweisen",
+    "english": "to instruct",
+    "category": "B2",
+    "hint": "to show someone how to use something or admit to hospital"
+  },
+  {
+    "german": "einwerfen",
+    "english": "to throw in",
+    "category": "B2",
+    "hint": "to post a letter or interrupt with a comment"
+  },
+  {
+    "german": "einziehen",
+    "english": "to move in",
+    "category": "B2",
+    "hint": "to start living in a new flat or collect money"
+  },
+  {
+    "german": "einzw\u00E4ngen",
+    "english": "to squeeze in",
+    "category": "B2",
+    "hint": "to force into a tight space (sich einzw\u00E4ngen)"
+  },
+  {
+    "german": "empfangen",
+    "english": "to receive",
+    "category": "B2",
+    "hint": "to welcome guests or get a signal"
+  },
+  {
+    "german": "empfehlen",
+    "english": "to recommend",
+    "category": "B2",
+    "hint": "to suggest something is good"
+  },
+  {
+    "german": "empfinden",
+    "english": "to feel",
+    "category": "B2",
+    "hint": "to experience an emotion deeply"
+  },
+  {
+    "german": "entgegenkommen",
+    "english": "to meet halfway",
+    "category": "B2",
+    "hint": "to compromise or walk toward someone"
+  },
+  {
+    "german": "entgegenwirken",
+    "english": "to counteract",
+    "category": "B2",
+    "hint": "to work against an effect"
+  },
+  {
+    "german": "entgleisen",
+    "english": "to derail",
+    "category": "B2",
+    "hint": "train leaves the tracks or conversation goes off-topic"
+  },
+  {
+    "german": "entkriminalisieren",
+    "english": "to decriminalize",
+    "category": "B2",
+    "hint": "to make something no longer a crime"
+  },
+  {
+    "german": "entlassen",
+    "english": "to dismiss",
+    "category": "B2",
+    "hint": "to fire from a job or release from hospital"
+  },
+  {
+    "german": "entmutigen",
+    "english": "to discourage",
+    "category": "B2",
+    "hint": "to make someone lose motivation"
+  },
+  {
+    "german": "entpuppen",
+    "english": "to turn out to be",
+    "category": "B2",
+    "hint": "to reveal its true nature (sich entpuppen als)"
+  },
+  {
+    "german": "entr\u00FCsten",
+    "english": "to outrage",
+    "category": "B2",
+    "hint": "to make someone very angry about injustice (sich entr\u00FCsten)"
+  },
+  {
+    "german": "entsch\u00E4digen",
+    "english": "to compensate",
+    "category": "B2",
+    "hint": "to pay money for loss or damage"
+  },
+  {
+    "german": "entsorgen",
+    "english": "to dispose of",
+    "category": "B2",
+    "hint": "to throw away rubbish correctly"
+  },
+  {
+    "german": "entspannen",
+    "english": "to relax",
+    "category": "B2",
+    "hint": "to reduce stress (sich entspannen)"
+  },
+  {
+    "german": "entt\u00E4uschen",
+    "english": "to disappoint",
+    "category": "B2",
+    "hint": "to fail to meet expectations"
+  },
+  {
+    "german": "entwerfen",
+    "english": "to design",
+    "category": "B2",
+    "hint": "to create the first plan or sketch"
+  },
+  {
+    "german": "erachten",
+    "english": "to consider",
+    "category": "B2",
+    "hint": "to regard or judge (formal)"
+  },
+  {
+    "german": "er\u00F6rtern",
+    "english": "to discuss",
+    "category": "B2",
+    "hint": "to examine a topic in detail"
+  },
+  {
+    "german": "erregen",
+    "english": "to arouse",
+    "category": "B2",
+    "hint": "to cause strong feelings or attention"
+  },
+  {
+    "german": "ersparen",
+    "english": "to spare",
+    "category": "B2",
+    "hint": "to save someone trouble or pain"
+  },
+  {
+    "german": "erw\u00E4gen",
+    "english": "to consider",
+    "category": "B2",
+    "hint": "to think carefully about an option"
+  },
+  {
+    "german": "erweitern",
+    "english": "to expand",
+    "category": "B2",
+    "hint": "to make bigger or add to"
+  },
+  {
+    "german": "erwirken",
+    "english": "to obtain",
+    "category": "B2",
+    "hint": "to achieve something through official channels"
+  },
+  {
+    "german": "erz\u00FCrnen",
+    "english": "to anger",
+    "category": "B2",
+    "hint": "to make someone extremely angry (formal)"
+  },
+  {
+    "german": "etablieren",
+    "english": "to establish",
+    "category": "B2",
+    "hint": "to set up permanently or gain acceptance"
+  },
+  {
+    "german": "ethisch",
+    "english": "to act ethically",
+    "category": "B2",
+    "hint": "to behave according to moral principles"
+  },
+  {
+    "german": "evakuieren",
+    "english": "to evacuate",
+    "category": "B2",
+    "hint": "to remove people from a dangerous area"
+  },
+  {
+    "german": "existiert",
+    "english": "to exist",
+    "category": "B2",
+    "hint": "to be real or be present in reality"
+  },
+  {
+    "german": "fabulieren",
+    "english": "to fantasize",
+    "category": "B2",
+    "hint": "to make up elaborate, often untrue stories"
+  },
+  {
+    "german": "f\u00E4lschen",
+    "english": "to forge",
+    "category": "B2",
+    "hint": "to fake documents, money, or signatures"
+  },
+  {
+    "german": "faszinieren",
+    "english": "to fascinate",
+    "category": "B2",
+    "hint": "to completely captivate someone\u2019s interest"
+  },
+  {
+    "german": "fehlinterpretieren",
+    "english": "to misinterpret",
+    "category": "B2",
+    "hint": "to understand something the wrong way"
+  },
+  {
+    "german": "feilschen",
+    "english": "to haggle",
+    "category": "B2",
+    "hint": "to bargain hard over the price at a market"
+  },
+  {
+    "german": "fernmelden",
+    "english": "to deregister",
+    "category": "B2",
+    "hint": "to officially unregister your address"
+  },
+  {
+    "german": "fesseln",
+    "english": "to captivate",
+    "category": "B2",
+    "hint": "to hold someone\u2019s attention completely (or tie up)"
+  },
+  {
+    "german": "festlegen",
+    "english": "to determine",
+    "category": "B2",
+    "hint": "to fix a date, rule, or decision firmly"
+  },
+  {
+    "german": "feucht",
+    "english": "to moisten",
+    "category": "B2",
+    "hint": "to make slightly wet (feucht machen)"
+  },
+  {
+    "german": "finanzieren",
+    "english": "to finance",
+    "category": "B2",
+    "hint": "to provide the money for a project"
+  },
+  {
+    "german": "fixieren",
+    "english": "to fixate",
+    "category": "B2",
+    "hint": "to stare intensely or fasten securely"
+  },
+  {
+    "german": "fl\u00FCchten",
+    "english": "to flee",
+    "category": "B2",
+    "hint": "to escape quickly from danger"
+  },
+  {
+    "german": "formulieren",
+    "english": "to formulate",
+    "category": "B2",
+    "hint": "to express something carefully in words"
+  },
+  {
+    "german": "freisetzen",
+    "english": "to release",
+    "category": "B2",
+    "hint": "to set free or discharge chemicals/energy"
+  },
+  {
+    "german": "freisprechen",
+    "english": "to acquit",
+    "category": "B2",
+    "hint": "to declare someone not guilty in court"
+  },
+  {
+    "german": "fressen",
+    "english": "to devour",
+    "category": "B2",
+    "hint": "how animals eat \u2013 or to eat greedily"
+  },
+  {
+    "german": "fristen",
+    "english": "to eke out",
+    "category": "B2",
+    "hint": "to barely manage to live (ein Dasein fristen)"
+  },
+  {
+    "german": "fr\u00F6nen",
+    "english": "to indulge in",
+    "category": "B2",
+    "hint": "to give yourself over to a pleasure or vice"
+  },
+  {
+    "german": "frotzeln",
+    "english": "to tease",
+    "category": "B2",
+    "hint": "to mock someone in a playful, light-hearted way"
+  },
+  {
+    "german": "funken",
+    "english": "to radio",
+    "category": "B2",
+    "hint": "to send a message by radio"
+  },
+  {
+    "german": "g\u00E4hnen",
+    "english": "to yawn",
+    "category": "B2",
+    "hint": "to open your mouth wide when tired or bored"
+  },
+  {
+    "german": "geb\u00E4ren",
+    "english": "to give birth",
+    "category": "B2",
+    "hint": "formal word for delivering a baby"
+  },
+  {
+    "german": "gebrechen",
+    "english": "to ail",
+    "category": "B2",
+    "hint": "to suffer from a chronic illness (es gebricht ihm an\u2026)"
+  },
+  {
+    "german": "gedenken",
+    "english": "to commemorate",
+    "category": "B2",
+    "hint": "to remember or honor solemnly"
+  },
+  {
+    "german": "gef\u00E4hrden",
+    "english": "to endanger",
+    "category": "B2",
+    "hint": "to put someone or something at risk"
+  },
+  {
+    "german": "gegen\u00FCberstellen",
+    "english": "to confront",
+    "category": "B2",
+    "hint": "to make two people or things face each other"
+  },
+  {
+    "german": "geheimhalten",
+    "english": "to keep secret",
+    "category": "B2",
+    "hint": "to make sure nobody finds out"
+  },
+  {
+    "german": "gelten",
+    "english": "to apply",
+    "category": "B2",
+    "hint": "to be valid or considered as"
+  },
+  {
+    "german": "genie\u00DFen",
+    "english": "to enjoy",
+    "category": "B2",
+    "hint": "to really take pleasure in something"
+  },
+  {
+    "german": "geraten",
+    "english": "to get into",
+    "category": "B2",
+    "hint": "to end up in a situation, good or bad"
+  },
+  {
+    "german": "gerecht werden",
+    "english": "to do justice to",
+    "category": "B2",
+    "hint": "to treat fairly or fully live up to expectations"
+  },
+  {
+    "german": "gering sch\u00E4tzen",
+    "english": "to underestimate",
+    "category": "B2",
+    "hint": "to think something is less important than it is"
+  },
+  {
+    "german": "gestalten",
+    "english": "to design",
+    "category": "B2",
+    "hint": "to creatively shape or organize something"
+  },
+  {
+    "german": "gew\u00E4hrleisten",
+    "english": "to ensure",
+    "category": "B2",
+    "hint": "to officially guarantee something will happen"
+  },
+  {
+    "german": "gl\u00E4nzen",
+    "english": "to shine",
+    "category": "B2",
+    "hint": "to reflect light or perform brilliantly"
+  },
+  {
+    "german": "gleiten",
+    "english": "to glide",
+    "category": "B2",
+    "hint": "to move smoothly and effortlessly"
+  },
+  {
+    "german": "glorifizieren",
+    "english": "to glorify",
+    "category": "B2",
+    "hint": "to praise or idealize excessively"
+  },
+  {
+    "german": "gruseln",
+    "english": "to creep out",
+    "category": "B2",
+    "hint": "to make someone\u2019s skin crawl (sich gruseln)"
+  },
+  {
+    "german": "gurgeln",
+    "english": "to gargle",
+    "category": "B2",
+    "hint": "to rinse your throat with liquid making a bubbling sound"
+  },
+  {
+    "german": "handhaben",
+    "english": "to handle",
+    "category": "B2",
+    "hint": "to deal with a situation or use a tool correctly"
+  },
+  {
+    "german": "harren",
+    "english": "to await",
+    "category": "B2",
+    "hint": "to wait patiently and formally (literary)"
+  },
+  {
+    "german": "h\u00E4ufen",
+    "english": "to pile up",
+    "category": "B2",
+    "hint": "to accumulate things in a heap (sich h\u00E4ufen)"
+  },
+  {
+    "german": "hegen",
+    "english": "to harbor",
+    "category": "B2",
+    "hint": "to nurture feelings, hopes or animals"
+  },
+  {
+    "german": "heilen",
+    "english": "to cure",
+    "category": "B2",
+    "hint": "to make completely healthy again"
+  },
+  {
+    "german": "herabsetzen",
+    "english": "to degrade",
+    "category": "B2",
+    "hint": "to lower in value, rank or insult someone"
+  },
+  {
+    "german": "heranf\u00FChren",
+    "english": "to introduce to",
+    "category": "B2",
+    "hint": "to gently guide someone toward a topic or skill"
+  },
+  {
+    "german": "herausfordern",
+    "english": "to challenge",
+    "category": "B2",
+    "hint": "to provoke or dare someone"
+  },
+  {
+    "german": "herausgeben",
+    "english": "to publish",
+    "category": "B2",
+    "hint": "to release a book, magazine or give change"
+  },
+  {
+    "german": "herausstellen",
+    "english": "to turn out",
+    "category": "B2",
+    "hint": "to prove to be in the end (sich herausstellen)"
+  },
+  {
+    "german": "herbeif\u00FChren",
+    "english": "to bring about",
+    "category": "B2",
+    "hint": "to cause or make something happen"
+  },
+  {
+    "german": "herrschen",
+    "english": "to prevail",
+    "category": "B2",
+    "hint": "to rule, dominate or be the current situation"
+  },
+  {
+    "german": "hervorheben",
+    "english": "to emphasize",
+    "category": "B2",
+    "hint": "to stress or highlight something important"
+  },
+  {
+    "german": "hervorrufen",
+    "english": "to cause",
+    "category": "B2",
+    "hint": "to trigger a reaction, memory or applause"
+  },
+  {
+    "german": "heucheln",
+    "english": "to pretend",
+    "category": "B2",
+    "hint": "to fake feelings hypocritically"
+  },
+  {
+    "german": "hinausgehen",
+    "english": "to exceed",
+    "category": "B2",
+    "hint": "to go beyond a limit or expectation"
+  },
+  {
+    "german": "hinausz\u00F6gern",
+    "english": "to delay",
+    "category": "B2",
+    "hint": "to deliberately postpone something"
+  },
+  {
+    "german": "hineinversetzen",
+    "english": "to empathize",
+    "category": "B2",
+    "hint": "to put yourself in someone else\u2019s position (sich hineinversetzen)"
+  },
+  {
+    "german": "hinf\u00E4llig werden",
+    "english": "to become invalid",
+    "category": "B2",
+    "hint": "a rule or offer no longer applies"
+  },
+  {
+    "german": "hinken",
+    "english": "to limp",
+    "category": "B2",
+    "hint": "to walk with an uneven, painful step"
+  },
+  {
+    "german": "hinterfragen",
+    "english": "to question",
+    "category": "B2",
+    "hint": "to critically examine motives or facts"
+  },
+  {
+    "german": "hinterlassen",
+    "english": "to leave behind",
+    "category": "B2",
+    "hint": "to abandon or bequeath after death"
+  },
+  {
+    "german": "hinterlegen",
+    "english": "to deposit",
+    "category": "B2",
+    "hint": "to leave money or keys in safe custody"
+  },
+  {
+    "german": "hinterziehen",
+    "english": "to evade",
+    "category": "B2",
+    "hint": "to illegally avoid taxes or duties"
+  },
+  {
+    "german": "huldigen",
+    "english": "to pay homage",
+    "category": "B2",
+    "hint": "to show deep respect or tribute"
+  },
+  {
+    "german": "h\u00FCten",
+    "english": "to guard",
+    "category": "B2",
+    "hint": "to watch over or beware (sich h\u00FCten vor)"
+  },
+  {
+    "german": "illustrieren",
+    "english": "to illustrate",
+    "category": "B2",
+    "hint": "to explain with pictures or examples"
+  },
+  {
+    "german": "implizieren",
+    "english": "to imply",
+    "category": "B2",
+    "hint": "to suggest something without saying it directly"
+  },
+  {
+    "german": "importieren",
+    "english": "to import",
+    "category": "B2",
+    "hint": "to bring goods or data from another country"
+  },
+  {
+    "german": "indizieren",
+    "english": "to index",
+    "category": "B2",
+    "hint": "to create an index or adjust for inflation"
+  },
+  {
+    "german": "infizieren",
+    "english": "to infect",
+    "category": "B2",
+    "hint": "to contaminate with a virus or bacteria"
+  },
+  {
+    "german": "inhalieren",
+    "english": "to inhale",
+    "category": "B2",
+    "hint": "to breathe in medicine or smoke deeply"
+  },
+  {
+    "german": "injizieren",
+    "english": "to inject",
+    "category": "B2",
+    "hint": "to insert liquid with a syringe"
+  },
+  {
+    "german": "inkludieren",
+    "english": "to include",
+    "category": "B2",
+    "hint": "to contain as part of a whole"
+  },
+  {
+    "german": "inspirieren",
+    "english": "to inspire",
+    "category": "B2",
+    "hint": "to fill someone with creativity or motivation"
+  },
+  {
+    "german": "installieren",
+    "english": "to install",
+    "category": "B2",
+    "hint": "to set up software or technical equipment"
+  },
+  {
+    "german": "inszenieren",
+    "english": "to stage",
+    "category": "B2",
+    "hint": "to direct a play or deliberately create a scene"
+  },
+  {
+    "german": "integrieren",
+    "english": "to integrate",
+    "category": "B2",
+    "hint": "to make someone/something part of a group"
+  },
+  {
+    "german": "intendieren",
+    "english": "to intend",
+    "category": "B2",
+    "hint": "to have as a plan or purpose (formal)"
+  },
+  {
+    "german": "interpretieren",
+    "english": "to interpret",
+    "category": "B2",
+    "hint": "to explain the meaning of something"
+  },
+  {
+    "german": "irref\u00FChren",
+    "english": "to mislead",
+    "category": "B2",
+    "hint": "to give a wrong impression on purpose"
+  },
+  {
+    "german": "isolieren",
+    "english": "to isolate",
+    "category": "B2",
+    "hint": "to separate from others or insulate"
+  },
+  {
+    "german": "jagen",
+    "english": "to hunt",
+    "category": "B2",
+    "hint": "to chase animals or rush around stressed"
+  },
+  {
+    "german": "jammern",
+    "english": "to whine",
+    "category": "B2",
+    "hint": "to complain in an annoying, pitiful way"
+  },
+  {
+    "german": "jauchzen",
+    "english": "to cheer",
+    "category": "B2",
+    "hint": "to shout with joy"
+  },
+  {
+    "german": "jubeln",
+    "english": "to rejoice",
+    "category": "B2",
+    "hint": "to celebrate loudly and happily"
+  },
+  {
+    "german": "kandidieren",
+    "english": "to run for office",
+    "category": "B2",
+    "hint": "to stand as a candidate in an election"
+  },
+  {
+    "german": "kassieren",
+    "english": "to collect",
+    "category": "B2",
+    "hint": "to take in money, fines or cancel something"
+  },
+  {
+    "german": "katalogisieren",
+    "english": "to catalog",
+    "category": "B2",
+    "hint": "to systematically list items in a catalog"
+  },
+  {
+    "german": "kategorisieren",
+    "english": "to categorize",
+    "category": "B2",
+    "hint": "to sort things into groups or types"
+  },
+  {
+    "german": "kennzeichnen",
+    "english": "to mark",
+    "category": "B2",
+    "hint": "to label or identify with a sign"
+  },
+  {
+    "german": "klagen",
+    "english": "to sue",
+    "category": "B2",
+    "hint": "to take someone to court or complain bitterly"
+  },
+  {
+    "german": "kl\u00E4ren",
+    "english": "to clarify",
+    "category": "B2",
+    "hint": "to make something clear or solve a misunderstanding"
+  },
+  {
+    "german": "klassifizieren",
+    "english": "to classify",
+    "category": "B2",
+    "hint": "to put into official categories or levels"
+  },
+  {
+    "german": "kneten",
+    "english": "to knead",
+    "category": "B2",
+    "hint": "to work dough or muscles with your hands"
+  },
+  {
+    "german": "kombinieren",
+    "english": "to combine",
+    "category": "B2",
+    "hint": "to mix or join things together"
+  },
+  {
+    "german": "kommentieren",
+    "english": "to comment",
+    "category": "B2",
+    "hint": "to give an opinion or explanation"
+  },
+  {
+    "german": "kommunizieren",
+    "english": "to communicate",
+    "category": "B2",
+    "hint": "to exchange information clearly"
+  },
+  {
+    "german": "kompensieren",
+    "english": "to compensate",
+    "category": "B2",
+    "hint": "to balance out a loss or disadvantage"
+  },
+  {
+    "german": "komplizieren",
+    "english": "to complicate",
+    "category": "B2",
+    "hint": "to make something unnecessarily difficult"
+  },
+  {
+    "german": "konditionieren",
+    "english": "to condition",
+    "category": "B2",
+    "hint": "to train the body or influence behavior"
+  },
+  {
+    "german": "konfrontieren",
+    "english": "to confront",
+    "category": "B2",
+    "hint": "to face someone directly with a problem"
+  },
+  {
+    "german": "kongruent sein",
+    "english": "to be congruent",
+    "category": "B2",
+    "hint": "to match perfectly in shape or opinion"
+  },
+  {
+    "german": "konkretisieren",
+    "english": "to specify",
+    "category": "B2",
+    "hint": "to make something precise and detailed"
+  },
+  {
+    "german": "konsumieren",
+    "english": "to consume",
+    "category": "B2",
+    "hint": "to use up food, energy or media"
+  },
+  {
+    "german": "kontern",
+    "english": "to counter",
+    "category": "B2",
+    "hint": "to respond quickly to an attack or argument"
+  },
+  {
+    "german": "kontrastieren",
+    "english": "to contrast",
+    "category": "B2",
+    "hint": "to show strong differences"
+  },
+  {
+    "german": "kontrollieren",
+    "english": "to control",
+    "category": "B2",
+    "hint": "to check or keep power over something"
+  },
+  {
+    "german": "konzipieren",
+    "english": "to conceptualize",
+    "category": "B2",
+    "hint": "to plan or design an idea from the start"
+  },
+  {
+    "german": "kooperieren",
+    "english": "to cooperate",
+    "category": "B2",
+    "hint": "to work together toward the same goal"
+  },
+  {
+    "german": "koordinieren",
+    "english": "to coordinate",
+    "category": "B2",
+    "hint": "to organize people or activities smoothly"
+  },
+  {
+    "german": "kr\u00E4nken",
+    "english": "to offend",
+    "category": "B2",
+    "hint": "to hurt someone\u2019s feelings deeply"
+  },
+  {
+    "german": "kreativ sein",
+    "english": "to be creative",
+    "category": "B2",
+    "hint": "to come up with original ideas"
+  },
+  {
+    "german": "k\u00FCndigen",
+    "english": "to terminate",
+    "category": "B2",
+    "hint": "to quit a job or cancel a contract"
+  },
+  {
+    "german": "kursieren",
+    "english": "to circulate",
+    "category": "B2",
+    "hint": "rumors or money go around"
+  },
+  {
+    "german": "k\u00FCrzen",
+    "english": "to cut",
+    "category": "B2",
+    "hint": "to shorten text or reduce budgets"
+  },
+  {
+    "german": "lagern",
+    "english": "to store",
+    "category": "B2",
+    "hint": "to keep goods in a warehouse"
+  },
+  {
+    "german": "l\u00E4hmen",
+    "english": "to paralyze",
+    "category": "B2",
+    "hint": "to make unable to move or act"
+  },
+  {
+    "german": "landen",
+    "english": "to land",
+    "category": "B2",
+    "hint": "plane touches down or end up somewhere"
+  },
+  {
+    "german": "l\u00E4stern",
+    "english": "to gossip",
+    "category": "B2",
+    "hint": "to speak badly about someone behind their back"
+  },
+  {
+    "german": "l\u00E4uten",
+    "english": "to ring",
+    "category": "B2",
+    "hint": "church bells or phone rings solemnly"
+  },
+  {
+    "german": "leaken",
+    "english": "to leak",
+    "category": "B2",
+    "hint": "to deliberately release secret information"
+  },
+  {
+    "german": "lehnen",
+    "english": "to lean",
+    "category": "B2",
+    "hint": "to rest against something or reject (ablehnen)"
+  },
+  {
+    "german": "liberalisieren",
+    "english": "to liberalize",
+    "category": "B2",
+    "hint": "to make rules or markets freer"
+  },
+  {
+    "german": "liefern",
+    "english": "to deliver",
+    "category": "B2",
+    "hint": "to bring goods or provide proof"
+  },
+  {
+    "german": "loben",
+    "english": "to praise",
+    "category": "B2",
+    "hint": "to say someone did something well"
+  },
+  {
+    "german": "lockern",
+    "english": "to loosen",
+    "category": "B2",
+    "hint": "to make rules or muscles less tight"
+  },
+  {
+    "german": "lokalisieren",
+    "english": "to locate",
+    "category": "B2",
+    "hint": "to find the exact position of something"
+  },
+  {
+    "german": "l\u00FCften",
+    "english": "to air",
+    "category": "B2",
+    "hint": "to let fresh air into a room or reveal a secret"
+  },
+  {
+    "german": "l\u00FCgen",
+    "english": "to lie",
+    "category": "B2",
+    "hint": "to say something that is not true"
+  },
+  {
+    "german": "m\u00E4hen",
+    "english": "to mow",
+    "category": "B2",
+    "hint": "to cut grass with a lawnmower"
+  },
+  {
+    "german": "mahnen",
+    "english": "to admonish",
+    "category": "B2",
+    "hint": "to warn or urgently remind someone (also: payment reminder)"
+  },
+  {
+    "german": "manipulieren",
+    "english": "to manipulate",
+    "category": "B2",
+    "hint": "to influence or control someone/something cleverly or unfairly"
+  },
+  {
+    "german": "markieren",
+    "english": "to mark",
+    "category": "B2",
+    "hint": "to highlight text or tag something"
+  },
+  {
+    "german": "m\u00E4\u00DFigen",
+    "english": "to moderate",
+    "category": "B2",
+    "hint": "to restrain yourself or reduce intensity (sich m\u00E4\u00DFigen)"
+  },
+  {
+    "german": "melden",
+    "english": "to report",
+    "category": "B2",
+    "hint": "to register, report an incident or announce yourself"
+  },
+  {
+    "german": "messen",
+    "english": "to measure",
+    "category": "B2",
+    "hint": "to determine size, amount or compare (sich messen mit)"
+  },
+  {
+    "german": "migrieren",
+    "english": "to migrate",
+    "category": "B2",
+    "hint": "to move from one country or system to another"
+  },
+  {
+    "german": "mildern",
+    "english": "to mitigate",
+    "category": "B2",
+    "hint": "to make a problem or punishment less severe"
+  },
+  {
+    "german": "mindern",
+    "english": "to reduce",
+    "category": "B2",
+    "hint": "to lower value, quality or intensity"
+  },
+  {
+    "german": "minimieren",
+    "english": "to minimize",
+    "category": "B2",
+    "hint": "to reduce to the smallest possible amount or importance"
+  },
+  {
+    "german": "missantachten",
+    "english": "to disregard",
+    "category": "B2",
+    "hint": "to deliberately ignore rules or advice"
+  },
+  {
+    "german": "missbilligen",
+    "english": "to disapprove",
+    "category": "B2",
+    "hint": "to formally express disapproval"
+  },
+  {
+    "german": "missbrauchen",
+    "english": "to abuse",
+    "category": "B2",
+    "hint": "to misuse power, trust or substances"
+  },
+  {
+    "german": "mobilisieren",
+    "english": "to mobilize",
+    "category": "B2",
+    "hint": "to gather forces or resources for action"
+  },
+  {
+    "german": "moderieren",
+    "english": "to moderate",
+    "category": "B2",
+    "hint": "to lead a discussion or panel"
+  },
+  {
+    "german": "modifizieren",
+    "english": "to modify",
+    "category": "B2",
+    "hint": "to change something slightly"
+  },
+  {
+    "german": "motivieren",
+    "english": "to motivate",
+    "category": "B2",
+    "hint": "to give someone a reason to act"
+  },
+  {
+    "german": "m\u00FCnden",
+    "english": "to flow into",
+    "category": "B2",
+    "hint": "river flows into the sea or discussion leads to a result"
+  },
+  {
+    "german": "munkeln",
+    "english": "to rumor",
+    "category": "B2",
+    "hint": "people whisper that\u2026 (es wird gemunkelt)"
+  },
+  {
+    "german": "mutma\u00DFen",
+    "english": "to presume",
+    "category": "B2",
+    "hint": "to make an educated guess"
+  },
+  {
+    "german": "nachbessern",
+    "english": "to improve",
+    "category": "B2",
+    "hint": "to fix or upgrade something afterward"
+  },
+  {
+    "german": "nacheifern",
+    "english": "to emulate",
+    "category": "B2",
+    "hint": "to try to equal or surpass a role model"
+  },
+  {
+    "german": "nachforschen",
+    "english": "to investigate",
+    "category": "B2",
+    "hint": "to research or dig deeper into something"
+  },
+  {
+    "german": "nachgeben",
+    "english": "to give in",
+    "category": "B2",
+    "hint": "to yield in an argument or physically sag"
+  },
+  {
+    "german": "nachhaken",
+    "english": "to follow up",
+    "category": "B2",
+    "hint": "to ask again for more details"
+  },
+  {
+    "german": "nachkommen",
+    "english": "to comply",
+    "category": "B2",
+    "hint": "to fulfill a request or catch up with someone"
+  },
+  {
+    "german": "nachlassen",
+    "english": "to decrease",
+    "category": "B2",
+    "hint": "intensity, rain or effort lets up"
+  },
+  {
+    "german": "nachpr\u00FCfen",
+    "english": "to verify",
+    "category": "B2",
+    "hint": "to check if something is correct"
+  },
+  {
+    "german": "nachrechnen",
+    "english": "to recalculate",
+    "category": "B2",
+    "hint": "to do the math again to confirm"
+  },
+  {
+    "german": "nachsagen",
+    "english": "to say about someone",
+    "category": "B2",
+    "hint": "people say he is\u2026 (man sagt ihm nach)"
+  },
+  {
+    "german": "nachtragen",
+    "english": "to hold a grudge",
+    "category": "B2",
+    "hint": "to remain bitter about past wrongs"
+  },
+  {
+    "german": "nachverfolgen",
+    "english": "to track",
+    "category": "B2",
+    "hint": "to trace a package or pursue a goal"
+  },
+  {
+    "german": "nachziehen",
+    "english": "to follow",
+    "category": "B2",
+    "hint": "family moves later or tighten a screw"
+  },
+  {
+    "german": "n\u00E4herkommen",
+    "english": "to get closer",
+    "category": "B2",
+    "hint": "physically or emotionally approach (sich n\u00E4herkommen)"
+  },
+  {
+    "german": "n\u00E4hern",
+    "english": "to approach",
+    "category": "B2",
+    "hint": "to move closer to something/someone (sich n\u00E4hern)"
+  },
+  {
+    "german": "n\u00E4hren",
+    "english": "to nourish",
+    "category": "B2",
+    "hint": "to feed or sustain hopes/doubts"
+  },
+  {
+    "german": "namhaft machen",
+    "english": "to name",
+    "category": "B2",
+    "hint": "to officially identify or nominate someone"
+  },
+  {
+    "german": "nerv\u00F6s machen",
+    "english": "to make nervous",
+    "category": "B2",
+    "hint": "to cause someone to feel anxious"
+  },
+  {
+    "german": "niederlassen",
+    "english": "to settle",
+    "category": "B2",
+    "hint": "to establish a business or residence (sich niederlassen)"
+  },
+  {
+    "german": "niederschlagen",
+    "english": "to suppress",
+    "category": "B2",
+    "hint": "to crush a rebellion or reflect in the eyes"
+  },
+  {
+    "german": "normieren",
+    "english": "to standardize",
+    "category": "B2",
+    "hint": "to bring to a common standard"
+  },
+  {
+    "german": "obliegen",
+    "english": "to be incumbent",
+    "category": "B2",
+    "hint": "it is someone\u2019s duty (es obliegt ihm)"
+  },
+  {
+    "german": "obsiegen",
+    "english": "to prevail",
+    "category": "B2",
+    "hint": "to win in a dispute or competition (formal)"
+  },
+  {
+    "german": "offenbaren",
+    "english": "to reveal",
+    "category": "B2",
+    "hint": "to uncover a secret or truth or secret"
+  },
+  {
+    "german": "offenlegen",
+    "english": "to disclose",
+    "category": "B2",
+    "hint": "to make facts or finances public"
+  },
+  {
+    "german": "offerieren",
+    "english": "to offer",
+    "category": "B2",
+    "hint": "to formally propose a price or service"
+  },
+  {
+    "german": "\u00F6konomisieren",
+    "english": "to economize",
+    "category": "B2",
+    "hint": "to save money or resources"
+  },
+  {
+    "german": "operieren",
+    "english": "to operate",
+    "category": "B2",
+    "hint": "to perform surgery or function"
+  },
+  {
+    "german": "optimieren",
+    "english": "to optimize",
+    "category": "B2",
+    "hint": "to make as efficient as possible"
+  },
+  {
+    "german": "ordinieren",
+    "english": "to ordain",
+    "category": "B2",
+    "hint": "to appoint as priest or prescribe medicine"
+  },
+  {
+    "german": "orientieren",
+    "english": "to orient",
+    "category": "B2",
+    "hint": "to find your way or inform someone (sich orientieren)"
+  },
+  {
+    "german": "outrieren",
+    "english": "to overdo",
+    "category": "B2",
+    "hint": "to exaggerate dramatically (rare)"
+  },
+  {
+    "german": "Overhead",
+    "english": "overhead costs",
+    "category": "B2",
+    "hint": "fixed business costs (Gemeinkosten) \u2013 not a verb, but common B2 noun"
+  },
+  {
+    "german": "pachten",
+    "english": "to lease",
+    "category": "B2",
+    "hint": "to rent land or property for a long period"
+  },
+  {
+    "german": "parken",
+    "english": "to park",
+    "category": "B2",
+    "hint": "to leave a vehicle in a parking space"
+  },
+  {
+    "german": "parodieren",
+    "english": "to parody",
+    "category": "B2",
+    "hint": "to imitate something humorously or satirically"
+  },
+  {
+    "german": "partizipieren",
+    "english": "to participate",
+    "category": "B2",
+    "hint": "to take part in something (formal)"
+  },
+  {
+    "german": "passivieren",
+    "english": "to passivize",
+    "category": "B2",
+    "hint": "to turn an active sentence into passive voice"
+  },
+  {
+    "german": "patentieren",
+    "english": "to patent",
+    "category": "B2",
+    "hint": "to officially register an invention"
+  },
+  {
+    "german": "pauschalieren",
+    "english": "to generalize",
+    "category": "B2",
+    "hint": "to make a broad, oversimplified statement"
+  },
+  {
+    "german": "pensionieren",
+    "english": "to retire",
+    "category": "B2",
+    "hint": "to send someone into retirement (sich pensionieren lassen)"
+  },
+  {
+    "german": "perforieren",
+    "english": "to perforate",
+    "category": "B2",
+    "hint": "to make a line of small holes for easy tearing"
+  },
+  {
+    "german": "personifizieren",
+    "english": "to personify",
+    "category": "B2",
+    "hint": "to represent an idea as a person"
+  },
+  {
+    "german": "pf\u00E4nden",
+    "english": "to seize",
+    "category": "B2",
+    "hint": "to legally take property to cover a debt"
+  },
+  {
+    "german": "pflegen",
+    "english": "to care for",
+    "category": "B2",
+    "hint": "to look after people, skin or traditions"
+  },
+  {
+    "german": "pl\u00E4dieren",
+    "english": "to plead",
+    "category": "B2",
+    "hint": "to argue strongly in favor of something"
+  },
+  {
+    "german": "plagen",
+    "english": "to plague",
+    "category": "B2",
+    "hint": "to torment or bother constantly"
+  },
+  {
+    "german": "pl\u00E4rren",
+    "english": "to blare",
+    "category": "B2",
+    "hint": "loud, unpleasant noise (music or crying)"
+  },
+  {
+    "german": "pochen",
+    "english": "to pound",
+    "category": "B2",
+    "hint": "heart beats loudly or to knock heavily"
+  },
+  {
+    "german": "polarisieren",
+    "english": "to polarize",
+    "category": "B2",
+    "hint": "to sharply divide opinions"
+  },
+  {
+    "german": "positionieren",
+    "english": "to position",
+    "category": "B2",
+    "hint": "to place or market strategically (sich positionieren)"
+  },
+  {
+    "german": "pr\u00E4destinieren",
+    "english": "to predestine",
+    "category": "B2",
+    "hint": "to be perfectly suited for something"
+  },
+  {
+    "german": "pr\u00E4gen",
+    "english": "to coin",
+    "category": "B2",
+    "hint": "to mint coins or strongly shape character"
+  },
+  {
+    "german": "pr\u00E4judizieren",
+    "english": "to prejudice",
+    "category": "B2",
+    "hint": "to harm or prejudge a case (formal)"
+  },
+  {
+    "german": "praktizieren",
+    "english": "to practice",
+    "category": "B2",
+    "hint": "to work as a doctor/lawyer or actively do something"
+  },
+  {
+    "german": "privatisieren",
+    "english": "to privatize",
+    "category": "B2",
+    "hint": "to transfer from state to private ownership"
+  },
+  {
+    "german": "probieren",
+    "english": "to test",
+    "category": "B2",
+    "hint": "to try something out or taste food"
+  },
+  {
+    "german": "problematisieren",
+    "english": "to problematize",
+    "category": "B2",
+    "hint": "to present something as a problem"
+  },
+  {
+    "german": "produzieren",
+    "english": "to produce",
+    "category": "B2",
+    "hint": "to manufacture goods or create films"
+  },
+  {
+    "german": "profilieren",
+    "english": "to profile",
+    "category": "B2",
+    "hint": "to build a distinctive image (sich profilieren)"
+  },
+  {
+    "german": "profitieren",
+    "english": "to profit",
+    "category": "B2",
+    "hint": "to gain advantage or money from something"
+  },
+  {
+    "german": "prognostizieren",
+    "english": "to forecast",
+    "category": "B2",
+    "hint": "to predict future developments"
+  },
+  {
+    "german": "proklamieren",
+    "english": "to proclaim",
+    "category": "B2",
+    "hint": "to officially and publicly announce"
+  },
+  {
+    "german": "promovieren",
+    "english": "to graduate",
+    "category": "B2",
+    "hint": "to earn a doctorate (PhD)"
+  },
+  {
+    "german": "propagieren",
+    "english": "to propagate",
+    "category": "B2",
+    "hint": "to promote or spread an idea"
+  },
+  {
+    "german": "protestieren",
+    "english": "to protest",
+    "category": "B2",
+    "hint": "to express strong disagreement"
+  },
+  {
+    "german": "provozieren",
+    "english": "to provoke",
+    "category": "B2",
+    "hint": "to deliberately make someone angry"
+  },
+  {
+    "german": "pr\u00FCgeln",
+    "english": "to beat",
+    "category": "B2",
+    "hint": "to hit someone repeatedly (violent)"
+  },
+  {
+    "german": "publizieren",
+    "english": "to publish",
+    "category": "B2",
+    "hint": "to make research or books publicly available"
+  },
+  {
+    "german": "pulsieren",
+    "english": "to pulsate",
+    "category": "B2",
+    "hint": "to throb or beat rhythmically"
+  },
+  {
+    "german": "qualifizieren",
+    "english": "to qualify",
+    "category": "B2",
+    "hint": "to gain the skills or reach the next round (sich qualifizieren)"
+  },
+  {
+    "german": "quantifizieren",
+    "english": "to quantify",
+    "category": "B2",
+    "hint": "to express as a number or amount"
+  },
+  {
+    "german": "quengeln",
+    "english": "to whine",
+    "category": "B2",
+    "hint": "to complain in an annoying, childish way"
+  },
+  {
+    "german": "quittieren",
+    "english": "to quit",
+    "category": "B2",
+    "hint": "to resign from a job or acknowledge receipt"
+  },
+  {
+    "german": "quotieren",
+    "english": "to quote",
+    "category": "B2",
+    "hint": "to state a price or cite a source"
+  },
+  {
+    "german": "r\u00E4chen",
+    "english": "to avenge",
+    "category": "B2",
+    "hint": "to take revenge for a wrong (sich r\u00E4chen)"
+  },
+  {
+    "german": "rationalisieren",
+    "english": "to rationalize",
+    "category": "B2",
+    "hint": "to make a process more efficient or justify something"
+  },
+  {
+    "german": "r\u00E4tseln",
+    "english": "to puzzle",
+    "category": "B2",
+    "hint": "to wonder and try to figure something out"
+  },
+  {
+    "german": "rebellieren",
+    "english": "to rebel",
+    "category": "B2",
+    "hint": "to actively resist authority"
+  },
+  {
+    "german": "recyceln",
+    "english": "to recycle",
+    "category": "B2",
+    "hint": "to reuse waste materials"
+  },
+  {
+    "german": "referieren",
+    "english": "to lecture",
+    "category": "B2",
+    "hint": "to give a formal talk or report on a topic"
+  },
+  {
+    "german": "reflektieren",
+    "english": "to reflect",
+    "category": "B2",
+    "hint": "to think deeply or mirror light (sich reflektieren)"
+  },
+  {
+    "german": "reformieren",
+    "english": "to reform",
+    "category": "B2",
+    "hint": "to improve a system or institution"
+  },
+  {
+    "german": "regenerieren",
+    "english": "to regenerate",
+    "category": "B2",
+    "hint": "to regrow or recover energy"
+  },
+  {
+    "german": "regieren",
+    "english": "to govern",
+    "category": "B2",
+    "hint": "to rule a country or control a situation"
+  },
+  {
+    "german": "registrieren",
+    "english": "to register",
+    "category": "B2",
+    "hint": "to officially record or notice something (sich registrieren)"
+  },
+  {
+    "german": "regulieren",
+    "english": "to regulate",
+    "category": "B2",
+    "hint": "to control by rules or adjust temperature"
+  },
+  {
+    "german": "rehabilitieren",
+    "english": "to rehabilitate",
+    "category": "B2",
+    "hint": "to restore health, reputation or rights"
+  },
+  {
+    "german": "rekapitulieren",
+    "english": "to recap",
+    "category": "B2",
+    "hint": "to summarize the main points again"
+  },
+  {
+    "german": "rekonstruieren",
+    "english": "to reconstruct",
+    "category": "B2",
+    "hint": "to rebuild or recreate the past"
+  },
+  {
+    "german": "rekordieren",
+    "english": "to record",
+    "category": "B2",
+    "hint": "to capture sound/video (less common spelling)"
+  },
+  {
+    "german": "relativieren",
+    "english": "to relativize",
+    "category": "B2",
+    "hint": "to put something into perspective"
+  },
+  {
+    "german": "renommieren",
+    "english": "to boast",
+    "category": "B2",
+    "hint": "to brag loudly about achievements"
+  },
+  {
+    "german": "renovieren",
+    "english": "to renovate",
+    "category": "B2",
+    "hint": "to modernize or restore a building"
+  },
+  {
+    "german": "reparieren",
+    "english": "to repair",
+    "category": "B2",
+    "hint": "to fix something that is broken"
+  },
+  {
+    "german": "reproduzieren",
+    "english": "to reproduce",
+    "category": "B2",
+    "hint": "to make a copy or have offspring"
+  },
+  {
+    "german": "reservieren",
+    "english": "to reserve",
+    "category": "B2",
+    "hint": "to book a table or seat in advance"
+  },
+  {
+    "german": "residieren",
+    "english": "to reside",
+    "category": "B2",
+    "hint": "to have an official residence (formal)"
+  },
+  {
+    "german": "resozialisieren",
+    "english": "to reintegrate",
+    "category": "B2",
+    "hint": "to help ex-prisoners return to society"
+  },
+  {
+    "german": "respektieren",
+    "english": "to respect",
+    "category": "B2",
+    "hint": "to admire or follow rules"
+  },
+  {
+    "german": "restaurieren",
+    "english": "to restore",
+    "category": "B2",
+    "hint": "to return art or buildings to original state"
+  },
+  {
+    "german": "resultieren",
+    "english": "to result",
+    "category": "B2",
+    "hint": "to be the consequence of something"
+  },
+  {
+    "german": "revanchieren",
+    "english": "to reciprocate",
+    "category": "B2",
+    "hint": "to return a favor or revenge (sich revanchieren)"
+  },
+  {
+    "german": "revidieren",
+    "english": "to revise",
+    "category": "B2",
+    "hint": "to change an opinion or correct a text"
+  },
+  {
+    "german": "revolutionieren",
+    "english": "to revolutionize",
+    "category": "B2",
+    "hint": "to completely change a field or system"
+  },
+  {
+    "german": "rezensieren",
+    "english": "to review",
+    "category": "B2",
+    "hint": "to write a critical review of a book/film"
+  },
+  {
+    "german": "riskieren",
+    "english": "to risk",
+    "category": "B2",
+    "hint": "to take a chance of something bad happening"
+  },
+  {
+    "german": "ritualisieren",
+    "english": "to ritualize",
+    "category": "B2",
+    "hint": "to turn something into a fixed ritual"
+  },
+  {
+    "german": "rivalisieren",
+    "english": "to rival",
+    "category": "B2",
+    "hint": "to compete strongly with someone"
+  },
+  {
+    "german": "rotieren",
+    "english": "to rotate",
+    "category": "B2",
+    "hint": "to turn around an axis"
+  },
+  {
+    "german": "ruinieren",
+    "english": "to ruin",
+    "category": "B2",
+    "hint": "to completely destroy financially or emotionally"
+  },
+  {
+    "german": "r\u00FCsten",
+    "english": "to arm",
+    "category": "B2",
+    "hint": "to equip with weapons or prepare thoroughly"
+  },
+  {
+    "german": "tabellarisieren",
+    "english": "to tabulate",
+    "category": "B2",
+    "hint": "to arrange data in a clear table"
+  },
+  {
+    "german": "taktieren",
+    "english": "to maneuver",
+    "category": "B2",
+    "hint": "to act strategically, especially in politics or negotiations"
+  },
+  {
+    "german": "tarieren",
+    "english": "to calibrate",
+    "category": "B2",
+    "hint": "to precisely adjust scales or instruments"
+  },
+  {
+    "german": "tarnen",
+    "english": "to camouflage",
+    "category": "B2",
+    "hint": "to hide by making something blend in (sich tarnen)"
+  },
+  {
+    "german": "tasten",
+    "english": "to grope",
+    "category": "B2",
+    "hint": "to feel around in the dark or touch inappropriately"
+  },
+  {
+    "german": "taumeln",
+    "english": "to stagger",
+    "category": "B2",
+    "hint": "to walk unsteadily, drunk or dizzy"
+  },
+  {
+    "german": "taxieren",
+    "english": "to appraise",
+    "category": "B2",
+    "hint": "to estimate the value of something (expertly)"
+  },
+  {
+    "german": "technisieren",
+    "english": "to technologize",
+    "category": "B2",
+    "hint": "to make something highly technical or automated"
+  },
+  {
+    "german": "terminieren",
+    "english": "to schedule",
+    "category": "B2",
+    "hint": "to set or end at a specific date (formal)"
+  },
+  {
+    "german": "terrorisieren",
+    "english": "to terrorize",
+    "category": "B2",
+    "hint": "to frighten or dominate through violence"
+  },
+  {
+    "german": "testen",
+    "english": "to test",
+    "category": "B2",
+    "hint": "to try out or examine performance"
+  },
+  {
+    "german": "thematisieren",
+    "english": "to thematize",
+    "category": "B2",
+    "hint": "to make something the central topic"
+  },
+  {
+    "german": "theoretisieren",
+    "english": "to theorize",
+    "category": "B2",
+    "hint": "to discuss abstract ideas without practical proof"
+  },
+  {
+    "german": "tolerieren",
+    "english": "to tolerate",
+    "category": "B2",
+    "hint": "to accept something you don\u2019t like"
+  },
+  {
+    "german": "t\u00F6nen",
+    "english": "to tint",
+    "category": "B2",
+    "hint": "to color hair or glass slightly"
+  },
+  {
+    "german": "torpedieren",
+    "english": "to torpedo",
+    "category": "B2",
+    "hint": "to deliberately destroy a plan or project"
+  },
+  {
+    "german": "tosen",
+    "english": "to roar",
+    "category": "B2",
+    "hint": "storm, sea or crowd makes a loud, wild noise"
+  },
+  {
+    "german": "trainieren",
+    "english": "to train",
+    "category": "B2",
+    "hint": "to practice sports or prepare for a task"
+  },
+  {
+    "german": "tr\u00E4llern",
+    "english": "to warble",
+    "category": "B2",
+    "hint": "to sing cheerfully and lightly"
+  },
+  {
+    "german": "trampeln",
+    "english": "to trample",
+    "category": "B2",
+    "hint": "to walk heavily or crush underfoot"
+  },
+  {
+    "german": "transpirieren",
+    "english": "to perspire",
+    "category": "B2",
+    "hint": "to sweat (formal/scientific word)"
+  },
+  {
+    "german": "transportieren",
+    "english": "to transport",
+    "category": "B2",
+    "hint": "to move goods or people"
+  },
+  {
+    "german": "trauern",
+    "english": "to mourn",
+    "category": "B2",
+    "hint": "to feel deep sadness after a loss"
+  },
+  {
+    "german": "tr\u00E4ufeln",
+    "english": "to drip",
+    "category": "B2",
+    "hint": "to let liquid fall in small drops"
+  },
+  {
+    "german": "triumphieren",
+    "english": "to triumph",
+    "category": "B2",
+    "hint": "to celebrate a great victory"
+  },
+  {
+    "german": "trocknen",
+    "english": "to dry",
+    "category": "B2",
+    "hint": "to remove moisture (sich trocknen)"
+  },
+  {
+    "german": "tr\u00F6deln",
+    "english": "to dawdle",
+    "category": "B2",
+    "hint": "to waste time, move slowly"
+  },
+  {
+    "german": "tr\u00F6sten",
+    "english": "to comfort",
+    "category": "B2",
+    "hint": "to console someone who is sad"
+  },
+  {
+    "german": "trotzen",
+    "english": "to defy",
+    "category": "B2",
+    "hint": "to stubbornly resist or brave danger"
+  },
+  {
+    "german": "tummeln",
+    "english": "to frolic",
+    "category": "B2",
+    "hint": "to play or move around energetically (sich tummeln)"
+  },
+  {
+    "german": "\u00FCben",
+    "english": "to practice",
+    "category": "B2",
+    "hint": "to do something repeatedly to improve skills"
+  },
+  {
+    "german": "\u00FCberbewerten",
+    "english": "to overestimate",
+    "category": "B2",
+    "hint": "to value something too highly"
+  },
+  {
+    "german": "\u00FCberbr\u00FCcken",
+    "english": "to bridge",
+    "category": "B2",
+    "hint": "to connect or cover a gap temporarily"
+  },
+  {
+    "german": "\u00FCberdachen",
+    "english": "to roof",
+    "category": "B2",
+    "hint": "to cover with a roof or think over thoroughly"
+  },
+  {
+    "german": "\u00FCberfallen",
+    "english": "to attack",
+    "category": "B2",
+    "hint": "to suddenly assault or overwhelm"
+  },
+  {
+    "german": "\u00FCberfordern",
+    "english": "to overtax",
+    "category": "B2",
+    "hint": "to demand too much from someone"
+  },
+  {
+    "german": "\u00FCberfrachten",
+    "english": "to overload",
+    "category": "B2",
+    "hint": "to burden with too much weight or information"
+  },
+  {
+    "german": "\u00FCberf\u00FChren",
+    "english": "to convict",
+    "category": "B2",
+    "hint": "to prove guilty or transport across"
+  },
+  {
+    "german": "\u00FCberholen",
+    "english": "to overtake",
+    "category": "B2",
+    "hint": "to pass a vehicle or surpass someone"
+  },
+  {
+    "german": "\u00FCberlappen",
+    "english": "to overlap",
+    "category": "B2",
+    "hint": "to partly cover or coincide in time"
+  },
+  {
+    "german": "\u00FCberleben",
+    "english": "to survive",
+    "category": "B2",
+    "hint": "to continue living after danger"
+  },
+  {
+    "german": "\u00FCberlisten",
+    "english": "to outwit",
+    "category": "B2",
+    "hint": "to trick someone cleverly"
+  },
+  {
+    "german": "\u00FCbermitteln",
+    "english": "to transmit",
+    "category": "B2",
+    "hint": "to pass on information or greetings"
+  },
+  {
+    "german": "\u00FCberpr\u00FCfen",
+    "english": "to check",
+    "category": "B2",
+    "hint": "to examine for correctness"
+  },
+  {
+    "german": "\u00FCberqueren",
+    "english": "to cross",
+    "category": "B2",
+    "hint": "to go from one side to the other"
+  },
+  {
+    "german": "\u00FCberraschen",
+    "english": "to surprise",
+    "category": "B2",
+    "hint": "to do something unexpected"
+  },
+  {
+    "german": "\u00FCberreden",
+    "english": "to persuade",
+    "category": "B2",
+    "hint": "to convince someone to do something"
+  },
+  {
+    "german": "\u00FCberschatten",
+    "english": "to overshadow",
+    "category": "B2",
+    "hint": "to make something seem less important"
+  },
+  {
+    "german": "\u00FCbersch\u00E4tzen",
+    "english": "to overestimate",
+    "category": "B2",
+    "hint": "to think too highly of abilities"
+  },
+  {
+    "german": "\u00FCberschreiten",
+    "english": "to exceed",
+    "category": "B2",
+    "hint": "to go beyond a limit"
+  },
+  {
+    "german": "\u00FCberschwemmen",
+    "english": "to flood",
+    "category": "B2",
+    "hint": "to overwhelm with too much (market, emails)"
+  },
+  {
+    "german": "\u00FCbersehen",
+    "english": "to overlook",
+    "category": "B2",
+    "hint": "to fail to notice or ignore deliberately"
+  },
+  {
+    "german": "\u00FCbersteigen",
+    "english": "to surpass",
+    "category": "B2",
+    "hint": "to exceed expectations or climb over"
+  },
+  {
+    "german": "\u00FCberstimmen",
+    "english": "to outvote",
+    "category": "B2",
+    "hint": "to defeat by majority vote"
+  },
+  {
+    "german": "\u00FCbertragen",
+    "english": "to transfer",
+    "category": "B2",
+    "hint": "to broadcast or pass on (disease, duties)"
+  },
+  {
+    "german": "\u00FCbert\u00FCnchen",
+    "english": "to whitewash",
+    "category": "B2",
+    "hint": "to cover up flaws literally or figuratively"
+  },
+  {
+    "german": "\u00FCberw\u00E4ltigen",
+    "english": "to overwhelm",
+    "category": "B2",
+    "hint": "to overpower or deeply move emotionally"
+  },
+  {
+    "german": "\u00FCberweisen",
+    "english": "to transfer",
+    "category": "B2",
+    "hint": "to send money or refer to a specialist"
+  },
+  {
+    "german": "\u00FCberwinden",
+    "english": "to overcome",
+    "category": "B2",
+    "hint": "to conquer fear or obstacles"
+  },
+  {
+    "german": "umarmen",
+    "english": "to hug",
+    "category": "B2",
+    "hint": "to embrace with arms"
+  },
+  {
+    "german": "umgestalten",
+    "english": "to redesign",
+    "category": "B2",
+    "hint": "to completely change the structure or appearance"
+  },
+  {
+    "german": "umkehren",
+    "english": "to turn back",
+    "category": "B2",
+    "hint": "to reverse direction or decision"
+  },
+  {
+    "german": "umleiten",
+    "english": "to divert",
+    "category": "B2",
+    "hint": "to redirect traffic or attention"
+  },
+  {
+    "german": "umsetzen",
+    "english": "to implement",
+    "category": "B2",
+    "hint": "to put a plan into action or relocate"
+  },
+  {
+    "german": "umstrukturieren",
+    "english": "to restructure",
+    "category": "B2",
+    "hint": "to reorganize a company or system"
+  },
+  {
+    "german": "umwandeln",
+    "english": "to convert",
+    "category": "B2",
+    "hint": "to change form or function"
+  },
+  {
+    "german": "umzingeln",
+    "english": "to encircle",
+    "category": "B2",
+    "hint": "to surround completely"
+  },
+  {
+    "german": "unterbieten",
+    "english": "to undercut",
+    "category": "B2",
+    "hint": "to offer a lower price than competitors"
+  },
+  {
+    "german": "unterbrechen",
+    "english": "to interrupt",
+    "category": "B2",
+    "hint": "to stop someone from speaking or a process"
+  },
+  {
+    "german": "unterdr\u00FCcken",
+    "english": "to suppress",
+    "category": "B2",
+    "hint": "to hold back feelings or revolt"
+  },
+  {
+    "german": "untergraben",
+    "english": "to undermine",
+    "category": "B2",
+    "hint": "to weaken gradually or secretly"
+  },
+  {
+    "german": "unterlassen",
+    "english": "to refrain from",
+    "category": "B2",
+    "hint": "to deliberately not do something"
+  },
+  {
+    "german": "untersch\u00E4tzen",
+    "english": "to underestimate",
+    "category": "B2",
+    "hint": "to think too little of someone\u2019s abilities"
+  },
+  {
+    "german": "unterschreiten",
+    "english": "to fall below",
+    "category": "B2",
+    "hint": "to go under a limit or minimum"
+  },
+  {
+    "german": "unterstellen",
+    "english": "to assume",
+    "category": "B2",
+    "hint": "to presume or place under authority"
+  },
+  {
+    "german": "unterst\u00FCtzen",
+    "english": "to support",
+    "category": "B2",
+    "hint": "to help or back someone/something"
+  },
+  {
+    "german": "untertreiben",
+    "english": "to understate",
+    "category": "B2",
+    "hint": "to describe something as less than it is"
+  },
+  {
+    "german": "untervermieten",
+    "english": "to sublet",
+    "category": "B2",
+    "hint": "to rent out rented property to another"
+  },
+  {
+    "german": "unterwerfen",
+    "english": "to subjugate",
+    "category": "B2",
+    "hint": "to bring under control or submit (sich unterwerfen)"
+  },
+  {
+    "german": "urbanisieren",
+    "english": "to urbanize",
+    "category": "B2",
+    "hint": "to turn an area into a city-like environment"
+  },
+  {
+    "german": "variieren",
+    "english": "to vary",
+    "category": "B2",
+    "hint": "to change slightly or differ"
+  },
+  {
+    "german": "verabscheuen",
+    "english": "to detest",
+    "category": "B2",
+    "hint": "to hate something intensely"
+  },
+  {
+    "german": "verallgemeinern",
+    "english": "to generalize",
+    "category": "B2",
+    "hint": "to make a broad statement from specifics"
+  },
+  {
+    "german": "veralten",
+    "english": "to become outdated",
+    "category": "B2",
+    "hint": "to no longer be modern or useful"
+  },
+  {
+    "german": "veranlagen",
+    "english": "to predispose",
+    "category": "B2",
+    "hint": "to naturally incline toward something"
+  },
+  {
+    "german": "veranschaulichen",
+    "english": "to illustrate",
+    "category": "B2",
+    "hint": "to explain with examples or visuals"
+  },
+  {
+    "german": "veranstalten",
+    "english": "to organize",
+    "category": "B2",
+    "hint": "to arrange an event or party"
+  },
+  {
+    "german": "verarbeiten",
+    "english": "to process",
+    "category": "B2",
+    "hint": "to handle data, materials or emotions"
+  },
+  {
+    "german": "verausgaben",
+    "english": "to spend",
+    "category": "B2",
+    "hint": "to exhaust yourself or resources (sich verausgaben)"
+  },
+  {
+    "german": "ver\u00E4u\u00DFern",
+    "english": "to sell",
+    "category": "B2",
+    "hint": "to formally dispose of property"
+  },
+  {
+    "german": "verballhornen",
+    "english": "to distort",
+    "category": "B2",
+    "hint": "to corrupt or parody a name or phrase"
+  },
+  {
+    "german": "verbeamten",
+    "english": "to bureaucratize",
+    "category": "B2",
+    "hint": "to turn into a bureaucratic system"
+  },
+  {
+    "german": "verbeugen",
+    "english": "to bow",
+    "category": "B2",
+    "hint": "to bend forward in respect (sich verbeugen)"
+  },
+  {
+    "german": "verbiegen",
+    "english": "to bend",
+    "category": "B2",
+    "hint": "to warp metal or twist the truth"
+  },
+  {
+    "german": "verbilligen",
+    "english": "to cheapen",
+    "category": "B2",
+    "hint": "to reduce price or value"
+  },
+  {
+    "german": "verbinden",
+    "english": "to connect",
+    "category": "B2",
+    "hint": "to link or bandage a wound"
+  },
+  {
+    "german": "verbittern",
+    "english": "to embitter",
+    "category": "B2",
+    "hint": "to make someone resentful"
+  },
+  {
+    "german": "verblassen",
+    "english": "to fade",
+    "category": "B2",
+    "hint": "colors or memories become less vivid"
+  },
+  {
+    "german": "verbleiben",
+    "english": "to remain",
+    "category": "B2",
+    "hint": "to stay or be left over (formal)"
+  },
+  {
+    "german": "verbl\u00FCffen",
+    "english": "to astonish",
+    "category": "B2",
+    "hint": "to surprise and confuse someone"
+  },
+  {
+    "german": "verbrauchen",
+    "english": "to consume",
+    "category": "B2",
+    "hint": "to use up resources like fuel"
+  },
+  {
+    "german": "verbreiten",
+    "english": "to spread",
+    "category": "B2",
+    "hint": "to disseminate news or germs"
+  },
+  {
+    "german": "verbrennen",
+    "english": "to burn",
+    "category": "B2",
+    "hint": "to destroy by fire or get sunburned"
+  },
+  {
+    "german": "verdamfen",
+    "english": "to condemn",
+    "category": "B2",
+    "hint": "to officially sentence or disapprove"
+  },
+  {
+    "german": "verdamfen",
+    "english": "to evaporate",
+    "category": "B2",
+    "hint": "to turn liquid into vapor"
+  },
+  {
+    "german": "verdauen",
+    "english": "to digest",
+    "category": "B2",
+    "hint": "to process food or information"
+  },
+  {
+    "german": "verderben",
+    "english": "to spoil",
+    "category": "B2",
+    "hint": "food goes bad or ruin plans"
+  },
+  {
+    "german": "verdoppeln",
+    "english": "to double",
+    "category": "B2",
+    "hint": "to increase to twice as much"
+  },
+  {
+    "german": "verdr\u00E4ngen",
+    "english": "to displace",
+    "category": "B2",
+    "hint": "to push aside or repress memories"
+  },
+  {
+    "german": "verdrehen",
+    "english": "to twist",
+    "category": "B2",
+    "hint": "to turn or distort facts"
+  },
+  {
+    "german": "verd\u00FCnnen",
+    "english": "to dilute",
+    "category": "B2",
+    "hint": "to make thinner by adding liquid"
+  },
+  {
+    "german": "vereidigen",
+    "english": "to swear in",
+    "category": "B2",
+    "hint": "to administer an oath to an official"
+  },
+  {
+    "german": "vereinfachen",
+    "english": "to simplify",
+    "category": "B2",
+    "hint": "to make easier or less complex"
+  },
+  {
+    "german": "vereinheitlichen",
+    "english": "to standardize",
+    "category": "B2",
+    "hint": "to make uniform across a group"
+  },
+  {
+    "german": "vereinigen",
+    "english": "to unite",
+    "category": "B2",
+    "hint": "to bring together into one"
+  },
+  {
+    "german": "vereinnahmen",
+    "english": "to appropriate",
+    "category": "B2",
+    "hint": "to claim or take over for oneself"
+  },
+  {
+    "german": "verengen",
+    "english": "to narrow",
+    "category": "B2",
+    "hint": "to make smaller in width"
+  },
+  {
+    "german": "verewigen",
+    "english": "to immortalize",
+    "category": "B2",
+    "hint": "to make famous forever, like in a photo"
+  },
+  {
+    "german": "verfahren",
+    "english": "to proceed",
+    "category": "B2",
+    "hint": "to continue or handle legally"
+  },
+  {
+    "german": "verfallen",
+    "english": "to decay",
+    "category": "B2",
+    "hint": "to deteriorate or expire"
+  },
+  {
+    "german": "verfassen",
+    "english": "to compose",
+    "category": "B2",
+    "hint": "to write a text or document"
+  },
+  {
+    "german": "verfechten",
+    "english": "to advocate",
+    "category": "B2",
+    "hint": "to strongly defend a cause"
+  },
+  {
+    "german": "verfehlen",
+    "english": "to miss",
+    "category": "B2",
+    "hint": "to fail to hit or achieve"
+  },
+  {
+    "german": "verfestigen",
+    "english": "to solidify",
+    "category": "B2",
+    "hint": "to make firm or strengthen"
+  },
+  {
+    "german": "verfilmen",
+    "english": "to film",
+    "category": "B2",
+    "hint": "to adapt a story into a movie"
+  },
+  {
+    "german": "verfluchen",
+    "english": "to curse",
+    "category": "B2",
+    "hint": "to wish harm using bad words"
+  },
+  {
+    "german": "verfolgen",
+    "english": "to pursue",
+    "category": "B2",
+    "hint": "to chase or follow a goal"
+  },
+  {
+    "german": "verformen",
+    "english": "to deform",
+    "category": "B2",
+    "hint": "to change shape unnaturally"
+  },
+  {
+    "german": "verfrachten",
+    "english": "to ship",
+    "category": "B2",
+    "hint": "to transport goods in large quantities"
+  },
+  {
+    "german": "verf\u00FCgen",
+    "english": "to dispose",
+    "category": "B2",
+    "hint": "to have at one\u0027s disposal or order something"
+  },
+  {
+    "german": "verf\u00FChren",
+    "english": "to seduce",
+    "category": "B2",
+    "hint": "to tempt or lead astray"
+  },
+  {
+    "german": "verf\u00FCnffachen",
+    "english": "to quintuple",
+    "category": "B2",
+    "hint": "to multiply by five"
+  },
+  {
+    "german": "vergn\u00FCgen",
+    "english": "to amuse",
+    "category": "B2",
+    "hint": "to enjoy or entertain (sich vergn\u00FCgen)"
+  },
+  {
+    "german": "vergr\u00F6\u00DFern",
+    "english": "to enlarge",
+    "category": "B2",
+    "hint": "to make bigger in size"
+  },
+  {
+    "german": "verg\u00FCten",
+    "english": "to compensate",
+    "category": "B2",
+    "hint": "to pay for work or loss"
+  },
+  {
+    "german": "verhaften",
+    "english": "to arrest",
+    "category": "B2",
+    "hint": "to take into custody by police"
+  },
+  {
+    "german": "verh\u00E4ltnism\u00E4\u00DFig",
+    "english": "to be proportional",
+    "category": "B2",
+    "hint": "to be in reasonable relation to something"
+  },
+  {
+    "german": "verhandeln",
+    "english": "to negotiate",
+    "category": "B2",
+    "hint": "to discuss terms for an agreement"
+  },
+  {
+    "german": "verharmlosen",
+    "english": "to downplay",
+    "category": "B2",
+    "hint": "to make something seem less serious"
+  },
+  {
+    "german": "verheddern",
+    "english": "to tangle",
+    "category": "B2",
+    "hint": "to get twisted up (sich verheddern)"
+  },
+  {
+    "german": "verheerend",
+    "english": "to devastate",
+    "category": "B2",
+    "hint": "to cause great destruction"
+  },
+  {
+    "german": "verheimlichen",
+    "english": "to conceal",
+    "category": "B2",
+    "hint": "to hide information deliberately"
+  },
+  {
+    "german": "verherrlichen",
+    "english": "to glorify",
+    "category": "B2",
+    "hint": "to praise excessively or idealize"
+  },
+  {
+    "german": "verh\u00F6hnen",
+    "english": "to mock",
+    "category": "B2",
+    "hint": "to ridicule or scorn someone"
+  },
+  {
+    "german": "verhungern",
+    "english": "to starve",
+    "category": "B2",
+    "hint": "to die from lack of food"
+  },
+  {
+    "german": "verinnerlichen",
+    "english": "to internalize",
+    "category": "B2",
+    "hint": "to make a belief part of yourself"
+  },
+  {
+    "german": "verj\u00FCngen",
+    "english": "to rejuvenate",
+    "category": "B2",
+    "hint": "to make younger or fresher"
+  },
+  {
+    "german": "verkaufen",
+    "english": "to sell",
+    "category": "B2",
+    "hint": "to exchange for money"
+  },
+  {
+    "german": "verk\u00E4uflich",
+    "english": "to be for sale",
+    "category": "B2",
+    "hint": "something that can be bought"
+  },
+  {
+    "german": "verkennen",
+    "english": "to misjudge",
+    "category": "B2",
+    "hint": "to fail to recognize the true nature"
+  },
+  {
+    "german": "verkl\u00E4ren",
+    "english": "to idealize",
+    "category": "B2",
+    "hint": "to see something in a romanticized light"
+  },
+  {
+    "german": "verkleinern",
+    "english": "to reduce",
+    "category": "B2",
+    "hint": "to make smaller in size"
+  },
+  {
+    "german": "verkn\u00FCpfen",
+    "english": "to link",
+    "category": "B2",
+    "hint": "to connect or associate"
+  },
+  {
+    "german": "verkommen",
+    "english": "to decay",
+    "category": "B2",
+    "hint": "to fall into ruin morally or physically"
+  },
+  {
+    "german": "verk\u00F6rpern",
+    "english": "to embody",
+    "category": "B2",
+    "hint": "to represent an idea perfectly"
+  },
+  {
+    "german": "verk\u00FCnden",
+    "english": "to announce",
+    "category": "B2",
+    "hint": "to make known publicly"
+  },
+  {
+    "german": "verlangen",
+    "english": "to demand",
+    "category": "B2",
+    "hint": "to strongly request or desire"
+  },
+  {
+    "german": "verl\u00E4ngern",
+    "english": "to extend",
+    "category": "B2",
+    "hint": "to make longer in time or length"
+  },
+  {
+    "german": "verlassen",
+    "english": "to abandon",
+    "category": "B2",
+    "hint": "to leave behind or rely on (sich verlassen auf)"
+  },
+  {
+    "german": "verleihen",
+    "english": "to lend",
+    "category": "B2",
+    "hint": "to give temporarily or award"
+  },
+  {
+    "german": "verleiten",
+    "english": "to tempt",
+    "category": "B2",
+    "hint": "to lead someone into doing wrong"
+  },
+  {
+    "german": "verletzen",
+    "english": "to injure",
+    "category": "B2",
+    "hint": "to hurt physically or emotionally"
+  },
+  {
+    "german": "verloben",
+    "english": "to engage",
+    "category": "B2",
+    "hint": "to promise to marry (sich verloben)"
+  },
+  {
+    "german": "verlosen",
+    "english": "to raffle",
+    "category": "B2",
+    "hint": "to give away by lottery"
+  },
+  {
+    "german": "vermehren",
+    "english": "to propagate",
+    "category": "B2",
+    "hint": "to reproduce or spread"
+  },
+  {
+    "german": "vermehren",
+    "english": "to multiply",
+    "category": "B2",
+    "hint": "to increase in number"
+  },
+  {
+    "german": "vermeiden",
+    "english": "to avoid",
+    "category": "B2",
+    "hint": "to keep away from something bad"
+  },
+  {
+    "german": "vermindern",
+    "english": "to reduce",
+    "category": "B2",
+    "hint": "to make less in amount"
+  },
+  {
+    "german": "vermitteln",
+    "english": "to mediate",
+    "category": "B2",
+    "hint": "to arrange or convey information"
+  },
+  {
+    "german": "vernachl\u00E4ssigen",
+    "english": "to neglect",
+    "category": "B2",
+    "hint": "to fail to care for properly"
+  },
+  {
+    "german": "vernehmen",
+    "english": "to interrogate",
+    "category": "B2",
+    "hint": "to question in court or hear sound"
+  },
+  {
+    "german": "vernichten",
+    "english": "to annihilate",
+    "category": "B2",
+    "hint": "to completely destroy"
+  },
+  {
+    "german": "verordnen",
+    "english": "to prescribe",
+    "category": "B2",
+    "hint": "to order medically or officially"
+  },
+  {
+    "german": "verpachten",
+    "english": "to lease out",
+    "category": "B2",
+    "hint": "to rent land to someone"
+  },
+  {
+    "german": "verpflichten",
+    "english": "to oblige",
+    "category": "B2",
+    "hint": "to bind legally or morally"
+  },
+  {
+    "german": "verraten",
+    "english": "to betray",
+    "category": "B2",
+    "hint": "to reveal a secret or be disloyal"
+  },
+  {
+    "german": "versagen",
+    "english": "to fail",
+    "category": "B2",
+    "hint": "to not work or deny access"
+  },
+  {
+    "german": "verschaffen",
+    "english": "to procure",
+    "category": "B2",
+    "hint": "to obtain or provide access"
+  },
+  {
+    "german": "versch\u00E4rfen",
+    "english": "to tighten",
+    "category": "B2",
+    "hint": "to make stricter or worse"
+  },
+  {
+    "german": "verschicken",
+    "english": "to send",
+    "category": "B2",
+    "hint": "to mail or dispatch"
+  },
+  {
+    "german": "verschleiern",
+    "english": "to veil",
+    "category": "B2",
+    "hint": "to obscure or hide facts"
+  },
+  {
+    "german": "verschleppen",
+    "english": "to delay",
+    "category": "B2",
+    "hint": "to prolong or kidnap"
+  },
+  {
+    "german": "verschlimmern",
+    "english": "to worsen",
+    "category": "B2",
+    "hint": "to make a situation worse"
+  },
+  {
+    "german": "verschl\u00FCsseln",
+    "english": "to encrypt",
+    "category": "B2",
+    "hint": "to code information for security"
+  },
+  {
+    "german": "verschmelzen",
+    "english": "to merge",
+    "category": "B2",
+    "hint": "to fuse or blend together"
+  },
+  {
+    "german": "verschmutzen",
+    "english": "to pollute",
+    "category": "B2",
+    "hint": "to make dirty or contaminated"
+  },
+  {
+    "german": "vers\u00F6hnen",
+    "english": "to reconcile",
+    "category": "B2",
+    "hint": "to restore friendly relations (sich vers\u00F6hnen)"
+  },
+  {
+    "german": "versorgen",
+    "english": "to supply",
+    "category": "B2",
+    "hint": "to provide care or provisions"
+  },
+  {
+    "german": "verst\u00E4rken",
+    "english": "to strengthen",
+    "category": "B2",
+    "hint": "to make stronger or amplify"
+  },
+  {
+    "german": "verstecken",
+    "english": "to hide",
+    "category": "B2",
+    "hint": "to conceal something or yourself"
+  },
+  {
+    "german": "versteuern",
+    "english": "to tax",
+    "category": "B2",
+    "hint": "to declare and pay taxes on income"
+  },
+  {
+    "german": "verstopfen",
+    "english": "to clog",
+    "category": "B2",
+    "hint": "to block a pipe or nose"
+  },
+  {
+    "german": "verst\u00FCmmeln",
+    "english": "to maim",
+    "category": "B2",
+    "hint": "to disfigure or cut off parts"
+  },
+  {
+    "german": "versuchen",
+    "english": "to attempt",
+    "category": "B2",
+    "hint": "to try to do something"
+  },
+  {
+    "german": "verteilen",
+    "english": "to distribute",
+    "category": "B2",
+    "hint": "to hand out or spread"
+  },
+  {
+    "german": "vertiefen",
+    "english": "to deepen",
+    "category": "B2",
+    "hint": "to make deeper or more intense"
+  },
+  {
+    "german": "vertilgen",
+    "english": "to exterminate",
+    "category": "B2",
+    "hint": "to destroy pests or consume food"
+  },
+  {
+    "german": "vertreten",
+    "english": "to represent",
+    "category": "B2",
+    "hint": "to stand in for or advocate a view"
+  },
+  {
+    "german": "ver\u00FCben",
+    "english": "to commit",
+    "category": "B2",
+    "hint": "to carry out a crime or act"
+  },
+  {
+    "german": "verunglimpfen",
+    "english": "to slander",
+    "category": "B2",
+    "hint": "to defame or speak ill of someone"
+  },
+  {
+    "german": "verunsichern",
+    "english": "to unsettle",
+    "category": "B2",
+    "hint": "to make someone insecure or uncertain"
+  },
+  {
+    "german": "vervielf\u00E4ltigen",
+    "english": "to multiply",
+    "category": "B2",
+    "hint": "to make many copies or increase"
+  },
+  {
+    "german": "verwalten",
+    "english": "to administer",
+    "category": "B2",
+    "hint": "to manage or oversee"
+  },
+  {
+    "german": "verwechseln",
+    "english": "to confuse",
+    "category": "B2",
+    "hint": "to mix up or mistake one for another"
+  },
+  {
+    "german": "verweigern",
+    "english": "to refuse",
+    "category": "B2",
+    "hint": "to deny or not grant"
+  },
+  {
+    "german": "verwerfen",
+    "english": "to reject",
+    "category": "B2",
+    "hint": "to discard an idea or throw away"
+  },
+  {
+    "german": "verwerten",
+    "english": "to utilize",
+    "category": "B2",
+    "hint": "to make use of or recycle"
+  },
+  {
+    "german": "verwickeln",
+    "english": "to entangle",
+    "category": "B2",
+    "hint": "to involve in a complicated situation"
+  },
+  {
+    "german": "verw\u00F6hnen",
+    "english": "to pamper",
+    "category": "B2",
+    "hint": "to spoil with luxuries or attention"
+  },
+  {
+    "german": "verwunden",
+    "english": "to wound",
+    "category": "B2",
+    "hint": "to injure physically or emotionally"
+  },
+  {
+    "german": "verw\u00FCsten",
+    "english": "to devastate",
+    "category": "B2",
+    "hint": "to lay waste to an area"
+  },
+  {
+    "german": "verzerren",
+    "english": "to distort",
+    "category": "B2",
+    "hint": "to twist out of shape or misrepresent"
+  },
+  {
+    "german": "verzweifeln",
+    "english": "to despair",
+    "category": "B2",
+    "hint": "to lose all hope"
+  },
+  {
+    "german": "visieren",
+    "english": "to aim",
+    "category": "B2",
+    "hint": "to target or endorse a document"
+  },
+  {
+    "german": "visualisieren",
+    "english": "to visualize",
+    "category": "B2",
+    "hint": "to make something visible, like data"
+  },
+  {
+    "german": "vollf\u00FChren",
+    "english": "to perform",
+    "category": "B2",
+    "hint": "to carry out an action or trick"
+  },
+  {
+    "german": "vollstrecken",
+    "english": "to enforce",
+    "category": "B2",
+    "hint": "to carry out a sentence or will"
+  },
+  {
+    "german": "vollziehen",
+    "english": "to execute",
+    "category": "B2",
+    "hint": "to perform or complete formally"
+  },
+  {
+    "german": "votieren",
+    "english": "to vote",
+    "category": "B2",
+    "hint": "to cast a formal vote"
+  },
+  {
+    "german": "wahrnehmen",
+    "english": "to perceive",
+    "category": "B2",
+    "hint": "to notice or sense something"
+  },
+  {
+    "german": "w\u00E4lzen",
+    "english": "to roll",
+    "category": "B2",
+    "hint": "to turn over heavily (sich w\u00E4lzen)"
+  },
+  {
+    "german": "wandeln",
+    "english": "to transform",
+    "category": "B2",
+    "hint": "to change or walk leisurely"
+  },
+  {
+    "german": "w\u00E4ssern",
+    "english": "to water",
+    "category": "B2",
+    "hint": "to irrigate plants or dilute"
+  },
+  {
+    "german": "wecken",
+    "english": "to awaken",
+    "category": "B2",
+    "hint": "to rouse from sleep or stir interest"
+  },
+  {
+    "german": "wegrationalisieren",
+    "english": "to rationalize away",
+    "category": "B2",
+    "hint": "to eliminate jobs through efficiency"
+  },
+  {
+    "german": "weigern",
+    "english": "to refuse",
+    "category": "B2",
+    "hint": "to decline to do something (sich weigern)"
+  },
+  {
+    "german": "weihen",
+    "english": "to consecrate",
+    "category": "B2",
+    "hint": "to make sacred or dedicate"
+  },
+  {
+    "german": "weiten",
+    "english": "to widen",
+    "category": "B2",
+    "hint": "to expand or stretch (sich weiten)"
+  },
+  {
+    "german": "werten",
+    "english": "to evaluate",
+    "category": "B2",
+    "hint": "to assess value or interpret data"
+  },
+  {
+    "german": "wetten",
+    "english": "to bet",
+    "category": "B2",
+    "hint": "to wager money on an outcome"
+  },
+  {
+    "german": "wichsen",
+    "english": "to polish",
+    "category": "B2",
+    "hint": "to shine shoes (careful with slang)"
+  },
+  {
+    "german": "widerspiegeln",
+    "english": "to reflect",
+    "category": "B2",
+    "hint": "to mirror or show an image of"
+  },
+  {
+    "german": "widersprechen",
+    "english": "to contradict",
+    "category": "B2",
+    "hint": "to say the opposite or oppose"
+  },
+  {
+    "german": "widmen",
+    "english": "to dedicate",
+    "category": "B2",
+    "hint": "to devote time or a book to someone"
+  },
+  {
+    "german": "wiederbeleben",
+    "english": "to revive",
+    "category": "B2",
+    "hint": "to bring back to life or consciousness"
+  },
+  {
+    "german": "wiedergeben",
+    "english": "to reproduce",
+    "category": "B2",
+    "hint": "to recount or play back"
+  },
+  {
+    "german": "wiedergewinnen",
+    "english": "to regain",
+    "category": "B2",
+    "hint": "to win back trust or territory"
+  },
+  {
+    "german": "wiedersehen",
+    "english": "to see again",
+    "category": "B2",
+    "hint": "to meet someone after separation"
+  },
+  {
+    "german": "wimmern",
+    "english": "to whimper",
+    "category": "B2",
+    "hint": "to cry softly or whine"
+  },
+  {
+    "german": "winkeln",
+    "english": "to angle",
+    "category": "B2",
+    "hint": "to bend at an angle or retreat"
+  },
+  {
+    "german": "winseln",
+    "english": "to whine",
+    "category": "B2",
+    "hint": "dog whines or person begs pitifully"
+  },
+  {
+    "german": "wippen",
+    "english": "to bob",
+    "category": "B2",
+    "hint": "to move up and down rhythmically"
+  },
+  {
+    "german": "wirtschaften",
+    "english": "to manage",
+    "category": "B2",
+    "hint": "to handle resources economically"
+  },
+  {
+    "german": "wundern",
+    "english": "to wonder",
+    "category": "B2",
+    "hint": "to be surprised or puzzled (sich wundern)"
+  },
+  {
+    "german": "z\u00E4hlen",
+    "english": "to count",
+    "category": "B2",
+    "hint": "to number or be important"
+  },
+  {
+    "german": "z\u00E4hmen",
+    "english": "to tame",
+    "category": "B2",
+    "hint": "to domesticate an animal"
+  },
+  {
+    "german": "z\u00E4hnen",
+    "english": "to teethe",
+    "category": "B2",
+    "hint": "baby grows teeth (zahnen)"
+  },
+  {
+    "german": "zanken",
+    "english": "to quarrel",
+    "category": "B2",
+    "hint": "to argue pettily (sich zanken)"
+  },
+  {
+    "german": "zapfen",
+    "english": "to tap",
+    "category": "B2",
+    "hint": "to draw beer or sap from a tree"
+  },
+  {
+    "german": "zappeln",
+    "english": "to fidget",
+    "category": "B2",
+    "hint": "to wriggle or squirm restlessly"
+  },
+  {
+    "german": "zeichnen",
+    "english": "to draw",
+    "category": "B2",
+    "hint": "to create pictures or sign"
+  },
+  {
+    "german": "zerfallen",
+    "english": "to disintegrate",
+    "category": "B2",
+    "hint": "to break into pieces or decay"
+  },
+  {
+    "german": "zerfleischen",
+    "english": "to tear apart",
+    "category": "B2",
+    "hint": "to rip to shreds literally or figuratively"
+  },
+  {
+    "german": "zerlegen",
+    "english": "to disassemble",
+    "category": "B2",
+    "hint": "to take apart or butcher meat"
+  },
+  {
+    "german": "zerreden",
+    "english": "to talk to pieces",
+    "category": "B2",
+    "hint": "to argue until an idea is destroyed"
+  },
+  {
+    "german": "zerschellen",
+    "english": "to shatter",
+    "category": "B2",
+    "hint": "to break with a crash (on rocks)"
+  },
+  {
+    "german": "zerst\u00F6ren",
+    "english": "to destroy",
+    "category": "B2",
+    "hint": "to completely ruin or demolish"
+  },
+  {
+    "german": "zerstreuen",
+    "english": "to disperse",
+    "category": "B2",
+    "hint": "to scatter or distract"
+  },
+  {
+    "german": "zertr\u00FCmmern",
+    "english": "to smash",
+    "category": "B2",
+    "hint": "to break into fragments"
+  },
+  {
+    "german": "zielen",
+    "english": "to aim",
+    "category": "B2",
+    "hint": "to point a weapon or strive for a goal"
+  },
+  {
+    "german": "zitieren",
+    "english": "to quote",
+    "category": "B2",
+    "hint": "to cite words or summon to court"
+  },
+  {
+    "german": "zittern",
+    "english": "to tremble",
+    "category": "B2",
+    "hint": "to shake from cold or fear"
+  },
+  {
+    "german": "z\u00F6gern",
+    "english": "to hesitate",
+    "category": "B2",
+    "hint": "to pause before deciding"
+  },
+  {
+    "german": "zollen",
+    "english": "to pay tribute",
+    "category": "B2",
+    "hint": "to show respect or admiration"
+  },
+  {
+    "german": "z\u00FCchten",
+    "english": "to breed",
+    "category": "B2",
+    "hint": "to raise animals or plants selectively"
+  },
+  {
+    "german": "z\u00FCchtigen",
+    "english": "to chastise",
+    "category": "B2",
+    "hint": "to punish physically (old-fashioned)"
+  },
+  {
+    "german": "z\u00FCgeln",
+    "english": "to curb",
+    "category": "B2",
+    "hint": "to restrain emotions or a horse"
+  },
+  {
+    "german": "z\u00FCgern",
+    "english": "to hesitate",
+    "category": "B2",
+    "hint": "to delay due to uncertainty"
+  },
+  {
+    "german": "zupfen",
+    "english": "to pluck",
+    "category": "B2",
+    "hint": "to pull strings or feathers"
+  },
+  {
+    "german": "zurechtweisen",
+    "english": "to rebuke",
+    "category": "B2",
+    "hint": "to correct or scold someone"
+  },
+  {
+    "german": "zur\u00FCckf\u00FChren",
+    "english": "to trace back",
+    "category": "B2",
+    "hint": "to attribute to a cause or lead back"
+  },
+  {
+    "german": "zur\u00FCckgreifen",
+    "english": "to resort to",
+    "category": "B2",
+    "hint": "to fall back on something"
+  },
+  {
+    "german": "zur\u00FCckkehren",
+    "english": "to return",
+    "category": "B2",
+    "hint": "to go back to a place"
+  },
+  {
+    "german": "zusagen",
+    "english": "to accept",
+    "category": "B2",
+    "hint": "to agree to an invitation or offer"
+  },
+  {
+    "german": "zusammenbrechen",
+    "english": "to collapse",
+    "category": "B2",
+    "hint": "to break down physically or emotionally"
+  },
+  {
+    "german": "zusammensetzen",
+    "english": "to compose",
+    "category": "B2",
+    "hint": "to put together or consist of (sich zusammensetzen)"
+  },
+  {
+    "german": "zusammenstellen",
+    "english": "to compile",
+    "category": "B2",
+    "hint": "to assemble a list or team"
+  },
+  {
+    "german": "zuschlagen",
+    "english": "to strike",
+    "category": "B2",
+    "hint": "to hit or grab an opportunity"
+  },
+  {
+    "german": "zuschreiben",
+    "english": "to attribute",
+    "category": "B2",
+    "hint": "to ascribe or add to an account"
+  },
+  {
+    "german": "zuspitzen",
+    "english": "to escalate",
+    "category": "B2",
+    "hint": "to sharpen or intensify a situation (sich zuspitzen)"
+  },
+  {
+    "german": "zustande kommen",
+    "english": "to come about",
+    "category": "B2",
+    "hint": "to happen or be created"
+  },
+  {
+    "german": "zustimmen",
+    "english": "to agree",
+    "category": "B2",
+    "hint": "to consent or say yes"
+  },
+  {
+    "german": "zuteilen",
+    "english": "to allocate",
+    "category": "B2",
+    "hint": "to assign or distribute"
+  },
+  {
+    "german": "zutrauen",
+    "english": "to trust someone to",
+    "category": "B2",
+    "hint": "to believe someone capable"
+  },
+  {
+    "german": "zuverl\u00E4ssig",
+    "english": "to be reliable",
+    "category": "B2",
+    "hint": "to be dependable and trustworthy"
+  },
+  {
+    "german": "zuwinken",
+    "english": "to wave to",
+    "category": "B2",
+    "hint": "to signal with a hand gesture"
+  },
+  {
+    "german": "zuzahlen",
+    "english": "to pay extra",
+    "category": "B2",
+    "hint": "to add money to cover the difference"
+  },
+  {
+    "german": "zuziehen",
+    "english": "to consult",
+    "category": "B2",
+    "hint": "to involve an expert or close curtains"
+  },
+  {
+    "german": "zwinkern",
+    "english": "to wink",
+    "category": "B2",
+    "hint": "to close one eye briefly as a signal"
+  }
+]

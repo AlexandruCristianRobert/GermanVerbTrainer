@@ -14,6 +14,7 @@ import {
 } from '@angular/forms';
 import { Router } from '@angular/router';
 import { VocabQuizConfigService } from '../../services/vocab-quiz-config.service';
+import { CustomVerbListService } from '../../services/custom-verb-list.service';
 import { VerbService } from '../../../quiz/services/verb.service';
 import { StorageService } from '../../../../core/services/storage.service';
 import { AuthService } from '../../../../core/services/auth.service';
@@ -35,11 +36,13 @@ export class VocabQuizTestComponent implements OnInit, OnDestroy {
   @ViewChild('feedbackDiv') feedbackDiv?: ElementRef;
   @ViewChild('answerInput') answerInput?: ElementRef;
   showFeedback = false;
+  showHint = false;
   private timerInterval: any;
 
   constructor(
     private fb: FormBuilder,
     private vocabConfigService: VocabQuizConfigService,
+    private customListService: CustomVerbListService,
     private verbService: VerbService,
     private storageService: StorageService,
     private authService: AuthService,
@@ -88,6 +91,13 @@ export class VocabQuizTestComponent implements OnInit, OnDestroy {
   }
 
   private selectRandomVerbs(config: any): Verb[] {
+    if (config.useCustomList && config.customListId) {
+      return this.customListService.getRandomVerbsFromList(
+        config.customListId,
+        config.verbCount
+      );
+    }
+
     const filters: VerbFilters = {
       difficultyLevels: config.difficultyLevels,
       verbTypes: config.includeAllTypes ? undefined : [],
@@ -159,6 +169,7 @@ export class VocabQuizTestComponent implements OnInit, OnDestroy {
    */
   nextQuestion(): void {
     this.showFeedback = false;
+    this.showHint = false;
     this.answerForm.reset();
 
     if (this.quizState.currentIndex < this.quizState.questions.length - 1) {
@@ -220,6 +231,23 @@ export class VocabQuizTestComponent implements OnInit, OnDestroy {
   quitQuiz(): void {
     if (confirm('Are you sure you want to quit? Your progress will be lost.')) {
       this.router.navigate(['/vocab-quiz/config']);
+    }
+  }
+
+  /**
+   * Toggle hint visibility
+   */
+  toggleHint(): void {
+    this.showHint = !this.showHint;
+  }
+
+  /**
+   * Handle keyboard events for hint
+   */
+  onKeyDown(event: KeyboardEvent): void {
+    if (event.key === 'Tab' && !this.showFeedback) {
+      event.preventDefault();
+      this.toggleHint();
     }
   }
 

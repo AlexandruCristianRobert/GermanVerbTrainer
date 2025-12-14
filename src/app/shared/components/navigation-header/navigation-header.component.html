@@ -1,46 +1,50 @@
 <!-- e:\Projects\Angular\German Verbs\german-verb-trainer\src\app\shared\components\navigation-header\navigation-header.component.html -->
 
-<nav class="bg-white shadow-lg">
+<nav
+  class="bg-dark-800/90 backdrop-blur-lg border-b border-dark-600/50 sticky top-0 z-50"
+>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16">
       <!-- Logo and Brand -->
       <div class="flex items-center">
-        <a routerLink="/config" class="flex items-center space-x-2">
+        <a routerLink="/config" class="flex items-center space-x-2 group">
           <span class="text-2xl">🇩🇪</span>
-          <span class="text-xl font-bold text-gray-900"
+          <span
+            class="text-xl font-bold text-gradient group-hover:opacity-80 transition-opacity"
             >German Verb Trainer</span
           >
         </a>
       </div>
 
       <!-- Desktop Navigation -->
-      <div class="hidden md:flex md:items-center md:space-x-4">
+      <div class="hidden md:flex md:items-center md:space-x-2">
         <a
           routerLink="/config"
-          routerLinkActive="bg-blue-50 text-blue-700"
-          class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+          routerLinkActive="bg-accent-cyan/10 text-accent-cyan border-accent-cyan"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="px-4 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-dark-700 border border-transparent transition-all duration-200"
         >
           📋 Configure Quiz
         </a>
         <a
           routerLink="/vocab-quiz/config"
-          routerLinkActive="bg-blue-50 text-blue-700"
-          class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+          routerLinkActive="bg-accent-cyan/10 text-accent-cyan border-accent-cyan"
+          class="px-4 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-dark-700 border border-transparent transition-all duration-200"
         >
           📚 Vocabulary Quiz
         </a>
         <a
           routerLink="/history"
-          routerLinkActive="bg-blue-50 text-blue-700"
-          class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+          routerLinkActive="bg-accent-cyan/10 text-accent-cyan border-accent-cyan"
+          class="px-4 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-dark-700 border border-transparent transition-all duration-200"
         >
           📊 History
         </a>
         <a
           *ngIf="isAdmin"
           routerLink="/admin/upload-verbs"
-          routerLinkActive="bg-blue-50 text-blue-700"
-          class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+          routerLinkActive="bg-accent-cyan/10 text-accent-cyan border-accent-cyan"
+          class="px-4 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-dark-700 border border-transparent transition-all duration-200"
         >
           📤 Upload Verbs
         </a>
@@ -49,15 +53,15 @@
         <div class="relative ml-3">
           <button
             (click)="toggleUserMenu()"
-            class="flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100 focus:outline-none"
+            class="flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-400 hover:bg-dark-700 focus:outline-none focus:ring-2 focus:ring-accent-cyan/50 transition-all duration-200"
           >
             <div
-              class="h-8 w-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold"
+              class="h-8 w-8 rounded-full bg-gradient-to-br from-accent-cyan to-accent-purple text-white flex items-center justify-center font-semibold text-sm"
             >
               {{ getUserInitials() }}
             </div>
             <svg
-              class="h-5 w-5 text-gray-400"
+              class="h-5 w-5 text-gray-500"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -72,20 +76,20 @@
           <!-- Dropdown Menu -->
           <div
             *ngIf="showUserMenu"
-            class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
+            class="origin-top-right absolute right-0 mt-2 w-56 rounded-xl shadow-card-dark bg-dark-800 border border-dark-600 z-50 overflow-hidden"
           >
             <div class="py-1">
               <div
-                class="px-4 py-2 text-sm text-gray-700 border-b border-gray-200"
+                class="px-4 py-3 text-sm text-gray-300 border-b border-dark-600"
               >
-                <div class="font-medium">Signed in as</div>
-                <div class="text-xs text-gray-500 truncate">
+                <div class="font-medium text-white">Signed in as</div>
+                <div class="text-xs text-gray-500 truncate mt-1">
                   {{ getUserEmail() }}
                 </div>
               </div>
               <button
                 (click)="onLogout()"
-                class="block w-full text-left px-4 py-2 text-sm text-red-700 hover:bg-red-50"
+                class="block w-full text-left px-4 py-3 text-sm text-error-400 hover:bg-error-500/10 transition-colors duration-200"
               >
                 🚪 Logout
               </button>
@@ -98,7 +102,7 @@
       <div class="flex items-center md:hidden">
         <button
           (click)="toggleMobileMenu()"
-          class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none"
+          class="inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:bg-dark-700 hover:text-white focus:outline-none transition-colors duration-200"
         >
           <svg
             class="h-6 w-6"
@@ -127,19 +131,26 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div *ngIf="showMobileMenu" class="md:hidden border-t border-gray-200">
-    <div class="px-2 pt-2 pb-3 space-y-1">
+  <div *ngIf="showMobileMenu" class="md:hidden border-t border-dark-600">
+    <div class="px-2 pt-2 pb-3 space-y-1 bg-dark-800">
       <a
         routerLink="/config"
         (click)="showMobileMenu = false"
-        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:bg-dark-700 hover:text-white transition-colors duration-200"
       >
         📋 Configure Quiz
       </a>
       <a
+        routerLink="/vocab-quiz/config"
+        (click)="showMobileMenu = false"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:bg-dark-700 hover:text-white transition-colors duration-200"
+      >
+        📚 Vocabulary Quiz
+      </a>
+      <a
         routerLink="/history"
         (click)="showMobileMenu = false"
-        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:bg-dark-700 hover:text-white transition-colors duration-200"
       >
         📊 History
       </a>
@@ -147,15 +158,15 @@
         *ngIf="isAdmin"
         routerLink="/admin/upload-verbs"
         (click)="showMobileMenu = false"
-        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:bg-dark-700 hover:text-white transition-colors duration-200"
       >
         📤 Upload Verbs
       </a>
-      <div class="border-t border-gray-200 pt-2 mt-2">
-        <div class="px-3 py-2 text-sm text-gray-500">{{ getUserEmail() }}</div>
+      <div class="border-t border-dark-600 pt-2 mt-2">
+        <div class="px-4 py-2 text-sm text-gray-500">{{ getUserEmail() }}</div>
         <button
           (click)="onLogout(); showMobileMenu = false"
-          class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-red-700 hover:bg-red-50"
+          class="block w-full text-left px-4 py-3 rounded-lg text-base font-medium text-error-400 hover:bg-error-500/10 transition-colors duration-200"
         >
           🚪 Logout
         </button>

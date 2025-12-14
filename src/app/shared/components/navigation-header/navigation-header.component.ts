@@ -2,14 +2,14 @@
 
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router, RouterLink } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { AuthService } from '../../../core/services/auth.service';
 import { User } from '@supabase/supabase-js';
 
 @Component({
   selector: 'app-navigation-header',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './navigation-header.component.html',
   styleUrls: ['./navigation-header.component.scss'],
 })

@@ -1,67 +1,69 @@
-<div
-  class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8 px-4"
->
-  <div class="max-w-4xl mx-auto">
+<div class="min-h-screen bg-dark-900 py-4 px-4">
+  <div class="max-w-3xl mx-auto animate-fade-in">
     <!-- Header with Timer and Progress -->
-    <div class="bg-white shadow-lg rounded-lg p-6 mb-6">
-      <div class="flex items-center justify-between mb-4">
+    <div
+      class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-lg border border-dark-600/50 p-4 mb-3"
+    >
+      <div class="flex items-center justify-between mb-3">
         <div>
-          <h1 class="text-2xl font-bold text-gray-800">German Verb Quiz</h1>
-          <p class="text-sm text-gray-600 mt-1">
-            Question {{ currentQuestionIndex + 1 }} of {{ questions.length }}
+          <h1 class="text-lg font-bold text-white">Quiz</h1>
+          <p class="text-xs text-gray-400">
+            {{ currentQuestionIndex + 1 }}/{{ questions.length }}
           </p>
         </div>
         <div class="text-right">
-          <div class="text-3xl font-bold text-blue-600">
+          <div class="text-xl font-bold text-accent-cyan">
             {{ getFormattedTime() }}
           </div>
-          <div class="text-xs text-gray-600">Time Elapsed</div>
+          <div class="text-xs text-gray-500">Elapsed</div>
         </div>
       </div>
 
       <!-- Progress Bar -->
-      <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+      <div class="w-full bg-dark-700 rounded-full h-2 overflow-hidden">
         <div
-          class="bg-blue-600 h-3 rounded-full transition-all duration-300"
+          class="bg-gradient-to-r from-accent-cyan to-accent-purple h-2 rounded-full transition-all duration-300"
           [style.width.%]="progress"
         ></div>
       </div>
-      <div class="flex justify-between text-xs text-gray-600 mt-2">
-        <span>{{ questionsAnswered }} answered</span>
-        <span>{{ questionsRemaining }} remaining</span>
+      <div class="flex justify-between text-xs text-gray-500 mt-1.5">
+        <span>{{ questionsAnswered }} done</span>
+        <span>{{ questionsRemaining }} left</span>
       </div>
     </div>
 
     <!-- Question Card -->
-    <div *ngIf="currentQuestion" class="bg-white shadow-lg rounded-lg p-8 mb-6">
+    <div
+      *ngIf="currentQuestion"
+      class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-lg border border-dark-600/50 p-4 mb-3"
+    >
       <!-- Question Header -->
-      <div class="mb-6">
-        <div class="flex items-center justify-between mb-4">
+      <div class="mb-3">
+        <div class="flex items-center flex-wrap gap-2 mb-2.5">
           <span
-            class="inline-block px-3 py-1 bg-purple-100 text-purple-800 text-sm font-semibold rounded-full"
+            class="inline-block px-2 py-1 bg-accent-purple/20 text-accent-purple text-xs font-semibold rounded border border-accent-purple/50"
           >
             {{ currentQuestion.tense }}
           </span>
           <span
-            class="inline-block px-3 py-1 bg-green-100 text-green-800 text-sm font-semibold rounded-full"
+            class="inline-block px-2 py-1 bg-success-500/20 text-success-400 text-xs font-semibold rounded border border-success-500/50"
           >
             {{ currentQuestion.verb.verb_type }}
           </span>
           <span
-            class="inline-block px-3 py-1 bg-orange-100 text-orange-800 text-sm font-semibold rounded-full"
+            class="inline-block px-2 py-1 bg-warning-500/20 text-warning-400 text-xs font-semibold rounded border border-warning-500/50"
           >
-            Level {{ currentQuestion.verb.difficulty_level }}
+            Lv{{ currentQuestion.verb.difficulty_level }}
           </span>
         </div>
 
         <!-- Question Text -->
-        <h2 class="text-3xl font-bold text-gray-800 mb-2">
+        <h2 class="text-lg font-bold text-white mb-2">
           {{ currentQuestion.questionText }}
         </h2>
 
-        <p class="text-lg text-gray-600">
-          Verb:
-          <span class="font-semibold">{{
+        <p class="text-sm text-gray-400">
+          <span class="font-semibold text-accent-cyan">{{
             currentQuestion.verb.infinitive
           }}</span>
           ({{ currentQuestion.verb.english_translation }})
@@ -69,8 +71,8 @@
       </div>
 
       <!-- Answer Input -->
-      <div class="mb-6">
-        <label class="block text-sm font-medium text-gray-700 mb-2">
+      <div class="mb-3">
+        <label class="block text-xs font-medium text-gray-300 mb-1.5">
           Your Answer:
         </label>
         <input
@@ -78,10 +80,12 @@
           [(ngModel)]="currentAnswer"
           (keypress)="handleKeyPress($event)"
           (input)="showValidation = false"
-          placeholder="Type the conjugated verb..."
-          class="w-full px-4 py-3 text-xl border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
-          [class.border-red-500]="showValidation && !isCurrentAnswerCorrect()"
-          [class.border-green-500]="showValidation && isCurrentAnswerCorrect()"
+          placeholder="Type verb..."
+          class="w-full px-3 py-2 text-base bg-dark-700 border border-dark-600 rounded text-white placeholder-gray-500 focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan/30 transition-all duration-300"
+          [class.border-error-500]="showValidation && !isCurrentAnswerCorrect()"
+          [class.border-success-500]="
+            showValidation && isCurrentAnswerCorrect()
+          "
           autofocus
         />
 
@@ -89,9 +93,9 @@
         <div *ngIf="showValidation" class="mt-2">
           <div
             *ngIf="isCurrentAnswerCorrect()"
-            class="flex items-center text-green-600 text-sm font-medium"
+            class="flex items-center text-success-400 text-xs font-medium"
           >
-            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 20 20">
               <path
                 fill-rule="evenodd"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -102,10 +106,10 @@
           </div>
           <div
             *ngIf="!isCurrentAnswerCorrect() && answerError"
-            class="flex items-start text-red-600 text-sm font-medium"
+            class="flex items-start text-error-400 text-xs font-medium"
           >
             <svg
-              class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0"
+              class="w-4 h-4 mr-1.5 mt-0.5 flex-shrink-0"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -121,23 +125,23 @@
       </div>
 
       <!-- Action Buttons -->
-      <div class="flex gap-3 mb-6">
+      <div class="flex gap-2 mb-3">
         <button
           (click)="checkAnswer()"
           [disabled]="!currentAnswer.trim()"
-          class="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
+          class="flex-1 bg-gradient-to-r from-accent-cyan to-accent-purple text-white px-4 py-2 rounded font-semibold hover:shadow-glow-cyan disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 text-sm"
         >
-          Check Answer
+          Check
         </button>
         <button
           (click)="toggleHint()"
-          class="flex-1 bg-yellow-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors"
+          class="bg-warning-500/20 text-warning-400 border border-warning-500/50 px-4 py-2 rounded font-semibold hover:bg-warning-500/30 transition-all duration-200 text-sm"
         >
-          {{ showHint ? "Hide" : "Show" }} Hint
+          {{ showHint ? "Hide" : "" }}Hint
         </button>
         <button
           (click)="clearCurrentAnswer()"
-          class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg font-semibold hover:bg-gray-300 transition-colors"
+          class="px-4 py-2 bg-dark-600 text-gray-300 rounded font-semibold hover:bg-dark-500 hover:text-white transition-all duration-200 text-sm"
         >
           Clear
         </button>
@@ -146,47 +150,47 @@
       <!-- Hint Panel -->
       <div
         *ngIf="showHint"
-        class="bg-yellow-50 border-2 border-yellow-200 rounded-lg p-4 mb-6"
+        class="bg-warning-500/10 border border-warning-500/30 rounded p-3 mb-3"
       >
-        <div class="flex items-center justify-between mb-2">
-          <h3 class="font-semibold text-gray-800">
-            Hint (Level {{ hintLevel }}):
+        <div class="flex items-center justify-between mb-1.5">
+          <h3 class="font-semibold text-warning-400 text-xs">
+            Hint L{{ hintLevel }}:
           </h3>
-          <div class="flex gap-2">
+          <div class="flex gap-1.5">
             <button
               (click)="decreaseHintLevel()"
               [disabled]="hintLevel === 1"
-              class="px-2 py-1 bg-yellow-200 text-gray-700 rounded text-sm hover:bg-yellow-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              class="px-2 py-1 bg-warning-500/20 text-warning-400 rounded text-xs hover:bg-warning-500/30 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
-              Less
+              -
             </button>
             <button
               (click)="increaseHintLevel()"
               [disabled]="hintLevel === 3"
-              class="px-2 py-1 bg-yellow-200 text-gray-700 rounded text-sm hover:bg-yellow-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              class="px-2 py-1 bg-warning-500/20 text-warning-400 rounded text-xs hover:bg-warning-500/30 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
-              More
+              +
             </button>
           </div>
         </div>
-        <p class="text-gray-700 text-lg font-mono">{{ getHint() }}</p>
+        <p class="text-white text-sm font-mono">{{ getHint() }}</p>
       </div>
     </div>
 
     <!-- Navigation Buttons -->
-    <div class="flex gap-3 mb-6">
+    <div class="flex gap-2 mb-3">
       <button
         (click)="previousQuestion()"
         [disabled]="isFirstQuestion"
-        class="flex-1 bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
+        class="flex-1 bg-dark-700 text-gray-300 px-4 py-2 rounded font-semibold hover:bg-dark-600 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 text-sm"
       >
-        ← Previous
+        ← Prev
       </button>
 
       <button
         *ngIf="!isLastQuestion"
         (click)="nextQuestion()"
-        class="flex-1 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+        class="flex-1 bg-accent-cyan/20 text-accent-cyan border border-accent-cyan/50 px-4 py-2 rounded font-semibold hover:bg-accent-cyan/30 transition-all duration-200 text-sm"
       >
         Next →
       </button>
@@ -195,34 +199,30 @@
         *ngIf="isLastQuestion"
         (click)="confirmSubmitQuiz()"
         [disabled]="isSubmitting"
-        class="flex-1 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
+        class="flex-1 bg-gradient-to-r from-success-500 to-success-600 text-white px-4 py-2 rounded font-semibold hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 text-sm"
       >
-        {{ isSubmitting ? "Submitting..." : "Submit Quiz" }}
+        {{ isSubmitting ? "Submitting..." : "Submit" }}
       </button>
     </div>
 
     <!-- Question Navigator -->
-    <div class="bg-white shadow-lg rounded-lg p-6 mb-6">
-      <h3 class="font-semibold text-gray-800 mb-4">Quick Navigation:</h3>
-      <div class="grid grid-cols-5 sm:grid-cols-10 gap-2">
+    <div
+      class="bg-dark-800/80 backdrop-blur-lg shadow-card-dark rounded-lg border border-dark-600/50 p-3 mb-3"
+    >
+      <h3 class="font-semibold text-white mb-2 text-sm">Jump to:</h3>
+      <div class="grid grid-cols-10 gap-1.5">
         <button
           *ngFor="let question of questions; let i = index"
           (click)="goToQuestion(i)"
-          [class.bg-blue-600]="i === currentQuestionIndex"
-          [class.text-white]="i === currentQuestionIndex"
-          [class.bg-green-100]="
-            i !== currentQuestionIndex && isQuestionAnswered(i)
-          "
-          [class.text-green-800]="
-            i !== currentQuestionIndex && isQuestionAnswered(i)
-          "
-          [class.bg-gray-100]="
-            i !== currentQuestionIndex && !isQuestionAnswered(i)
-          "
-          [class.text-gray-700]="
-            i !== currentQuestionIndex && !isQuestionAnswered(i)
-          "
-          class="aspect-square rounded-lg font-semibold hover:shadow-md transition-all"
+          [ngClass]="{
+            'bg-gradient-to-r from-accent-cyan to-accent-purple text-white':
+              i === currentQuestionIndex,
+            'bg-success-500/20 text-success-400 border-success-500/50':
+              i !== currentQuestionIndex && isQuestionAnswered(i),
+            'bg-dark-700 text-gray-400 border-dark-600':
+              i !== currentQuestionIndex && !isQuestionAnswered(i)
+          }"
+          class="aspect-square rounded font-semibold border hover:scale-105 transition-all duration-200 text-xs"
         >
           {{ i + 1 }}
         </button>
@@ -233,7 +233,7 @@
     <div class="text-center">
       <button
         (click)="exitQuiz()"
-        class="text-red-600 hover:text-red-800 font-medium"
+        class="text-error-400 hover:text-error-300 font-medium transition-colors text-xs"
       >
         Exit Quiz
       </button>

@@ -240,6 +240,127 @@ export class VerbUploadComponent {
     this.filePreview = '';
   }
 
+  mergeHintsFromJSON(): void {
+    if (!this.selectedFile) {
+      return;
+    }
+
+    if (
+      !confirm(
+        'This will merge hints from the JSON file with existing verbs in the database. Continue?'
+      )
+    ) {
+      return;
+    }
+
+    this.uploadStatus = 'validating';
+    this.isLoading = true;
+    this.validationErrors = [];
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const content = e.target?.result as string;
+
+      try {
+        const hintsData = JSON.parse(content);
+
+        if (!Array.isArray(hintsData)) {
+          throw new Error('JSON must be an array of verbs');
+        }
+
+        // Create a map of infinitive -> hint
+        // Handle both "german" and "infinitive" properties from JSON
+        const hintMap = new Map<string, string>();
+        hintsData.forEach((verb: any) => {
+          const infinitive = verb.infinitive || verb.german;
+          if (infinitive && verb.hint) {
+            hintMap.set(infinitive.toLowerCase(), verb.hint);
+          }
+        });
+
+        console.log(`📝 Found ${hintMap.size} verbs with hints in JSON`);
+
+        // Now fetch all existing verbs and update them
+        this.verbDownloadService.downloadAllVerbs().subscribe({
+          next: (result) => {
+            if (result.success && result.verbs) {
+              const verbsToUpdate = result.verbs.map((verb) => {
+                const hint = hintMap.get(verb.infinitive.toLowerCase());
+                if (hint) {
+                  return { ...verb, hint };
+                }
+                return verb;
+              });
+
+              const updatedCount = verbsToUpdate.filter((v) => v.hint).length;
+              console.log(`✅ Will update ${updatedCount} verbs with hints`);
+
+              // Upsert the updated verbs (this will update existing records)
+              this.verbUploadService.upsertVerbs(verbsToUpdate).subscribe({
+                next: (uploadResult) => {
+                  this.isLoading = false;
+
+                  if (uploadResult.success) {
+                    this.uploadStatus = 'success';
+                    this.uploadResult = {
+                      count: updatedCount,
+                      message: `Successfully merged hints for ${updatedCount} verbs!`,
+                    };
+
+                    // Clear and reload cache
+                    this.cacheService.clearCache();
+                    this.cacheService.initializeCache().then(() => {
+                      console.log('✅ Cache reloaded with hints');
+                    });
+
+                    setTimeout(() => {
+                      this.resetForm();
+                    }, 3000);
+                  } else {
+                    this.uploadStatus = 'error';
+                    this.validationErrors = [
+                      uploadResult.error || 'Hint merge failed',
+                    ];
+                  }
+                },
+                error: (err) => {
+                  this.isLoading = false;
+                  this.uploadStatus = 'error';
+                  this.validationErrors = [
+                    'Failed to upload updated verbs: ' + err.message,
+                  ];
+                },
+              });
+            } else {
+              this.isLoading = false;
+              this.uploadStatus = 'error';
+              this.validationErrors = ['Failed to download existing verbs'];
+            }
+          },
+          error: (err) => {
+            this.isLoading = false;
+            this.uploadStatus = 'error';
+            this.validationErrors = [
+              'Failed to fetch existing verbs: ' + err.message,
+            ];
+          },
+        });
+      } catch (error: any) {
+        this.isLoading = false;
+        this.uploadStatus = 'error';
+        this.validationErrors = ['Invalid JSON format: ' + error.message];
+      }
+    };
+
+    reader.onerror = () => {
+      this.isLoading = false;
+      this.uploadStatus = 'error';
+      this.validationErrors = ['Failed to read file'];
+    };
+
+    reader.readAsText(this.selectedFile);
+  }
+
   goBack(): void {
     this.router.navigate(['/config']);
   }

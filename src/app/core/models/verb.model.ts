@@ -7,6 +7,7 @@ export interface Verb {
   conjugations: VerbConjugations;
   difficulty_level: number;
   created_at: string;
+  hint?: string;
 }
 
 export type VerbType = 'weak' | 'strong' | 'irregular' | 'modal';

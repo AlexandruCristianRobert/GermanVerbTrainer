@@ -2,12 +2,15 @@ export interface VocabQuizConfig {
   verbCount: number; // 5-100
   difficultyLevels: number[]; // [1, 2, 3] where 1=A1-A2, 2=B1-B2, 3=C1-C2
   includeAllTypes: boolean;
+  useCustomList: boolean;
+  customListId?: string;
 }
 
 export const DEFAULT_VOCAB_CONFIG: VocabQuizConfig = {
   verbCount: 20,
   difficultyLevels: [1, 2],
   includeAllTypes: true,
+  useCustomList: false,
 };
 
 export interface DifficultyLevelOption {

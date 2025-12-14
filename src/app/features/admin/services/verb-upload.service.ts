@@ -223,7 +223,7 @@ export class VerbUploadService {
   }
 
   /**
-   * Upload verbs to Supabase
+   * Upload verbs to Supabase (insert only, will fail on duplicates)
    */
   uploadVerbs(verbs: Verb[]): Observable<UploadResult> {
     console.log(`📤 Uploading ${verbs.length} verbs to Supabase...`);
@@ -279,8 +279,47 @@ export class VerbUploadService {
     );
   }
 
-  /**
-   * Generate template JSON for verb structure
+  /**   * Upsert verbs to Supabase (insert new or update existing based on ID)
+   */
+  upsertVerbs(verbs: Verb[]): Observable<UploadResult> {
+    console.log(`🔄 Upserting ${verbs.length} verbs to Supabase...`);
+
+    const client = this.supabaseService.getClient();
+
+    // Use upsert with onConflict on the 'id' column
+    return from(
+      client.from('verbs').upsert(verbs, { onConflict: 'id' }).select()
+    ).pipe(
+      map(({ data, error }) => {
+        if (error) {
+          console.error('❌ Verb upsert failed:', error);
+          return {
+            success: false,
+            count: 0,
+            error: error.message || 'Upsert failed',
+          };
+        }
+
+        console.log(`✅ Successfully upserted ${data?.length || 0} verbs`);
+        return {
+          success: true,
+          count: data?.length || 0,
+        };
+      }),
+      catchError((error) => {
+        console.error('❌ Upsert error:', error);
+        return from([
+          {
+            success: false,
+            count: 0,
+            error: error.message || 'An unexpected error occurred',
+          },
+        ]);
+      })
+    );
+  }
+
+  /**   * Generate template JSON for verb structure
    */
   generateTemplate(): string {
     const template = [

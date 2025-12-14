@@ -8,7 +8,8 @@ import {
   VocabQuizConfigComponent,
   VocabQuizTestComponent,
   VocabQuizResultsComponent,
-} from './features/vocab-quiz'; // ADD THIS
+  ManageVerbsComponent,
+} from './features/vocab-quiz';
 import { authGuard } from './core/guards/auth.guard';
 import { dataLoadedGuard } from './core/guards/data-loaded.guard';
 import { adminGuard } from './core/guards/admin.guard';
@@ -42,7 +43,6 @@ export const routes: Routes = [
     canActivate: [authGuard],
     data: { title: 'Quiz Results' },
   },
-  // ADD VOCABULARY QUIZ ROUTES HERE
   {
     path: 'vocab-quiz',
     canActivate: [authGuard, dataLoadedGuard],
@@ -66,6 +66,11 @@ export const routes: Routes = [
         path: 'results',
         component: VocabQuizResultsComponent,
         data: { title: 'Vocabulary Quiz Results' },
+      },
+      {
+        path: 'manage-verbs',
+        component: ManageVerbsComponent,
+        data: { title: 'Manage Custom Verb Lists' },
       },
     ],
   },
